@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros Negocios | Grupo Sura</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css"
+        integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/themes/splide-sea-green.min.css"
+        integrity="sha512-/oUoxw/jGrD5UopHdKP65VWYXMNzISSafMMcqajF/bPpzpcArjXIBujC7xLDmty9LymRYmdCovi9lZ8ZJz7/ag=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./output.css">
 </head>
 
@@ -261,7 +268,7 @@
             <div class="w-full px-1.5 md:px-7 lg:px-10 xl:px-16">
                 <!-- Tabs -->
                 <ul
-                    class="w-full text-sm md:text-base lg:text-xl font-semibold sm:flex sm:justify-between grid grid-cols-2 gap-2 mb-6 text-primary">
+                    class="tabs w-full text-sm md:text-base lg:text-xl font-semibold sm:flex sm:justify-between grid grid-cols-2 gap-2 mb-6 text-primary">
                     <li class="px-3 flex-1 flex justify-center basis-1/4 border-r border-secondary">
                         <span
                             class="rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center bg-primary text-white cursor-pointer">Acciones</span>
@@ -281,7 +288,7 @@
                 </ul>
 
 
-                <!-- Menu and Content -->
+                <!-- Menu and Content tab-1 -->
                 <div class="menu&content overflow-y-hidden">
                     <div class="p-2 flex gap-5 min-w-[800px] sm:min-w-[1100px]">
                         <!-- Menu -->
@@ -419,19 +426,76 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Charts -->
+                    <main class="w-full py-8 px-2">
+                        <h1 class="font-bold text-lg sm:text-2xl lg:text-4xl mb-2.5 sm:mb-10">Precio de la
+                            Acción</h1>
+                        <div class="h-100">
+                            <canvas style="background: #119fb9;" id="stockChart" height="400"></canvas>
+                        </div>
+                    </main>
                 </div>
-            </div>
+
+                <!-- Menu and Content tab-2 -->
+                <div class="menu&content overflow-y-hidden p-2">
+                    <p class="font-bold leading-9 text-4xl text-primary pb-4">Informe 2024</p>
+                    <div class="py-2 flex flex-col md:flex-row gap-8 items-start md:items-center">
+                        <div class="w-full h-60 overflow-hidden">
+                            <img class="w-full h-full overflow-hidden object-cover rounded-xl"
+                                src="./assets/images/laughing-girls.jpeg" alt="laughing-guy">
+                        </div>
+                        <div class="w-full">
+                            <h3 class="text-base py-1.5 font-normal text-justify">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h3>
+                            <button
+                                class="flex justify-center items-center text-sm text-white bg-secondary px-10 mt-2 py-2 rounded-3xl cursor-pointer">CTA
+                                <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 items-center py-2">
+                        <p class="font-bold leading-9 text-4xl text-primary pb-4">Informe</p>
+                        <div class="splide w-full">
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    <div
+                                        class="splide__slide relative py-2 text-center cursor-pointer bg-white text-[#00AEC7]">
+                                        <span>2024</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2023</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2022</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2021</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2020</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2019</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2018</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
         </main>
 
-        <!-- Charts -->
-        <main class="w-full bg-white py-8">
-            <div class="px-1.5 md:px-7 lg:px-10 xl:px-16">
-                <h1 class="font-bold text-lg sm:text-2xl lg:text-4xl mb-2.5 sm:mb-10 lg:mb-20">Precio de la Acción</h1>
-                <div class="h-100">
-                    <canvas style="background: #119fb9;" id="stockChart" height="400"></canvas>
-                </div>
-            </div>
-        </main>
 
         <!-- También te puede interesar -->
         <main class="w-full overflow-hidden bg-white text-primary flex justify-center py-1 sm:py-8">
@@ -629,10 +693,11 @@
                     </ul>
                 </div>
             </div>
-            <div class="mx-auto text-center py-10 text-xs md:text-sm font-normal">
-                <h1>© Copyright Grupo SURA 2025</h1>
-                <h2>Supervisados por <span class="text-foooter cursor-pointer">Superintendencia Financiera de
-                        Colombia</span></h2>
+            <div class="py-10">
+                <p class="text-center text-xs md:text-sm font-normal mb-0">© Copyright Grupo SURA 2025</p>
+                <p class="text-center text-xs md:text-sm font-normal">Supervisados por <span
+                        class="text-foooter cursor-pointer">Superintendencia Financiera de
+                        Colombia</span></p>
             </div>
         </footer>
     </div>
@@ -640,8 +705,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"
         integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
+        integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script.js"></script>
     <script src="./accions.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const splide = new Splide('.splide', {
+                perPage: 6,
+                omitEnd: true,
+                pagination: false,
+            });
+            splide.mount();
+
+            const splideItems = [...document.getElementsByClassName("splide__slide")];
+            splideItems.forEach(element => {
+                element.addEventListener("click", () => {
+                    splideItems.forEach(item => {
+                        if (item.classList.contains("bg-white")) {
+                            item.classList.remove("bg-white");
+                            item.classList.remove("text-[#00AEC7]");
+                        }
+                    });
+                    element.classList.add("bg-white");
+                    element.classList.add("text-[#00AEC7]");
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
