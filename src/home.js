@@ -251,3 +251,18 @@ document.addEventListener("DOMContentLoaded", function () {
     ["#3E89DD", "transparent"]
   );
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const splide = new Splide(".splide", {
+    perPage: 3,
+    focus: 0,
+    omitEnd: true,
+    gap: 24,
+    breakpoints: {
+      640: {
+        perPage: 1,
+      },
+    },
+  });
+  splide.mount();
+});
