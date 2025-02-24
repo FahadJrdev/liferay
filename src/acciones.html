@@ -270,38 +270,38 @@
                 <ul
                     class="tabs w-full text-sm md:text-base lg:text-xl font-semibold sm:flex sm:justify-between grid grid-cols-2 gap-2 mb-6 text-primary">
                     <li class="px-3 flex-1 flex justify-center basis-1/4 border-r border-secondary">
-                        <span
+                        <span data-tab="tab-1"
                             class="rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center bg-primary text-white cursor-pointer">Acciones</span>
                     </li>
-                    <li class="px-1 flex-1 flex justify-center basis-1/4 sm:border-r sm:border-secondary">
-                        <span
+                    <li class="px-1 flex-1 flex justify-center basis-1/4 border-r border-secondary">
+                        <span data-tab="tab-2"
                             class=" rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center cursor-pointer">Informes</span>
                     </li>
                     <li class="px-1 flex-1 flex justify-center basis-1/4 border-r border-secondary">
-                        <span
+                        <span data-tab="tab-2"
                             class="rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center cursor-pointer">Inforelevantes</span>
                     </li>
                     <li class="flex-1 flex justify-center basis-1/4">
-                        <span
+                        <span data-tab="tab-4"
                             class="rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center cursor-pointer">Asamblea</span>
                     </li>
                 </ul>
 
-
                 <!-- Menu and Content tab-1 -->
-                <div class="menu&content overflow-y-hidden">
+                <div class="menu-content tab-1 overflow-y-hidden">
                     <div class="p-2 flex gap-5 min-w-[800px] sm:min-w-[1100px]">
                         <!-- Menu -->
                         <ul
-                            class="w-full min-w-44 flex-1 basis-1/5 sm:basis-1/3 flex flex-col rounded-lg p-1 sm:px-1.5 gap-6 justify-start bg-ex2">
+                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-1 sm:px-1.5 gap-6 justify-start bg-ex2">
                             <li
-                                class="active w-full bg-white rounded-lg text-sm sm:text-base lg:text-xl font-semibold cursor-pointer">
-                                <span class="block p-0.5 sm:p-3 border-l-2 sm:border-l-4 border-primary ">Indicadores
+                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-semibold cursor-pointer">
+                                <span class="block p-0.5 sm:p-3">Indicadores
                                     Bursátiles</span>
                             </li>
                             <li
-                                class="w-full hover:bg-white rounded-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
-                                <span class="block p-0.5 sm:p-3">ADR- American Depositary Receipt</span>
+                                class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="block p-0.5 sm:p-3">ADR-
+                                    American Depositary Receipt</span>
                             </li>
                             <li class="tableMenu w-full relative">
                                 <h1
@@ -329,7 +329,7 @@
 
                         <!-- Content -->
                         <div
-                            class="content text-sm sm:text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-5 flex-1 basis-2/3">
+                            class="content text-sm sm:text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-5">
                             <h1 class="text-primary font-bold text-lg sm:text-2xl">Indicadores Bursátiles</h1>
                             <p class="sm:text-base">
                                 30 de junio de 2024
@@ -428,7 +428,7 @@
                     </div>
                     <!-- Charts -->
                     <main class="w-full py-8 px-2">
-                        <h1 class="font-bold text-lg sm:text-2xl lg:text-4xl mb-2.5 sm:mb-10">Precio de la
+                        <h1 class="font-bold text-lg sm:text-2xl lg:text-4xl mb-2.5 sm:mb-10 text-primary">Precio de la
                             Acción</h1>
                         <div class="h-100">
                             <canvas style="background: #119fb9;" id="stockChart" height="400"></canvas>
@@ -437,7 +437,7 @@
                 </div>
 
                 <!-- Menu and Content tab-2 -->
-                <div class="menu&content overflow-y-hidden p-2">
+                <div class="menu-content tab-2 overflow-y-hidden p-2 hidden">
                     <p class="font-bold leading-9 text-4xl text-primary pb-4">Informe 2024</p>
                     <div class="py-2 flex flex-col md:flex-row gap-8 items-start md:items-center">
                         <div class="w-full h-60 overflow-hidden">
@@ -456,35 +456,41 @@
                     </div>
                     <div class="flex gap-3 items-center py-2">
                         <p class="font-bold leading-9 text-4xl text-primary pb-4">Informe</p>
-                        <div class="splide w-full">
+                        <div class="splide splide1 w-full">
                             <div class="splide__track">
                                 <div class="splide__list">
-                                    <div
+                                    <div data-year="2024"
                                         class="splide__slide relative py-2 text-center cursor-pointer bg-white text-[#00AEC7]">
                                         <span>2024</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
-                                    <div class="splide__slide relative py-2 text-center cursor-pointer">
+                                    <div data-year="2023"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
                                         <span>2023</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
-                                    <div class="splide__slide relative py-2 text-center cursor-pointer">
+                                    <div data-year="2022"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
                                         <span>2022</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
-                                    <div class="splide__slide relative py-2 text-center cursor-pointer">
+                                    <div data-year="2021"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
                                         <span>2021</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
-                                    <div class="splide__slide relative py-2 text-center cursor-pointer">
+                                    <div data-year="2020"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
                                         <span>2020</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
-                                    <div class="splide__slide relative py-2 text-center cursor-pointer">
+                                    <div data-year="2019"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
                                         <span>2019</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
-                                    <div class="splide__slide relative py-2 text-center cursor-pointer">
+                                    <div data-year="2018"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
                                         <span>2018</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
@@ -492,15 +498,385 @@
                             </div>
                         </div>
                     </div>
+                    <div class="p-2 flex gap-5 min-w-[800px] sm:min-w-[1100px]">
+                        <!-- Menu -->
+                        <ul
+                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-1 sm:px-1.5 gap-6 justify-start bg-ex2">
+                            <li data-content="content-1"
+                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-semibold cursor-pointer">
+                                <span class="block p-0.5 sm:p-3">Informe Anual</span>
+                            </li>
+                            <li data-content="content-2"
+                                class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="termItem block p-0.5 sm:p-3">1<sup>er</sup> Trimestre</span>
+                            </li>
+                            <li data-content="content-2"
+                                class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="termItem block p-0.5 sm:p-3">2<sup>do</sup> Trimestre</span>
+                            </li>
+                            <li data-content="content-2"
+                                class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="termItem block p-0.5 sm:p-3">3<sup>er</sup> Trimestre</span>
+                            </li>
+                            <li data-content="content-2"
+                                class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="termItem block p-0.5 sm:p-3">4<sup>to</sup> Trimestre</span>
+                            </li>
+                        </ul>
+
+                        <!-- Content -->
+                        <div
+                            class="text-sm sm:text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-5">
+                            <div class="informo-content content-1">
+                                <h1 class="text-primary font-bold text-lg sm:text-2xl">Informe Anual <span
+                                        class="year">2024</span></h1>
+                                <p class="sm:text-base">
+                                    Este Informe Anual <span class="year">2024</span> da cuenta de los aspectos más
+                                    relevantes de la evolución,
+                                    resultados y compromisos de Grupo
+                                    SURA, como gestor de inversiones con el objetivo estratégico de una rentabilidad
+                                    sostenible, que reconoce la importancia
+                                    de generar valor a nuestros accionistas contribuyendo al desarrollo armónico de la
+                                    sociedad.
+                                </p>
+                                <div class="w-full flex items-center gap-6 py-2">
+                                    <button
+                                        class="w-full flex justify-center items-center text-sm text-white bg-secondary px-10 mt-2 py-2 rounded-3xl cursor-pointer">
+                                        CTA
+                                        <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
+                                    </button>
+                                    <button
+                                        class="w-full flex justify-center items-center text-sm text-secondary border-secondary border-1  px-10 mt-2 py-2 rounded-3xl cursor-pointer">
+                                        <img class="ml-2 h-6" src="./assets/icons/docs.svg" alt="line-arrow">
+                                        Ver PDF
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="informo-content content-2 hidden">
+                                <h1 class="text-primary font-bold text-lg sm:text-2xl"><span class="year">2024</span> -
+                                    <span class="term">1<sup>er</sup> Trimestre</span>
+                                </h1>
+                                <div class="p-2 flex items-center gap-4">
+                                    <ul class="flex-1 self-start">
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary"><span class="year">2024</span> 1T Boletín
+                                                trimestral</span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary"><span class="year">2024</span> 1T Presentación
+                                                de
+                                                resultadoa</span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary"><span class="year">2024</span> 1T Informe
+                                                completo</span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary"><span class="year">2024</span> 1T Estados
+                                                financieros consolidados</span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary"><span class="year">2024</span> 1T Estados
+                                                financieros separados</span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary"><span class="year">2024</span> 1T Kit del
+                                                inversionista</span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary"><span class="year">2024</span> 1T
+                                                Videoconferencia</span>
+                                        </li>
+                                    </ul>
+                                    <div class="img">
+                                        <img class="rounded-lg w-60 h-full" src="./assets/images/writing-checking.jpeg"
+                                            alt="writing-checking">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-        </main>
 
+                <!-- Menu and Content tab-4 -->
+                <div class="menu-content tab-4 overflow-y-hidden p-2 hidden">
+                    <p class="font-bold leading-9 text-4xl text-primary pb-4">Asamblea Extraordinaria 21 de Octubre 2024
+                    </p>
+                    <div class="py-2 flex flex-col md:flex-row gap-8 items-start md:items-center">
+                        <div class="w-full h-60 overflow-hidden">
+                            <img class="w-full h-full overflow-hidden object-cover rounded-xl"
+                                src="./assets/images/conference.jpeg" alt="conference">
+                        </div>
+                        <div class="w-full">
+                            <h3 class="text-base py-1.5 font-normal text-justify">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h3>
+                            <button
+                                class="flex justify-center items-center text-sm text-white bg-secondary px-10 mt-2 py-2 rounded-3xl cursor-pointer">CTA
+                                <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 items-center py-2">
+                        <p class="font-bold leading-9 text-4xl text-primary pb-4">Asambleas</p>
+                        <div class="splide splide2 w-full">
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    <div data-year="2024"
+                                        class="splide__slide relative py-2 text-center cursor-pointer bg-white text-[#00AEC7]">
+                                        <span>2024</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div data-year="2023"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2023</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div data-year="2022"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2022</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div data-year="2021"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2021</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div data-year="2020"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2020</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div data-year="2019"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2019</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div data-year="2018"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2018</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 flex gap-5 min-w-[800px] sm:min-w-[1100px]">
+                        <!-- Menu -->
+                        <ul
+                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-1 sm:px-1.5 gap-6 justify-start bg-ex2">
+                            <li
+                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-semibold cursor-pointer">
+                                <span class="block p-0.5 sm:p-3">
+                                    <div data-date="22 Junio" class="date-content">Extraordinaria 22 Junio <span
+                                            class="year">2024</span>
+                                    </div>
+                                </span>
+                            </li>
+                            <li
+                                class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="block p-0.5 sm:p-3">
+                                    <div data-date="19 Abril" class="date-content">Extraordinaria 19 Abril <span
+                                            class="year">2024</span>
+                                    </div>
+                                </span>
+                            </li>
+                            <li
+                                class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="block p-0.5 sm:p-3">
+                                    <div data-date="31 Marzo" class="date-content">Extraordinaria 31 Marzo <span
+                                            class="year">2024</span>
+                                    </div>
+                                </span>
+                            </li>
+                            <li
+                                class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="block p-0.5 sm:p-3">
+                                    <div data-date="31 Marzo" class="date-content">Ordinaria 31 Marzo <span
+                                            class="year">2024</span>
+                                    </div>
+                                </span>
+                            </li>
+                        </ul>
+
+                        <!-- Content -->
+                        <div
+                            class="text-sm sm:text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-5">
+                            <div class="content">
+                                <h1 class="text-primary font-bold text-lg sm:text-2xl">Asamblea <span
+                                        class="tab-4-header">Extraordinaria 22
+                                        Junio <span class="year">2024</span></span>
+                                </h1>
+                                <div class="p-2 flex items-center gap-4">
+                                    <ul class="flex-1 self-start">
+                                        <button
+                                            class="flex justify-center items-center gap-4 text-sm text-primary border-primary border-1 px-10 mt-2 mb-2 py-2 rounded-3xl cursor-pointer">
+                                            Convocatoria
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.8329 5.58152L6.73063 0.728261L5.965 0C5.53077 0.413043 5.51934 1.07065 5.92501 1.49457L10.0502 5.42391H0V6.51087H10.0502L5.8793 10.4783C5.47364 10.9076 5.46221 11.587 5.89644 12L6.66206 11.2717L11.8329 6.35326C12.0557 6.1413 12.0557 5.79891 11.8329 5.58696V5.58152Z"
+                                                    fill="#0033A0" />
+                                            </svg>
+                                        </button>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary">Hojas de vida candidatos Junta Directiva -
+                                                <span class="date-content">22 Junio</span></span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary">Modelo poder de padres a terceros <span
+                                                    class="date-content">22 Junio</span></span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary">Modelo porder persona jurídica <span
+                                                    class="date-content">22 Junio</span></span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary">Modelo poder persona natural <span
+                                                    class="date-content">22 Junio</span></span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary">Propuestas de acuerdo asamblea <span
+                                                    class="date-content">22 Junio</span> 2da convocatoria</span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary">Proxi card Grupo SURA <span
+                                                    class="date-content">22 Junio</span> segunda convocaoria</span>
+                                        </li>
+                                    </ul>
+                                    <div class="img">
+                                        <img class="rounded-lg w-60 h-full" src="./assets/images/gossip.jpeg"
+                                            alt="gossip">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
 
         <!-- También te puede interesar -->
         <main class="w-full overflow-hidden bg-white text-primary flex justify-center py-1 sm:py-8">
             <div class="py-5 px-1.5 md:px-7 lg:px-10 xl:px-16">
-                <h1 class="font-bold text-lg sm:text-2xl lg:text-4xl mb-2.5 sm:mb-10 lg:mb-20">También te puede
+                <h1 class="font-bold text-lg sm:text-2xl lg:text-4xl mb-2.5 sm:mb-10 text-primary">También te puede
                     interesar</h1>
                 <div class="flex flex-col lg:flex-row justify-between gap-6">
                     <!-- Card 1-->
@@ -549,7 +925,7 @@
         <!-- Eventos -->
         <main class="w-full bg-tartiary text-primary flex justify-center py-8">
             <div class="w-full px-1.5 md:px-7 lg:px-10 xl:px-16">
-                <h1 class="font-bold text-2xl lg:text-4xl mb-10 lg:mb-20">Eventos</h1>
+                <h1 class="font-bold text-2xl lg:text-4xl mb-10 text-primary">Eventos</h1>
                 <div
                     class="flex flex-col sm:grid sm:grid-cols-2 sm:gap-y-6 md:flex md:flex-row justify-between gap-7 sm:gap-3">
                     <!-- Card 1-->
@@ -712,26 +1088,120 @@
     <script src="./accions.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const splide = new Splide('.splide', {
+            const splide1 = new Splide('.splide1', {
                 perPage: 6,
                 omitEnd: true,
                 pagination: false,
             });
-            splide.mount();
+            splide1.mount();
+            const splide2 = new Splide('.splide2', {
+                perPage: 6,
+                omitEnd: true,
+                pagination: false,
+            });
+            splide2.mount();
+            const tabs = document.querySelectorAll(".tabs li span");
+            const menuContents = document.querySelectorAll(".menu-content");
+            const splideItems1 = document.querySelectorAll(".splide1 .splide__slide");
+            const splideItems2 = document.querySelectorAll(".splide2 .splide__slide");
+            const tab2Years = document.querySelectorAll(".tab-2 .year");
+            const tab4Years = document.querySelectorAll(".tab-4 .year");
+            const sideMenuLists = document.querySelectorAll(".tab-1 .sidemenu .menuItem");
+            const sideMenu2Lists = document.querySelectorAll(".tab-2 .sidemenu .menuItem");
+            const informContents = document.querySelectorAll(".informo-content");
+            const sideMenu4Lists = document.querySelectorAll(".tab-4 .sidemenu .menuItem");
 
-            const splideItems = [...document.getElementsByClassName("splide__slide")];
-            splideItems.forEach(element => {
-                element.addEventListener("click", () => {
-                    splideItems.forEach(item => {
-                        if (item.classList.contains("bg-white")) {
-                            item.classList.remove("bg-white");
-                            item.classList.remove("text-[#00AEC7]");
+            const addClickListener = (elements, classesToAdd = [], classesToRemove = [], callback = null) => {
+                elements.forEach(element => {
+                    element.addEventListener("click", () => {
+                        elements.forEach(item => {
+                            classesToRemove.forEach(cls => item.classList.remove(cls));
+                        });
+                        classesToAdd.forEach(cls => element.classList.add(cls));
+
+                        if (callback && typeof callback === "function") {
+                            callback(element);
                         }
                     });
-                    element.classList.add("bg-white");
-                    element.classList.add("text-[#00AEC7]");
                 });
-            });
+            };
+
+            addClickListener(
+                tabs,
+                ["bg-primary", "text-white"],
+                ["bg-primary", "text-white"],
+                (tab) => {
+                    const targetTab = tab.getAttribute("data-tab");
+                    menuContents.forEach(content => {
+                        content.classList.add("hidden");
+                    });
+                    document.querySelector("." + targetTab).classList.remove("hidden");
+                }
+            );
+
+            addClickListener(
+                splideItems1,
+                ["bg-white", "text-[#00AEC7]"],
+                ["bg-white", "text-[#00AEC7]"],
+                (item) => {
+                    const targetItem = item.getAttribute("data-year");
+                    tab2Years.forEach(year => {
+                        year.innerHTML = targetItem;
+                    });
+                }
+            );
+
+            addClickListener(
+                splideItems2,
+                ["bg-white", "text-[#00AEC7]"],
+                ["bg-white", "text-[#00AEC7]"],
+                (item) => {
+                    const targetItem = item.getAttribute("data-year");
+                    tab4Years.forEach(year => {
+                        year.innerHTML = targetItem;
+                    });
+                }
+            );
+
+            addClickListener(
+                sideMenuLists,
+                ["bg-white", "border-l-4"],
+                ["bg-white", "border-l-4"]
+            );
+
+            addClickListener(
+                sideMenu2Lists,
+                ["bg-white", "border-l-4"],
+                ["bg-white", "border-l-4"],
+                (content) => {
+                    const targetContent = content.getAttribute("data-content");
+                    informContents.forEach(item => {
+                        item.classList.add("hidden");
+                    });
+                    document.querySelector(".informo-content." + targetContent).classList.remove("hidden");
+                    const termItem = content.querySelector(".termItem");
+                    if (termItem) {
+                        document.querySelector(".informo-content.content-2 .term").innerHTML = termItem.innerHTML;
+                    }
+                }
+            );
+
+            addClickListener(
+                sideMenu4Lists,
+                ["bg-white", "border-l-4"],
+                ["bg-white", "border-l-4"],
+                (content) => {
+                    const targetContent = content.querySelector(".date-content");
+                    const targetData = content.querySelector(".date-content").getAttribute("data-date");
+                    const dateContent = document.querySelector(".tab-4 .tab-4-header");
+                    const dateContentInside = document.querySelectorAll(".tab-4 .content .date-content");
+                    dateContent.innerHTML = targetContent.innerHTML;
+                    dateContentInside.forEach(item => {
+                        item.innerHTML = targetData;
+                    });
+                }
+            );
+
         });
     </script>
 </body>
