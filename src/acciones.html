@@ -17,9 +17,9 @@
 
 <body class="font-sans text-primary">
     <div class="w-full">
-        <!-- Header top -->
+        <!-- Header -->
         <header
-            class="flex justify-center bg-primary text-white px-1.5 md:px-7 lg:px-10 xl:px-16 py-1.5 lg:py-2.5 xl:py-3.5">
+            class="flex justify-center bg-primary text-white px-[6px] md:px-[28px] lg:px-[40px] xl:px-[64px] py-[6px] lg:py-[10px] xl:py-[14px]">
             <div class="w-full mx-auto flex justify-center sm:justify-end items-center">
                 <nav>
                     <ul class="flex space-x-6 text-xs md:text-sm lg:text-base">
@@ -31,29 +31,25 @@
                 </nav>
             </div>
         </header>
-        <div class="bg-white p-2.5 md:p-0 md:opacity-0 md:h-0">
+        <div class="bg-white p-[10px] md:p-0 md:opacity-0 md:h-0">
             <svg class="bar w-6 fill-primary cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path
                     d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
             </svg>
         </div>
-
-        <!-- Mediam Device Overlay -->
         <div
             class="overlay -z-10 invisible h-screen w-screen md:w-0 opacity-0 transition-all duration-300 ease-in-out md:opacity-0 fixed top-0 left-0 bg-primary">
         </div>
-
-        <!-- Header top / Main Header -->
         <header
-            class="mainMenu transition-all duration-300 ease-in-out overflow-x-hidden md:overflow-x-visible w-0 font-semibold md:opacity-100 z-20 fixed md:static bg-white md:bg-transparent top-0 left-0 h-screen md:h-auto md:w-full flex flex-col md:flex-row justify-center text-primary shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
-            <div class="flex justify-end p-3 md:p-0">
+            class="mainMenu transition-all duration-300 ease-in-out overflow-x-hidden md:overflow-visible w-0 font-semibold md:opacity-100 z-20 fixed md:static bg-white md:bg-transparent top-0 left-0 h-screen md:h-auto md:w-full flex flex-col md:flex-row justify-center text-primary shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+            <div class="flex justify-end p-[12px] md:p-0">
                 <svg class="xmark w-8 md:opacity-0 md:w-0 fill-primary cursor-pointer"
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                     <path
                         d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                 </svg>
             </div>
-            <div class="h-screen md:h-auto w-xs md:w-full px-4 md:px-7 lg:px-10 xl:px-16">
+            <div class="h-screen md:h-auto w-xs md:w-full px-[16px] md:px-[28px] lg:px-[40px] xl:px-[64px]">
                 <ul
                     class="w-full mx-auto flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-5 text-sm lg:text-base">
                     <li class="flex items-center px-2.5 md:px-0">
@@ -61,15 +57,15 @@
                     </li>
                     <li class="menuParent flex items-center relative">
                         <span
-                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
-                            <a href="#">¿Quienes somos?</a>
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">Quienes somos</a>
                             <img class="w-3 ml-1.5 transition-all duration-300" src="./assets/icons/down-arrow.svg"
                                 alt="down-arrow">
                         </span>
                         <ul
                             class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 overflow-hidden flex-col text-sm bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
                             <li
-                                class="flex justify-between items-center p-2 mt-4 mb-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Sobre Grupo SURA</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -77,7 +73,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Nuestra Identidad</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -85,7 +81,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Evolucion y Crecimiento</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -93,7 +89,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Talento Humano</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -101,7 +97,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 mt-2.5 mb-4 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">#PensarConOtros</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -112,27 +108,117 @@
                     </li>
                     <li class="flex items-center">
                         <span
-                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
-                            <a href="#">Gobierno Corporativo</a>
-                        </span>
-                    </li>
-                    <li class="flex items-center">
-                        <span
-                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
                             <a href="#">Portafolio</a>
                         </span>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="menuParent flex items-center relative">
                         <span
-                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
                             <a href="#">Relación con inversionistas</a>
+                            <img class="w-3 ml-1.5 transition-all duration-300" src="./assets/icons/down-arrow.svg"
+                                alt="down-arrow">
+                        </span>
+                        <ul
+                            class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 overflow-hidden flex-col text-sm bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                            <li
+                                class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Sobre Grupo SURA</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Nuestra Identidad</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Evolucion y Crecimiento</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Talento Humano</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">#PensarConOtros</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex items-center">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">Gobierno Corporativo</a>
                         </span>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="menuParent flex items-center relative">
                         <span
-                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
                             <a href="#">Sostenibilidad</a>
+                            <img class="w-3 ml-1.5 transition-all duration-300" src="./assets/icons/down-arrow.svg"
+                                alt="down-arrow">
                         </span>
+                        <ul
+                            class="dropDown z-40 px-2.5 hidden absolute top-10 left-0 w-60 overflow-hidden flex-col text-sm bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                            <li
+                                class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Sobre Grupo SURA</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Nuestra Identidad</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Evolucion y Crecimiento</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Talento Humano</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">#PensarConOtros</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                        </ul>
                     </li>
                     <li class="flex items-center px-2.5 md:px-0">
                         <img class="cursor-pointer w-10 md:w-8 lg:w-10 xl:w-12" src="./assets/icons/search-box.svg"
@@ -141,23 +227,27 @@
                 </ul>
             </div>
         </header>
-
-        <!-- Header bottom / Breadcrumbs -->
-        <header class="flex justify-start bg-white text-primary shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
-            <div class=" px-1.5 md:px-7 lg:px-10 xl:px-16">
+        <header class="flex justify-start bg-white text-primary pb-[32px] shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+            <div class=" px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
                 <div class="w-full mx-auto flex justify-between items-center">
                     <div class="flex items-center">
                         <nav>
-                            <ul class="flex space-x-6 py-1 lg:py-1.5 xl:py-2 text-xs md:text-sm">
+                            <ul class="flex space-x-6 py-[4px] lg:py-1.5 xl:py-[8px] text-xs md:text-sm">
                                 <li class="flex items-center">
                                     <a href="#"
-                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-1 lg:px-2.5 lg:py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">Home</a>
+                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-[4px] lg:px-2.5 lg:py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">Home</a>
                                     <img class="w-1.5 ml-1.5" src="./assets/icons/right-arrow.svg" alt="down-arrow">
                                 </li>
                                 <li class="flex items-center">
                                     <a href="#"
-                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-1 lg:px-2.5 lg:py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer font-semibold">Relación
-                                        con el inversionista</a>
+                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-[4px] lg:px-2.5 lg:py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">¿Quienes
+                                        somos</a>
+                                    <img class="w-1.5 ml-1.5" src="./assets/icons/right-arrow.svg" alt="down-arrow">
+                                </li>
+                                <li class="flex items-center">
+                                    <a href="#"
+                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-[4px] lg:px-2.5 lg:py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer font-semibold">Nuestros
+                                        negocios</a>
                                 </li>
                             </ul>
                         </nav>
@@ -173,9 +263,9 @@
         <!-- Slide In Pop Up -->
         <main class="w-full flex justify-center text-white bg-popup">
             <div
-                class="w-full justify-between items-center py-1 sm:py-2 lg:py-6 text-sm sm:text-base md:text-lg lg:text-xl font-semibold px-1.5 md:px-7 lg:px-10 xl:px-16 flex">
+                class="w-full justify-between items-center py-[4px] sm:py-[8px] lg:py-[24px] text-sm sm:text-base md:text-lg lg:text-xl font-semibold px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] flex">
                 <div class="w-full flex justify-start items-center">
-                    <img class="w-10 mr-3" src="./assets/icons/Calendario_ok.svg" alt="Calendario_ok">
+                    <img class="w-10 mr-[12px]" src="./assets/icons/Calendario_ok.svg" alt="Calendario_ok">
                     <p>S1 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                         laudantium.</p>
                 </div>
@@ -188,7 +278,7 @@
             <div class="relative top-0 left-0 w-full flex">
                 <!-- Text Section -->
                 <div
-                    class="w-[70%] z-10 h-full absolute bg-gradient-to-r from-primary via-primary to-transparent text-white px-1.5 md:px-7 lg:px-10 xl:px-16 flex flex-col justify-center">
+                    class="w-[70%] z-10 h-full absolute bg-gradient-to-r from-primary via-primary to-transparent text-white px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] flex flex-col justify-center">
                     <div class="w-[60%] flex flex-col gap-2 sm:gap-5">
                         <h2 class="text-base sm:text-2xl font-bold">H2 Lorem ipsum dolor sit amet</h2>
                         <p class="text-sm">
@@ -196,9 +286,9 @@
                             laudantium, totam rem aperiam.
                         </p>
                         <button
-                            class="w-36 sm:w-40 flex justify-center items-center text-sm text-white bg-secondary mt-2 py-1.5 sm:py-2.5 rounded-3xl cursor-pointer">
+                            class="w-36 sm:w-40 flex justify-center items-center text-sm text-white bg-secondary mt-[8px] py-1.5 sm:py-2.5 rounded-3xl cursor-pointer">
                             Leer más
-                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
+                            <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
                         </button>
                     </div>
                 </div>
@@ -214,12 +304,12 @@
         </main>
 
         <!-- H2 Título de la sección -->
-        <main class="w-full flex lg:flex-row md:flex-col justify-start text-primary bg-white sm:py-8">
+        <main class="w-full flex lg:flex-row md:flex-col justify-start text-primary bg-white sm:py-[32px]">
             <div
-                class="md:relative w-full flex flex-col gap-2.5 md:gap-0 md:flex-row py-5 px-1.5 md:px-7 lg:px-10 xl:px-16">
+                class="md:relative w-full flex flex-col gap-2.5 md:gap-0 md:flex-row py-[20px] px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
                 <div
-                    class="w-full md:w-[400px] md:h-[500px] bg-primary text-white p-2.5 sm:p-8 md:pr-24 rounded-lg md:rounded-r-lg">
-                    <h1 class="md:text-2xl lg:text-4xl font-bold mb-6">H2 Título de la sección</h1>
+                    class="w-full md:w-[400px] md:h-[500px] bg-primary text-white p-2.5 sm:p-[32px] md:pr-[96px] rounded-lg md:rounded-r-lg">
+                    <h1 class="md:text-2xl lg:text-4xl font-bold mb-[24px]">H2 Título de la sección</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -228,20 +318,20 @@
 
                 <!-- floating cards -->
                 <div
-                    class="md:absolute md:pr-3 md:top-1/2 md:left-[350px] lg:left-[400px] md:-translate-y-1/2 text-primary flex flex-col m-auto sm:flex-row gap-4 justify-between">
+                    class="md:absolute md:pr-[12px] md:top-1/2 md:left-[350px] lg:left-[400px] md:-translate-y-1/2 text-primary flex flex-col m-auto sm:flex-row gap-4 justify-between">
                     <!-- Card 1 -->
                     <div class="max-w-80 bg-white rounded-xl shadow-[0_2px_4px_rgba(0,0,0,0.3)] flex-1 basis-1">
                         <div class="w-full h-44 overflow-hidden">
                             <img class="w-full h-full object-cover rounded-t-xl" src="./assets/images/handshake.jpeg"
                                 alt="laughing-guy">
                         </div>
-                        <div class="p-3">
+                        <div class="p-[12px]">
                             <h3 class="text-base py-1.5 font-normal">Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                                 reprehenderit in voluptate.</h3>
                             <button
-                                class="flex justify-center items-center text-sm text-white bg-secondary px-10 mt-2 py-2 rounded-3xl cursor-pointer">CTA
-                                <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                                class="flex justify-center items-center text-sm text-white bg-secondary px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">CTA
+                                <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
                         </div>
                     </div>
                     <!-- Card 2 -->
@@ -250,13 +340,13 @@
                             <img class="w-full h-full overflow-hidden object-cover rounded-t-xl"
                                 src="./assets/images/laughing-girl.jpeg" alt="laughing-guy">
                         </div>
-                        <div class="p-3">
+                        <div class="p-[12px]">
                             <h3 class="text-base py-1.5 font-normal">Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                                 reprehenderit in voluptate.</h3>
                             <button
-                                class="flex justify-center items-center text-sm text-white bg-secondary px-10 mt-2 py-2 rounded-3xl cursor-pointer">CTA
-                                <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                                class="flex justify-center items-center text-sm text-white bg-secondary px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">CTA
+                                <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
                         </div>
                     </div>
                 </div>
@@ -264,64 +354,67 @@
         </main>
 
         <!-- Tab, menu and table together -->
-        <main class="w-full flex justify-center bg-tartiary py-8">
-            <div class="w-full px-1.5 md:px-7 lg:px-10 xl:px-16">
+        <main class="w-full flex justify-center bg-tartiary py-[32px]">
+            <div class="w-full px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
                 <!-- Tabs -->
                 <ul
-                    class="tabs w-full text-sm md:text-base lg:text-xl font-semibold sm:flex sm:justify-between grid grid-cols-2 gap-2 mb-6 text-primary">
-                    <li class="px-3 flex-1 flex justify-center basis-1/4 border-r border-secondary">
+                    class="tabs w-full text-sm md:text-base lg:text-xl font-semibold sm:flex sm:justify-between grid grid-cols-2 gap-2 mb-[24px] text-primary">
+                    <li class="px-[12px] flex-1 flex justify-center basis-1/4 border-r border-secondary">
                         <span data-tab="tab-1"
-                            class="rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center bg-primary text-white cursor-pointer">Acciones</span>
+                            class="rounded-lg w-full py-0.5 sm:py-[8px] flex justify-center items-center bg-primary text-white cursor-pointer">Acciones</span>
                     </li>
-                    <li class="px-1 flex-1 flex justify-center basis-1/4 border-r border-secondary">
+                    <li class="px-[4px] flex-1 flex justify-center basis-1/4 border-r border-secondary">
                         <span data-tab="tab-2"
-                            class=" rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center cursor-pointer">Informes</span>
+                            class=" rounded-lg w-full py-0.5 sm:py-[8px] flex justify-center items-center cursor-pointer">Informes</span>
                     </li>
-                    <li class="px-1 flex-1 flex justify-center basis-1/4 border-r border-secondary">
+                    <li class="px-[4px] flex-1 flex justify-center basis-1/4 border-r border-secondary">
                         <span data-tab="tab-2"
-                            class="rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center cursor-pointer">Inforelevantes</span>
+                            class="rounded-lg w-full py-0.5 sm:py-[8px] flex justify-center items-center cursor-pointer">Inforelevantes</span>
                     </li>
                     <li class="flex-1 flex justify-center basis-1/4">
                         <span data-tab="tab-4"
-                            class="rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center cursor-pointer">Asamblea</span>
+                            class="rounded-lg w-full py-0.5 sm:py-[8px] flex justify-center items-center cursor-pointer">Asamblea</span>
                     </li>
                 </ul>
 
                 <!-- Menu and Content tab-1 -->
                 <div class="menu-content tab-1 overflow-y-hidden">
-                    <div class="p-2 flex gap-5 min-w-[800px] sm:min-w-[1100px]">
+                    <div class="p-[8px] flex gap-5 min-w-[800px] sm:min-w-[1100px]">
                         <!-- Menu -->
                         <ul
-                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-1 sm:px-1.5 gap-6 justify-start bg-ex2">
+                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2">
                             <li
                                 class="menuItem w-full bg-white hover:bg-white border-l-4 border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-semibold cursor-pointer">
-                                <span class="block p-0.5 sm:p-3">Indicadores
+                                <span class="block p-0.5 sm:p-[12px]">Indicadores
                                     Bursátiles</span>
                             </li>
                             <li
                                 class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
-                                <span class="block p-0.5 sm:p-3">ADR-
+                                <span class="block p-0.5 sm:p-[12px]">ADR-
                                     American Depositary Receipt</span>
                             </li>
                             <li class="tableMenu w-full relative">
                                 <h1
-                                    class="menuLabel w-full flex justify-between p-0.5 sm:p-3 hover:bg-white rounded-lg text-sm sm:text-base lg:text-xl font-normal mb-2 cursor-pointer">
+                                    class="menuLabel w-full flex justify-between p-0.5 sm:p-[12px] hover:bg-white rounded-lg text-sm sm:text-base lg:text-xl font-normal mb-[8px] cursor-pointer">
                                     <span class="font-bold text-xlblock">Dividendos</span>
-                                    <span class="flex items-center justify-center p-0.5 sm:p-3">
+                                    <span class="flex items-center justify-center p-0.5 sm:p-[12px]">
                                         <img class="w-3 transition-all duration-300" src="./assets/icons/down-arrow.svg"
                                             alt="down-arrow">
                                     </span>
                                 </h1>
                                 <!-- Nested Menu -->
                                 <ul
-                                    class="dropDown text-sm sm:text-base lg:text-xl font-normal bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl overflow-x-hidden w-full flex flex-col gap-3 sm:gap-6 sm:px-6 p-1 sm:py-4 max-h-92 transition-all duration-300 ease-in-out">
-                                    <li class="hover:bg-tableBG px-3 py-2 rounded-xl cursor-pointer">Acción Ordinaria
+                                    class="dropDown text-sm sm:text-base lg:text-xl font-normal bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl overflow-x-hidden w-full flex flex-col gap-3 sm:gap-6 sm:px-[24px] p-[4px] sm:py-[16px] max-h-92 transition-all duration-300 ease-in-out">
+                                    <li class="hover:bg-tableBG px-[12px] py-[8px] rounded-xl cursor-pointer">Acción
+                                        Ordinaria
                                     </li>
-                                    <li class="hover:bg-tableBG px-3 py-2 rounded-xl cursor-pointer">Acción Preferencial
+                                    <li class="hover:bg-tableBG px-[12px] py-[8px] rounded-xl cursor-pointer">Acción
+                                        Preferencial
                                     </li>
-                                    <li class="hover:bg-tableBG px-3 py-2 rounded-xl cursor-pointer">Dividendos
+                                    <li class="hover:bg-tableBG px-[12px] py-[8px] rounded-xl cursor-pointer">Dividendos
                                         Históricos</li>
-                                    <li class="hover:bg-tableBG px-3 py-2 rounded-xl cursor-pointer">Composición
+                                    <li class="hover:bg-tableBG px-[12px] py-[8px] rounded-xl cursor-pointer">
+                                        Composición
                                         accionaria</li>
                                 </ul>
                             </li>
@@ -329,7 +422,7 @@
 
                         <!-- Content -->
                         <div
-                            class="content text-sm sm:text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-5">
+                            class="content text-sm sm:text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
                             <h1 class="text-primary font-bold text-lg sm:text-2xl">Indicadores Bursátiles</h1>
                             <p class="sm:text-base">
                                 30 de junio de 2024
@@ -346,37 +439,37 @@
                                 <ul
                                     class="min-w-[340px] max-h-[400px] overflow-x-hidden flex flex-col w-full rounded-lg border border-table sm:text-base">
                                     <li
-                                        class="p-2.5 flex justify-center items-center rounded-t-lg font-bold bg-tartiary mb-2">
+                                        class="p-2.5 flex justify-center items-center rounded-t-lg font-bold bg-tartiary mb-[8px]">
                                         ACCIÓN ORDINARIA</li>
-                                    <li class="p-2 flex justify-between bg-tableBG">
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
                                         <p>Acciones en circulación</p>
                                         <p>319,830,883</p>
                                     </li>
-                                    <li class="p-2 flex justify-between bg-white">
+                                    <li class="p-[8px] flex justify-between bg-white">
                                         <p>Precio de cierre (COP)</p>
                                         <p>34,400</p>
                                     </li>
-                                    <li class="p-2 flex justify-between bg-tableBG">
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
                                         <p>PVL (Precio/Valor en Libros)</p>
                                         <p>0.8</p>
                                     </li>
-                                    <li class="p-2 flex justify-between bg-white">
+                                    <li class="p-[8px] flex justify-between bg-white">
                                         <p>Valorización anual (YTD)</p>
                                         <p>18.6%</p>
                                     </li>
-                                    <li class="p-2 flex justify-between bg-tableBG">
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
                                         <p>Precio máximo (COP)</p>
                                         <p>36,300</p>
                                     </li>
-                                    <li class="p-2 flex justify-between bg-white">
+                                    <li class="p-[8px] flex justify-between bg-white">
                                         <p>Precio mínimo (COP)</p>
                                         <p>33,040</p>
                                     </li>
-                                    <li class="p-2 flex justify-between bg-tableBG">
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
                                         <p>Dividendo Anual (COP)</p>
                                         <p>1,400</p>
                                     </li>
-                                    <li class="p-2 flex justify-between bg-white rounded-b-lg">
+                                    <li class="p-[8px] flex justify-between bg-white rounded-b-lg">
                                         <p>Retorno del dividendo</p>
                                         <p>4.07%</p>
                                     </li>
@@ -387,37 +480,37 @@
                                 <ul
                                     class="min-w-[340px] max-h-[400px] overflow-x-hidden flex flex-col w-full rounded-lg border border-table sm:text-base">
                                     <li
-                                        class="p-2.5 flex justify-center items-center rounded-t-lg font-bold bg-tartiary mb-2">
+                                        class="p-2.5 flex justify-center items-center rounded-t-lg font-bold bg-tartiary mb-[8px]">
                                         ACCIÓN PREFERENCIAL</li>
-                                    <li class="p-2 flex justify-between bg-tableBG">
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
                                         <p>Acciones en circulación</p>
                                         <p>112,508,173</p>
                                     </li>
-                                    <li class="p-2 flex justify-between bg-white">
+                                    <li class="p-[8px] flex justify-between bg-white">
                                         <p>Precio de cierre (COP)</p>
                                         <p>24,420</p>
                                     </li>
-                                    <li class="p-2 flex justify-between bg-tableBG">
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
                                         <p>PVL (Precio/Valor en Libros)</p>
                                         <p>0.6</p>
                                     </li>
-                                    <li class="p-2 flex justify-between bg-white">
+                                    <li class="p-[8px] flex justify-between bg-white">
                                         <p>Valorización anual (YTD)</p>
                                         <p>80.9%</p>
                                     </li>
-                                    <li class="p-2 flex justify-between bg-tableBG">
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
                                         <p>Precio máximo (COP)</p>
                                         <p>25,500</p>
                                     </li>
-                                    <li class="p-2 flex justify-between bg-white">
+                                    <li class="p-[8px] flex justify-between bg-white">
                                         <p>Precio mínimo (COP)</p>
                                         <p>24,020</p>
                                     </li>
-                                    <li class="p-2 flex justify-between bg-tableBG">
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
                                         <p>Dividendo Anual (COP)</p>
                                         <p>1,400</p>
                                     </li>
-                                    <li class="p-2 flex justify-between bg-white rounded-b-lg">
+                                    <li class="p-[8px] flex justify-between bg-white rounded-b-lg">
                                         <p>Retorno del dividendo</p>
                                         <p>5.73%</p>
                                     </li>
@@ -427,8 +520,9 @@
                         </div>
                     </div>
                     <!-- Charts -->
-                    <main class="w-full py-8 px-2">
-                        <h1 class="font-bold text-lg sm:text-2xl lg:text-4xl mb-2.5 sm:mb-10 text-primary">Precio de la
+                    <main class="w-full py-[32px] px-[8px]">
+                        <h1 class="font-bold text-lg sm:text-2xl lg:text-4xl mb-2.5 sm:mb-[40px] text-primary">Precio de
+                            la
                             Acción</h1>
                         <div class="h-100">
                             <canvas style="background: #119fb9;" id="stockChart" height="400"></canvas>
@@ -437,9 +531,9 @@
                 </div>
 
                 <!-- Menu and Content tab-2 -->
-                <div class="menu-content tab-2 overflow-y-hidden p-2 hidden">
-                    <p class="font-bold leading-9 text-4xl text-primary pb-4">Informe 2024</p>
-                    <div class="py-2 flex flex-col md:flex-row gap-8 items-start md:items-center">
+                <div class="menu-content tab-2 overflow-y-hidden p-[8px] hidden">
+                    <p class="font-bold leading-9 text-4xl text-primary pb-[16px]">Informe 2024</p>
+                    <div class="py-[8px] flex flex-col md:flex-row gap-8 items-start md:items-center">
                         <div class="w-full h-60 overflow-hidden">
                             <img class="w-full h-full overflow-hidden object-cover rounded-xl"
                                 src="./assets/images/laughing-girls.jpeg" alt="laughing-guy">
@@ -450,47 +544,47 @@
                                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h3>
                             <button
-                                class="flex justify-center items-center text-sm text-white bg-secondary px-10 mt-2 py-2 rounded-3xl cursor-pointer">CTA
-                                <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                                class="flex justify-center items-center text-sm text-white bg-secondary px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">CTA
+                                <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
                         </div>
                     </div>
-                    <div class="flex gap-3 items-center py-2">
-                        <p class="font-bold leading-9 text-4xl text-primary pb-4">Informe</p>
+                    <div class="flex gap-3 items-center py-[8px]">
+                        <p class="font-bold leading-9 text-4xl text-primary pb-[16px]">Informe</p>
                         <div class="splide splide1 w-full">
                             <div class="splide__track">
                                 <div class="splide__list">
                                     <div data-year="2024"
-                                        class="splide__slide relative py-2 text-center cursor-pointer bg-white text-[#00AEC7]">
+                                        class="splide__slide relative py-[8px] text-center cursor-pointer bg-white text-[#00AEC7]">
                                         <span>2024</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
                                     <div data-year="2023"
-                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        class="splide__slide relative py-[8px] text-center cursor-pointer">
                                         <span>2023</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
                                     <div data-year="2022"
-                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        class="splide__slide relative py-[8px] text-center cursor-pointer">
                                         <span>2022</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
                                     <div data-year="2021"
-                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        class="splide__slide relative py-[8px] text-center cursor-pointer">
                                         <span>2021</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
                                     <div data-year="2020"
-                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        class="splide__slide relative py-[8px] text-center cursor-pointer">
                                         <span>2020</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
                                     <div data-year="2019"
-                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        class="splide__slide relative py-[8px] text-center cursor-pointer">
                                         <span>2019</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
                                     <div data-year="2018"
-                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        class="splide__slide relative py-[8px] text-center cursor-pointer">
                                         <span>2018</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
@@ -498,35 +592,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-2 flex gap-5 min-w-[800px] sm:min-w-[1100px]">
+                    <div class="p-[8px] flex gap-5 min-w-[800px] sm:min-w-[1100px]">
                         <!-- Menu -->
                         <ul
-                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-1 sm:px-1.5 gap-6 justify-start bg-ex2">
+                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2">
                             <li data-content="content-1"
                                 class="menuItem w-full bg-white hover:bg-white border-l-4 border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-semibold cursor-pointer">
-                                <span class="block p-0.5 sm:p-3">Informe Anual</span>
+                                <span class="block p-0.5 sm:p-[12px]">Informe Anual</span>
                             </li>
                             <li data-content="content-2"
                                 class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
-                                <span class="termItem block p-0.5 sm:p-3">1<sup>er</sup> Trimestre</span>
+                                <span class="termItem block p-0.5 sm:p-[12px]">1<sup>er</sup> Trimestre</span>
                             </li>
                             <li data-content="content-2"
                                 class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
-                                <span class="termItem block p-0.5 sm:p-3">2<sup>do</sup> Trimestre</span>
+                                <span class="termItem block p-0.5 sm:p-[12px]">2<sup>do</sup> Trimestre</span>
                             </li>
                             <li data-content="content-2"
                                 class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
-                                <span class="termItem block p-0.5 sm:p-3">3<sup>er</sup> Trimestre</span>
+                                <span class="termItem block p-0.5 sm:p-[12px]">3<sup>er</sup> Trimestre</span>
                             </li>
                             <li data-content="content-2"
                                 class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
-                                <span class="termItem block p-0.5 sm:p-3">4<sup>to</sup> Trimestre</span>
+                                <span class="termItem block p-0.5 sm:p-[12px]">4<sup>to</sup> Trimestre</span>
                             </li>
                         </ul>
 
                         <!-- Content -->
                         <div
-                            class="text-sm sm:text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-5">
+                            class="text-sm sm:text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
                             <div class="informo-content content-1">
                                 <h1 class="text-primary font-bold text-lg sm:text-2xl">Informe Anual <span
                                         class="year">2024</span></h1>
@@ -539,15 +633,15 @@
                                     de generar valor a nuestros accionistas contribuyendo al desarrollo armónico de la
                                     sociedad.
                                 </p>
-                                <div class="w-full flex items-center gap-6 py-2">
+                                <div class="w-full flex items-center gap-6 py-[8px]">
                                     <button
-                                        class="w-full flex justify-center items-center text-sm text-white bg-secondary px-10 mt-2 py-2 rounded-3xl cursor-pointer">
+                                        class="w-full flex justify-center items-center text-sm text-white bg-secondary px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">
                                         CTA
-                                        <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
+                                        <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
                                     </button>
                                     <button
-                                        class="w-full flex justify-center items-center text-sm text-secondary border-secondary border-1  px-10 mt-2 py-2 rounded-3xl cursor-pointer">
-                                        <img class="ml-2 h-6" src="./assets/icons/docs.svg" alt="line-arrow">
+                                        class="w-full flex justify-center items-center text-sm text-secondary border-secondary border-1  px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">
+                                        <img class="ml-[8px] h-6" src="./assets/icons/docs.svg" alt="line-arrow">
                                         Ver PDF
                                     </button>
                                 </div>
@@ -556,9 +650,9 @@
                                 <h1 class="text-primary font-bold text-lg sm:text-2xl"><span class="year">2024</span> -
                                     <span class="term">1<sup>er</sup> Trimestre</span>
                                 </h1>
-                                <div class="p-2 flex items-center gap-4">
+                                <div class="p-[8px] flex items-center gap-4">
                                     <ul class="flex-1 self-start">
-                                        <li class="flex items-center gap-6 mb-2">
+                                        <li class="flex items-center gap-6 mb-[8px]">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -571,7 +665,7 @@
                                             <span class="text-secondary"><span class="year">2024</span> 1T Boletín
                                                 trimestral</span>
                                         </li>
-                                        <li class="flex items-center gap-6 mb-2">
+                                        <li class="flex items-center gap-6 mb-[8px]">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -585,7 +679,7 @@
                                                 de
                                                 resultadoa</span>
                                         </li>
-                                        <li class="flex items-center gap-6 mb-2">
+                                        <li class="flex items-center gap-6 mb-[8px]">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -598,7 +692,7 @@
                                             <span class="text-secondary"><span class="year">2024</span> 1T Informe
                                                 completo</span>
                                         </li>
-                                        <li class="flex items-center gap-6 mb-2">
+                                        <li class="flex items-center gap-6 mb-[8px]">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -611,7 +705,7 @@
                                             <span class="text-secondary"><span class="year">2024</span> 1T Estados
                                                 financieros consolidados</span>
                                         </li>
-                                        <li class="flex items-center gap-6 mb-2">
+                                        <li class="flex items-center gap-6 mb-[8px]">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -624,7 +718,7 @@
                                             <span class="text-secondary"><span class="year">2024</span> 1T Estados
                                                 financieros separados</span>
                                         </li>
-                                        <li class="flex items-center gap-6 mb-2">
+                                        <li class="flex items-center gap-6 mb-[8px]">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -637,7 +731,7 @@
                                             <span class="text-secondary"><span class="year">2024</span> 1T Kit del
                                                 inversionista</span>
                                         </li>
-                                        <li class="flex items-center gap-6 mb-2">
+                                        <li class="flex items-center gap-6 mb-[8px]">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -663,10 +757,11 @@
                 </div>
 
                 <!-- Menu and Content tab-4 -->
-                <div class="menu-content tab-4 overflow-y-hidden p-2 hidden">
-                    <p class="font-bold leading-9 text-4xl text-primary pb-4">Asamblea Extraordinaria 21 de Octubre 2024
+                <div class="menu-content tab-4 overflow-y-hidden p-[8px] hidden">
+                    <p class="font-bold leading-9 text-4xl text-primary pb-[16px]">Asamblea Extraordinaria 21 de Octubre
+                        2024
                     </p>
-                    <div class="py-2 flex flex-col md:flex-row gap-8 items-start md:items-center">
+                    <div class="py-[8px] flex flex-col md:flex-row gap-8 items-start md:items-center">
                         <div class="w-full h-60 overflow-hidden">
                             <img class="w-full h-full overflow-hidden object-cover rounded-xl"
                                 src="./assets/images/conference.jpeg" alt="conference">
@@ -677,47 +772,47 @@
                                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h3>
                             <button
-                                class="flex justify-center items-center text-sm text-white bg-secondary px-10 mt-2 py-2 rounded-3xl cursor-pointer">CTA
-                                <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                                class="flex justify-center items-center text-sm text-white bg-secondary px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">CTA
+                                <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
                         </div>
                     </div>
-                    <div class="flex gap-3 items-center py-2">
-                        <p class="font-bold leading-9 text-4xl text-primary pb-4">Asambleas</p>
+                    <div class="flex gap-3 items-center py-[8px]">
+                        <p class="font-bold leading-9 text-4xl text-primary pb-[16px]">Asambleas</p>
                         <div class="splide splide2 w-full">
                             <div class="splide__track">
                                 <div class="splide__list">
                                     <div data-year="2024"
-                                        class="splide__slide relative py-2 text-center cursor-pointer bg-white text-[#00AEC7]">
+                                        class="splide__slide relative py-[8px] text-center cursor-pointer bg-white text-[#00AEC7]">
                                         <span>2024</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
                                     <div data-year="2023"
-                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        class="splide__slide relative py-[8px] text-center cursor-pointer">
                                         <span>2023</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
                                     <div data-year="2022"
-                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        class="splide__slide relative py-[8px] text-center cursor-pointer">
                                         <span>2022</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
                                     <div data-year="2021"
-                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        class="splide__slide relative py-[8px] text-center cursor-pointer">
                                         <span>2021</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
                                     <div data-year="2020"
-                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        class="splide__slide relative py-[8px] text-center cursor-pointer">
                                         <span>2020</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
                                     <div data-year="2019"
-                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        class="splide__slide relative py-[8px] text-center cursor-pointer">
                                         <span>2019</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
                                     <div data-year="2018"
-                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        class="splide__slide relative py-[8px] text-center cursor-pointer">
                                         <span>2018</span>
                                         <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
                                     </div>
@@ -725,13 +820,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-2 flex gap-5 min-w-[800px] sm:min-w-[1100px]">
+                    <div class="p-[8px] flex gap-5 min-w-[800px] sm:min-w-[1100px]">
                         <!-- Menu -->
                         <ul
-                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-1 sm:px-1.5 gap-6 justify-start bg-ex2">
+                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2">
                             <li
                                 class="menuItem w-full bg-white hover:bg-white border-l-4 border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-semibold cursor-pointer">
-                                <span class="block p-0.5 sm:p-3">
+                                <span class="block p-0.5 sm:p-[12px]">
                                     <div data-date="22 Junio" class="date-content">Extraordinaria 22 Junio <span
                                             class="year">2024</span>
                                     </div>
@@ -739,7 +834,7 @@
                             </li>
                             <li
                                 class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
-                                <span class="block p-0.5 sm:p-3">
+                                <span class="block p-0.5 sm:p-[12px]">
                                     <div data-date="19 Abril" class="date-content">Extraordinaria 19 Abril <span
                                             class="year">2024</span>
                                     </div>
@@ -747,7 +842,7 @@
                             </li>
                             <li
                                 class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
-                                <span class="block p-0.5 sm:p-3">
+                                <span class="block p-0.5 sm:p-[12px]">
                                     <div data-date="31 Marzo" class="date-content">Extraordinaria 31 Marzo <span
                                             class="year">2024</span>
                                     </div>
@@ -755,7 +850,7 @@
                             </li>
                             <li
                                 class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
-                                <span class="block p-0.5 sm:p-3">
+                                <span class="block p-0.5 sm:p-[12px]">
                                     <div data-date="31 Marzo" class="date-content">Ordinaria 31 Marzo <span
                                             class="year">2024</span>
                                     </div>
@@ -765,16 +860,16 @@
 
                         <!-- Content -->
                         <div
-                            class="text-sm sm:text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-5">
+                            class="text-sm sm:text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
                             <div class="content">
                                 <h1 class="text-primary font-bold text-lg sm:text-2xl">Asamblea <span
                                         class="tab-4-header">Extraordinaria 22
                                         Junio <span class="year">2024</span></span>
                                 </h1>
-                                <div class="p-2 flex items-center gap-4">
+                                <div class="p-[8px] flex items-center gap-4">
                                     <ul class="flex-1 self-start">
                                         <button
-                                            class="flex justify-center items-center gap-4 text-sm text-primary border-primary border-1 px-10 mt-2 mb-2 py-2 rounded-3xl cursor-pointer">
+                                            class="flex justify-center items-center gap-4 text-sm text-primary border-primary border-1 px-[40px] mt-[8px] mb-[8px] py-[8px] rounded-3xl cursor-pointer">
                                             Convocatoria
                                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -783,7 +878,7 @@
                                                     fill="#0033A0" />
                                             </svg>
                                         </button>
-                                        <li class="flex items-center gap-6 mb-2">
+                                        <li class="flex items-center gap-6 mb-[8px]">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -796,7 +891,7 @@
                                             <span class="text-secondary">Hojas de vida candidatos Junta Directiva -
                                                 <span class="date-content">22 Junio</span></span>
                                         </li>
-                                        <li class="flex items-center gap-6 mb-2">
+                                        <li class="flex items-center gap-6 mb-[8px]">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -809,7 +904,7 @@
                                             <span class="text-secondary">Modelo poder de padres a terceros <span
                                                     class="date-content">22 Junio</span></span>
                                         </li>
-                                        <li class="flex items-center gap-6 mb-2">
+                                        <li class="flex items-center gap-6 mb-[8px]">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -822,7 +917,7 @@
                                             <span class="text-secondary">Modelo porder persona jurídica <span
                                                     class="date-content">22 Junio</span></span>
                                         </li>
-                                        <li class="flex items-center gap-6 mb-2">
+                                        <li class="flex items-center gap-6 mb-[8px]">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -835,7 +930,7 @@
                                             <span class="text-secondary">Modelo poder persona natural <span
                                                     class="date-content">22 Junio</span></span>
                                         </li>
-                                        <li class="flex items-center gap-6 mb-2">
+                                        <li class="flex items-center gap-6 mb-[8px]">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -848,7 +943,7 @@
                                             <span class="text-secondary">Propuestas de acuerdo asamblea <span
                                                     class="date-content">22 Junio</span> 2da convocatoria</span>
                                         </li>
-                                        <li class="flex items-center gap-6 mb-2">
+                                        <li class="flex items-center gap-6 mb-[8px]">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -874,48 +969,48 @@
         </main>
 
         <!-- También te puede interesar -->
-        <main class="w-full overflow-hidden bg-white text-primary flex justify-center py-1 sm:py-8">
-            <div class="py-5 px-1.5 md:px-7 lg:px-10 xl:px-16">
-                <h1 class="font-bold text-lg sm:text-2xl lg:text-4xl mb-2.5 sm:mb-10 text-primary">También te puede
+        <main class="w-full overflow-hidden bg-white text-primary flex justify-center py-[4px] sm:py-[32px]">
+            <div class="py-[20px] px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
+                <h1 class="font-bold text-lg sm:text-2xl lg:text-4xl mb-2.5 sm:mb-[40px] text-primary">También te puede
                     interesar</h1>
                 <div class="flex flex-col lg:flex-row justify-between gap-6">
                     <!-- Card 1-->
                     <div
-                        class="flex flex-col justify-between shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-6">
-                        <h1 class="text-base sm:text-xl font-semibold mb-5">Resultados Trimestrales</h1>
-                        <p class="font-normal text-sm sm:text-base p-1">At vero eos et accusamus et iusto odio
+                        class="flex flex-col justify-between shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-[24px]">
+                        <h1 class="text-base sm:text-xl font-semibold mb-[20px]">Resultados Trimestrales</h1>
+                        <p class="font-normal text-sm sm:text-base p-[4px]">At vero eos et accusamus et iusto odio
                             dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
                             dolores et quas molestias excepturi</p>
                         <button
-                            class="self-end w-48 flex justify-center items-center text-sm mt-5 text-white bg-secondary px-10 py-3 rounded-3xl cursor-pointer">Call
+                            class="self-end w-48 flex justify-center items-center text-sm mt-[20px] text-white bg-secondary px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
                             To Action
-                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
+                            <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
                         </button>
                     </div>
                     <!-- Card 2-->
                     <div
-                        class="flex flex-col justify-between shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-6">
-                        <h1 class="text-xl font-semibold mb-5">Asamblea de Accionistas</h1>
-                        <p class="font-normal text-sm sm:text-base p-1">At vero eos et accusamus et iusto odio
+                        class="flex flex-col justify-between shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-[24px]">
+                        <h1 class="text-xl font-semibold mb-[20px]">Asamblea de Accionistas</h1>
+                        <p class="font-normal text-sm sm:text-base p-[4px]">At vero eos et accusamus et iusto odio
                             dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
                             dolores et quas molestias excepturi</p>
                         <button
-                            class="self-end w-48 flex justify-center items-center text-sm mt-5 text-white bg-secondary px-10 py-3 rounded-3xl cursor-pointer">Call
+                            class="self-end w-48 flex justify-center items-center text-sm mt-[20px] text-white bg-secondary px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
                             To Action
-                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
+                            <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
                         </button>
                     </div>
                     <!-- Card 3-->
                     <div
-                        class="flex flex-col justify-between shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-6">
-                        <h1 class="text-xl font-semibold mb-5">Pago de Dividendos</h1>
-                        <p class="font-normal text-sm sm:text-base p-1">At vero eos et accusamus et iusto odio
+                        class="flex flex-col justify-between shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-[24px]">
+                        <h1 class="text-xl font-semibold mb-[20px]">Pago de Dividendos</h1>
+                        <p class="font-normal text-sm sm:text-base p-[4px]">At vero eos et accusamus et iusto odio
                             dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
                             dolores et quas molestias excepturi</p>
                         <button
-                            class="self-end w-48 flex justify-center items-center text-sm mt-5 text-white bg-secondary px-10 py-3 rounded-3xl cursor-pointer">Call
+                            class="self-end w-48 flex justify-center items-center text-sm mt-[20px] text-white bg-secondary px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
                             To Action
-                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
+                            <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
                         </button>
                     </div>
                 </div>
@@ -923,64 +1018,65 @@
         </main>
 
         <!-- Eventos -->
-        <main class="w-full bg-tartiary text-primary flex justify-center py-8">
-            <div class="w-full px-1.5 md:px-7 lg:px-10 xl:px-16">
-                <h1 class="font-bold text-2xl lg:text-4xl mb-10 text-primary">Eventos</h1>
+        <main class="w-full bg-tartiary text-primary flex justify-center py-[32px]">
+            <div class="w-full px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
+                <h1 class="font-bold text-2xl lg:text-4xl mb-[40px] text-primary">Eventos</h1>
                 <div
                     class="flex flex-col sm:grid sm:grid-cols-2 sm:gap-y-6 md:flex md:flex-row justify-between gap-7 sm:gap-3">
                     <!-- Card 1-->
-                    <div class="flex flex-col justify-between flex-1 basis-1 border-l-2 border-primary pl-3">
-                        <h1 class="text-xl font-semibold mb-5">Video conferencia presentación Informe 4T 2024</h1>
+                    <div class="flex flex-col justify-between flex-1 basis-1 border-l-2 border-primary pl-[12px]">
+                        <h1 class="text-xl font-semibold mb-[20px]">Video conferencia presentación Informe 4T 2024</h1>
                         <div class="flex justify-start gap-2.5">
                             <img class="w-10" src="./assets/icons/Calendario_fecha.svg" alt="Calendario_fecha">
                             <div>
-                                <p class="font-normal text-base p-1">18 de Diciembre del 2024</p>
-                                <p class="font-normal text-base p-1">14:00 GTM</p>
+                                <p class="font-normal text-base p-[4px]">18 de Diciembre del 2024</p>
+                                <p class="font-normal text-base p-[4px]">14:00 GTM</p>
                             </div>
                         </div>
                         <button
-                            class="w-48 flex justify-center items-center text-sm mt-5 text-white bg-secondary px-10 py-3 rounded-3xl cursor-pointer">Call
+                            class="w-48 flex justify-center items-center text-sm mt-[20px] text-white bg-secondary px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
                             To Action
-                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                            <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
                     </div>
                     <!-- Card 2-->
-                    <div class="flex-1 basis-1 flex flex-col justify-between border-l-2 border-primary pl-3">
-                        <h1 class="text-xl font-semibold mb-5">Nombre del evento número 2</h1>
+                    <div class="flex-1 basis-1 flex flex-col justify-between border-l-2 border-primary pl-[12px]">
+                        <h1 class="text-xl font-semibold mb-[20px]">Nombre del evento número 2</h1>
                         <div class="flex justify-start gap-2.5">
                             <img class="w-10" src="./assets/icons/Calendario_fecha.svg" alt="Calendario_fecha">
                             <div>
-                                <p class="font-normal text-base p-1">18 de Diciembre del 2024</p>
-                                <p class="font-normal text-base p-1">14:00 GTM</p>
+                                <p class="font-normal text-base p-[4px]">18 de Diciembre del 2024</p>
+                                <p class="font-normal text-base p-[4px]">14:00 GTM</p>
                             </div>
                         </div>
                         <button
-                            class="w-48 flex justify-center items-center text-sm mt-5 text-white bg-secondary px-10 py-3 rounded-3xl cursor-pointer">Call
+                            class="w-48 flex justify-center items-center text-sm mt-[20px] text-white bg-secondary px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
                             To Action
-                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                            <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
                     </div>
                     <!-- Card 3-->
-                    <div class="flex flex-col justify-between flex-1 basis-1 border-l-2 border-primary pl-3">
-                        <h1 class="text-xl font-semibold mb-5">Nombre del evento</h1>
+                    <div class="flex flex-col justify-between flex-1 basis-1 border-l-2 border-primary pl-[12px]">
+                        <h1 class="text-xl font-semibold mb-[20px]">Nombre del evento</h1>
                         <div class="flex justify-start gap-2.5">
                             <img class="w-10" src="./assets/icons/Calendario_fecha.svg" alt="Calendario_fecha">
                             <div>
-                                <p class="font-normal text-base p-1">18 de Diciembre del 2024</p>
-                                <p class="font-normal text-base p-1">14:00 GTM</p>
+                                <p class="font-normal text-base p-[4px]">18 de Diciembre del 2024</p>
+                                <p class="font-normal text-base p-[4px]">14:00 GTM</p>
                             </div>
                         </div>
                         <button
-                            class="w-48 flex justify-center items-center text-sm mt-5 text-white bg-secondary px-10 py-3 rounded-3xl cursor-pointer">Call
+                            class="w-48 flex justify-center items-center text-sm mt-[20px] text-white bg-secondary px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
                             To Action
-                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                            <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
                     </div>
                 </div>
             </div>
         </main>
 
         <!-- Inversionista -->
-        <main class="w-full overflow-hidden bg-white flex justify-center py-8 px-1.5 md:px-7 lg:px-10 xl:px-16">
-            <div class="flex flex-col lg:flex-row gap-4 bg-primary rounded-xl justify-between p-4">
-                <div class="p-4 flex flex-col gap-2 justify-center items-center flex-1 basis-1/3">
+        <main
+            class="w-full overflow-hidden bg-white flex justify-center py-[32px] px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
+            <div class="flex flex-col lg:flex-row gap-4 bg-primary rounded-xl justify-between p-[16px]">
+                <div class="p-[16px] flex flex-col gap-2 justify-center items-center flex-1 basis-1/3">
                     <h1 class="text-secondary text-xl sm:text-4xl font-bold">Centro de atención al inversionista</h1>
                     <p class="text-white text-base sm:text-xl font-normal">En caso que necesites información adicional a
                         la que aquí se encuentra, puedes contactar a las siguientes personas:</p>
@@ -994,7 +1090,7 @@
                             <img class="w-full h-full object-cover rounded-t-xl transform -scale-x-100"
                                 src="./assets/images/laughing-guy.jpeg" alt="laughing-guy">
                         </div>
-                        <div class="p-3">
+                        <div class="p-[12px]">
                             <h2 class="text-xl py-1.5 font-semibold">Carlos Eduardo Gonzalez Tabares</h2>
                             <h3 class="text-base py-1.5 font-normal">Gerente de Inversionistas y Mercado de Capitales
                             </h3>
@@ -1010,7 +1106,7 @@
                             <img class="w-full h-full object-cover rounded-t-xl transform -scale-x-100"
                                 src="./assets/images/moody-guy.jpeg" alt="moody-guy-guy">
                         </div>
-                        <div class="p-3">
+                        <div class="p-[12px]">
                             <h2 class="text-xl py-1.5 font-semibold">Daniel Mesa Gómez</h2>
                             <h3 class="text-base py-1.5 font-normal">Director de Inversionistas y Mercado de Capitales
                             </h3>
@@ -1026,18 +1122,33 @@
 
         <!-- Footer -->
         <footer
-            class="w-full flex-col justify-center text-white text-base font-normal bg-primary px-1.5 md:px-7 lg:px-10 xl:px-16 py-8">
+            class="w-full flex-col justify-center text-white text-base font-normal bg-primary px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] py-[32px]">
             <div class="w-full mx-auto flex flex-col sm:flex-row justify-between">
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
+                        Nuestras compañías SURA</h4>
+                    <ul class="text-xs lg:text-sm">
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">gruposura.com</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">segurossura.com</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#"
+                                class="hover:underline">suraassetmanagement.com</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">sfundacionsura.com</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="mb-3.5">
                     <h4
                         class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
                         Ayudas e Información</h4>
                     <ul class="text-xs lg:text-sm">
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Suscríbete a nuestro Newslatter</a>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Suscríbete a nuestro
+                                Newslatter</a>
                         </li>
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Preguntas Frecuentes</a></li>
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Contacto</a></li>
-                        <li class="py-1 sm:py-3 flex gap-4">
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Contacto</a></li>
+                        <li class="py-[4px] sm:py-[12px] flex gap-4">
                             <a href="#"><img class="w-6 sm:w-8 lg:w-10" src="./assets/icons/X.svg" alt="X"></a>
                             <a href="#"><img class="w-6 sm:w-8 lg:w-10" src="./assets/icons/Linked-in.svg"
                                     alt="Linked-in"></a>
@@ -1052,9 +1163,12 @@
                         class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
                         Enlaces de Interés</h4>
                     <ul class="text-xs lg:text-sm">
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Centro de Recursos</a></li>
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Términos y Condiciones</a></li>
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Certificado de Renta</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Centro de Recursos</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Términos y Condiciones</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Certificado de Renta</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="mb-3.5">
@@ -1062,14 +1176,15 @@
                         class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
                         Links de inversiones</h4>
                     <ul class="text-xs lg:text-sm">
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Listados en BVC</a></li>
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Listados en NYSE (ADR nivel 1)</a>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Listados en BVC</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Listados en NYSE (ADR
+                                nivel 1)</a>
                         </li>
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Bolsa de Santiago</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Bolsa de Santiago</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="py-10">
+            <div class="py-[40px]">
                 <p class="text-center text-xs md:text-sm font-normal mb-0">© Copyright Grupo SURA 2025</p>
                 <p class="text-center text-xs md:text-sm font-normal">Supervisados por <span
                         class="text-foooter cursor-pointer">Superintendencia Financiera de

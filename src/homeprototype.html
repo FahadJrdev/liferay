@@ -17,9 +17,9 @@
 
 <body class="font-sans text-primary">
     <div class="w-full">
-        <!-- Header Top-->
+        <!-- Header -->
         <header
-            class="flex justify-center bg-primary text-white px-1.5 md:px-7 lg:px-10 xl:px-16 py-1.5 lg:py-2.5 xl:py-3.5">
+            class="flex justify-center bg-primary text-white px-[6px] md:px-[28px] lg:px-[40px] xl:px-[64px] py-[6px] lg:py-[10px] xl:py-[14px]">
             <div class="w-full mx-auto flex justify-center sm:justify-end items-center">
                 <nav>
                     <ul class="flex space-x-6 text-xs md:text-sm lg:text-base">
@@ -31,31 +31,25 @@
                 </nav>
             </div>
         </header>
-
-        <!-- Three bar -->
-        <div class="bg-white p-2.5 md:p-0 md:opacity-0 md:h-0">
+        <div class="bg-white p-[10px] md:p-0 md:opacity-0 md:h-0">
             <svg class="bar w-6 fill-primary cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path
                     d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
             </svg>
         </div>
-
-        <!-- Mediam Device Overlay -->
         <div
             class="overlay -z-10 invisible h-screen w-screen md:w-0 opacity-0 transition-all duration-300 ease-in-out md:opacity-0 fixed top-0 left-0 bg-primary">
         </div>
-
-        <!-- Header top / Main Header -->
         <header
             class="mainMenu transition-all duration-300 ease-in-out overflow-x-hidden md:overflow-visible w-0 font-semibold md:opacity-100 z-20 fixed md:static bg-white md:bg-transparent top-0 left-0 h-screen md:h-auto md:w-full flex flex-col md:flex-row justify-center text-primary shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
-            <div class="flex justify-end p-3 md:p-0">
+            <div class="flex justify-end p-[12px] md:p-0">
                 <svg class="xmark w-8 md:opacity-0 md:w-0 fill-primary cursor-pointer"
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                     <path
                         d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                 </svg>
             </div>
-            <div class="h-screen md:h-auto w-xs md:w-full px-4 md:px-7 lg:px-10 xl:px-16">
+            <div class="h-screen md:h-auto w-xs md:w-full px-[16px] md:px-[28px] lg:px-[40px] xl:px-[64px]">
                 <ul
                     class="w-full mx-auto flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-5 text-sm lg:text-base">
                     <li class="flex items-center px-2.5 md:px-0">
@@ -63,7 +57,7 @@
                     </li>
                     <li class="menuParent flex items-center relative">
                         <span
-                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
                             <a href="#">Quienes somos</a>
                             <img class="w-3 ml-1.5 transition-all duration-300" src="./assets/icons/down-arrow.svg"
                                 alt="down-arrow">
@@ -71,7 +65,7 @@
                         <ul
                             class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 overflow-hidden flex-col text-sm bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
                             <li
-                                class="flex justify-between items-center p-2 mt-4 mb-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Sobre Grupo SURA</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -79,7 +73,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Nuestra Identidad</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -87,7 +81,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Evolucion y Crecimiento</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -95,7 +89,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Talento Humano</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -103,7 +97,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 mt-2.5 mb-4 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">#PensarConOtros</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -114,13 +108,13 @@
                     </li>
                     <li class="flex items-center">
                         <span
-                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
                             <a href="#">Portafolio</a>
                         </span>
                     </li>
                     <li class="menuParent flex items-center relative">
                         <span
-                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
                             <a href="#">Relación con inversionistas</a>
                             <img class="w-3 ml-1.5 transition-all duration-300" src="./assets/icons/down-arrow.svg"
                                 alt="down-arrow">
@@ -128,7 +122,7 @@
                         <ul
                             class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 overflow-hidden flex-col text-sm bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
                             <li
-                                class="flex justify-between items-center p-2 mt-4 mb-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Sobre Grupo SURA</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -136,7 +130,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Nuestra Identidad</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -144,7 +138,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Evolucion y Crecimiento</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -152,7 +146,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Talento Humano</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -160,7 +154,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 mt-2.5 mb-4 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">#PensarConOtros</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -171,13 +165,13 @@
                     </li>
                     <li class="flex items-center">
                         <span
-                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
                             <a href="#">Gobierno Corporativo</a>
                         </span>
                     </li>
                     <li class="menuParent flex items-center relative">
                         <span
-                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
                             <a href="#">Sostenibilidad</a>
                             <img class="w-3 ml-1.5 transition-all duration-300" src="./assets/icons/down-arrow.svg"
                                 alt="down-arrow">
@@ -185,7 +179,7 @@
                         <ul
                             class="dropDown z-40 px-2.5 hidden absolute top-10 left-0 w-60 overflow-hidden flex-col text-sm bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
                             <li
-                                class="flex justify-between items-center p-2 mt-4 mb-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Sobre Grupo SURA</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -193,7 +187,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Nuestra Identidad</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -201,7 +195,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Evolucion y Crecimiento</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -209,7 +203,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Talento Humano</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -217,7 +211,7 @@
                                 </svg>
                             </li>
                             <li
-                                class="flex justify-between items-center p-2 mt-2.5 mb-4 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">#PensarConOtros</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
@@ -233,8 +227,34 @@
                 </ul>
             </div>
         </header>
-
-
+        <header class="flex justify-start bg-white text-primary pb-[32px] shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+            <div class=" px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
+                <div class="w-full mx-auto flex justify-between items-center">
+                    <div class="flex items-center">
+                        <nav>
+                            <ul class="flex space-x-6 py-[4px] lg:py-1.5 xl:py-[8px] text-xs md:text-sm">
+                                <li class="flex items-center">
+                                    <a href="#"
+                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-[4px] lg:px-2.5 lg:py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">Home</a>
+                                    <img class="w-1.5 ml-1.5" src="./assets/icons/right-arrow.svg" alt="down-arrow">
+                                </li>
+                                <li class="flex items-center">
+                                    <a href="#"
+                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-[4px] lg:px-2.5 lg:py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">¿Quienes
+                                        somos</a>
+                                    <img class="w-1.5 ml-1.5" src="./assets/icons/right-arrow.svg" alt="down-arrow">
+                                </li>
+                                <li class="flex items-center">
+                                    <a href="#"
+                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-[4px] lg:px-2.5 lg:py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer font-semibold">Nuestros
+                                        negocios</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
 
         <!-- Main Contents -->
 
@@ -242,9 +262,9 @@
         <!-- Slide In Pop Up -->
         <main class="w-full flex justify-center text-white bg-popup">
             <div
-                class="w-full justify-between items-center py-1 sm:py-2 lg:py-6 text-sm sm:text-base md:text-lg lg:text-xl font-semibold px-1.5 md:px-7 lg:px-10 xl:px-16 flex">
+                class="w-full justify-between items-center py-[4px] sm:py-[8px] lg:py-[24px] text-sm sm:text-base md:text-lg lg:text-xl font-semibold px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] flex">
                 <div class="w-full flex justify-start items-center">
-                    <img class="w-10 mr-3" src="./assets/icons/Calendario_ok.svg" alt="Calendario_ok">
+                    <img class="w-10 mr-[12px]" src="./assets/icons/Calendario_ok.svg" alt="Calendario_ok">
                     <p>S1 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                         laudantium.</p>
                 </div>
@@ -254,11 +274,11 @@
 
 
         <!-- Display video and text overlay -->
-        <main class="slider w-full mb-36 md:mb-0 flex justify-center bg-tartiary">
+        <main class="slider w-full mb-[144px] md:mb-0 flex justify-center bg-tartiary">
             <div class="relative w-full flex">
                 <!-- Upper Text Part -->
                 <div
-                    class="upperPart w-full sm:w-[70%] z-10 h-full absolute top-32 sm:top-0 left-0 bg-gradient-to-r from-white via-white to-transparent text-primary px-1.5 md:px-7 lg:px-10 xl:px-16 py-0.5 md:py-3 lg:py-8 xl:py-12 flex flex-col justify-start">
+                    class="upperPart w-full sm:w-[70%] z-10 h-full absolute top-32 sm:top-0 left-0 bg-gradient-to-r from-white via-white to-transparent text-primary px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] py-0.5 md:py-[12px] lg:py-[32px] xl:py-[48px] flex flex-col justify-start">
                     <div
                         class="hover1 transition-all duration-300 ease-in-out w-full sm:w-[60%] flex flex-col items-start justify-center gap-2 md:gap-5">
                         <h2 class="text-base md:text-2xl lg:text-4xl font-bold">H2 Lorem ipsum dolor sit amet,
@@ -269,9 +289,9 @@
                         </p>
                         <div class="btn1 transition-all duration-300 ease-in-out">
                             <button
-                                class="w-36 md:w-40 flex justify-center items-center text-sm md:font-bold md:text-base text-white bg-secondary mt-2 py-2 sm:py-3 rounded-3xl cursor-pointer">
+                                class="w-36 md:w-40 flex justify-center items-center text-sm md:font-bold md:text-base text-white bg-secondary mt-[8px] py-[8px] sm:py-[12px] rounded-3xl cursor-pointer">
                                 Leer más
-                                <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
+                                <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
                             </button>
                         </div>
                     </div>
@@ -279,7 +299,7 @@
 
                 <!-- Bottom Text Part -->
                 <div
-                    class="bottomPart w-full z-10 absolute -bottom-36 md:bottom-0 left-0 bg-gradient-to-t from-[rgba(255,255,255,0.8)] via-[rgba(255,255,255,0.8)] to-transparent text-primary px-1.5 md:px-7 lg:px-10 xl:px-16 pb-2 flex items-center justify-center">
+                    class="bottomPart w-full z-10 absolute -bottom-36 md:bottom-0 left-0 bg-gradient-to-t from-[rgba(255,255,255,0.8)] via-[rgba(255,255,255,0.8)] to-transparent text-primary px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] pb-[8px] flex items-center justify-center">
                     <div
                         class="bottomText w-full hidden sm:flex justify-between gap-3 md:text-lg lg:text-xl font-normal text-primary">
                         <div
@@ -290,9 +310,9 @@
                             </p>
                             <div class="btn2 transition-all duration-500 ease-in-out md:h-0 md:invisible md:opacity-0">
                                 <button
-                                    class="w-36 md:w-40 flex justify-center items-center text-sm md:font-bold md:text-base text-white bg-secondary mt-2 py-1.5 md:py-2.5 rounded-3xl cursor-pointer">
+                                    class="w-36 md:w-40 flex justify-center items-center text-sm md:font-bold md:text-base text-white bg-secondary mt-[8px] py-1.5 md:py-2.5 rounded-3xl cursor-pointer">
                                     Leer más
-                                    <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
+                                    <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
                                 </button>
                             </div>
                         </div>
@@ -304,9 +324,9 @@
                             </p>
                             <div class="btn3 transition-all duration-500 ease-in-out md:h-0 md:invisible md:opacity-0">
                                 <button
-                                    class="w-36 md:w-40 flex justify-center items-center text-sm md:font-bold md:text-base text-white bg-secondary mt-2 py-1.5 md:py-2.5 rounded-3xl cursor-pointer">
+                                    class="w-36 md:w-40 flex justify-center items-center text-sm md:font-bold md:text-base text-white bg-secondary mt-[8px] py-1.5 md:py-2.5 rounded-3xl cursor-pointer">
                                     Leer más
-                                    <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
+                                    <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
                                 </button>
                             </div>
                         </div>
@@ -318,7 +338,7 @@
                             </p>
                             <div class="btn4 transition-all duration-500 ease-in-out md:h-0 md:invisible md:opacity-0">
                                 <button
-                                    class="w-36 md:w-40 flex justify-center items-center text-sm md:font-bold md:text-base text-white bg-secondary mt-2 py-1.5 md:py-2.5 rounded-3xl cursor-pointer">
+                                    class="w-36 md:w-40 flex justify-center items-center text-sm md:font-bold md:text-base text-white bg-secondary mt-[8px] py-1.5 md:py-2.5 rounded-3xl cursor-pointer">
                                     Regístrese aquí
                                 </button>
                             </div>
@@ -330,14 +350,13 @@
 
                 <!-- Video Section -->
                 <div class="w-full flex justify-end md:h-[510px] lg:h-[550px] relative">
-                    <img class="sliderBG w-full md:w-[65%] transition-all duration-500 ease-in-out object-cover"
+                    <img class="sliderBG w-[65%] transition-all duration-500 ease-in-out object-cover"
                         src="./assets/images/dataAnalyst.jpg">
-                    <div class="hover2BG w-0 flex justify-center py-4 transition-all duration-500 ease-in-out">
-                        <video class="w-full md:w-[25%] h-full object-cover"
-                            src="./assets/videos/bookLover.mp4"></video>
+                    <div class="hover2BG w-0 flex justify-center py-[16px] transition-all duration-500 ease-in-out">
+                        <video class="w-[25%] h-full object-cover" src="./assets/videos/bookLover.mp4"></video>
                     </div>
                     <div class="hover3BG w-0 flex justify-end transition-all duration-500 ease-in-out">
-                        <video class="w-full md:w-[65%] h-full object-cover" src="./assets/videos/speach.mp4"></video>
+                        <video class="w-[65%] h-full object-cover" src="./assets/videos/speach.mp4"></video>
                     </div>
                     <img class="hover4BG w-0 object-cover transition-all duration-500 ease-in-out"
                         src="./assets/images/videoConference.jpg">
@@ -346,22 +365,22 @@
         </main>
 
         <!-- home-card -->
-        <main class="w-full bg-tartiary py-1 sm:py-8 px-1.5 md:px-7 lg:px-10 xl:px-16">
-            <h1 class="font-bold text-lg sm:text-2xl md:text-4xl py-2 md:py-8">H2 Título de la sección</h1>
-            <p class="text-sm sm:text-base text-ex1 mb-6">Lorem ipsum dolor sit amet, consectetur
+        <main class="w-full bg-tartiary py-[4px] sm:py-[32px] px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
+            <h1 class="font-bold text-lg sm:text-2xl md:text-4xl py-[8px] md:py-[32px]">H2 Título de la sección</h1>
+            <p class="text-sm sm:text-base text-ex1 mb-[24px]">Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat. Duis
                 aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 Excepteur sint
                 occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="flex flex-wrap justify-center gap-8 py-10 w-full">
+            <div class="flex flex-wrap justify-center gap-8 py-[40px] w-full">
                 <div class="flex-1 min-w-[300px] bg-white rounded-lg">
                     <img class="w-full h-48 object-cover rounded-lg" src="./assets/images/conference.jpeg"
                         alt="Conference">
-                    <div class="p-2">
-                        <h3 class="text-xl font-bold text-ex1 mt-4">Quodsi haberent magnalia</h3>
-                        <p class="text-ex1 text-sm mt-2">Lorem Ipsum is simply dummy text of the printing and
+                    <div class="p-[8px]">
+                        <h3 class="text-xl font-bold text-ex1 mt-[16px]">Quodsi haberent magnalia</h3>
+                        <p class="text-ex1 text-sm mt-[8px]">Lorem Ipsum is simply dummy text of the printing and
                             typesetting
                             industry. Lorem Ipsum has been the industry's standard
                             dummy text ever since the 1500s. Limitar el número de líneas</p>
@@ -370,9 +389,9 @@
                 <div class="flex-1 min-w-[300px] bg-white rounded-lg">
                     <img class="w-full h-48 object-cover rounded-lg" src="./assets/images/project.jpeg"
                         alt="Conference">
-                    <div class="p-2">
-                        <h3 class="text-xl font-bold text-ex1 mt-4">Quodsi haberent magnalia</h3>
-                        <p class="text-ex1 text-sm mt-2">Lorem Ipsum is simply dummy text of the printing and
+                    <div class="p-[8px]">
+                        <h3 class="text-xl font-bold text-ex1 mt-[16px]">Quodsi haberent magnalia</h3>
+                        <p class="text-ex1 text-sm mt-[8px]">Lorem Ipsum is simply dummy text of the printing and
                             typesetting
                             industry. Lorem Ipsum has been the industry's standard
                             dummy text ever since the 1500s. Limitar el número de líneas</p>
@@ -381,9 +400,9 @@
                 <div class="flex-1 min-w-[300px] bg-white rounded-lg">
                     <img class="w-full h-48 object-cover rounded-lg" src="./assets/images/podcast.jpeg"
                         alt="Conference">
-                    <div class="p-2">
-                        <h3 class="text-xl font-bold text-ex1 mt-4">Quodsi haberent magnalia</h3>
-                        <p class="text-ex1 text-sm mt-2">Lorem Ipsum is simply dummy text of the printing and
+                    <div class="p-[8px]">
+                        <h3 class="text-xl font-bold text-ex1 mt-[16px]">Quodsi haberent magnalia</h3>
+                        <p class="text-ex1 text-sm mt-[8px]">Lorem Ipsum is simply dummy text of the printing and
                             typesetting
                             industry. Lorem Ipsum has been the industry's standard
                             dummy text ever since the 1500s. Limitar el número de líneas</p>
@@ -394,11 +413,11 @@
 
         <!-- Three Pie chart -->
         <main
-            class="w-full text-white bg-primary flex flex-col gap-8 justify-center py-1 sm:py-8 px-1.5 md:px-7 lg:px-10 xl:px-16">
+            class="w-full text-white bg-primary flex flex-col gap-8 justify-center py-[4px] sm:py-[32px] px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
             <div class="flex justify-between items-center">
                 <h1 class="text-xl sm:text-4xl font-bold">Portafolio SURA</h1>
                 <button
-                    class="w-36 md:w-40 flex justify-center items-center text-sm md:font-bold md:text-base text-white bg-secondary mt-2 py-2 sm:py-3 rounded-3xl cursor-pointer">
+                    class="w-36 md:w-40 flex justify-center items-center text-sm md:font-bold md:text-base text-white bg-secondary mt-[8px] py-[8px] sm:py-[12px] rounded-3xl cursor-pointer">
                     CTA Portafolio
                 </button>
             </div>
@@ -406,21 +425,21 @@
                 blanditiis
                 praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             <div class="flex justify-between gap-6 h-80 bg-[#001E60] overflow-y-hidden">
-                <div class="w-full relative bg-[#DAE0E8] rounded-xl p-5">
+                <div class="w-full relative bg-[#DAE0E8] rounded-xl p-[20px]">
                     <canvas id="pieChart1" class="mx-auto"></canvas>
                     <div
                         class="absolute left-20 top-20 inset-0 flex justify-center items-center text-3xl font-bold leading-7 text-[#001E60]">
                         83.5%
                     </div>
                 </div>
-                <div class="w-full relative bg-[#DAE0E8] rounded-xl p-5">
+                <div class="w-full relative bg-[#DAE0E8] rounded-xl p-[20px]">
                     <canvas id="pieChart2" class="mx-auto"></canvas>
                     <div
                         class="absolute left-20 top-20 inset-0 flex justify-center items-center text-3xl font-bold leading-7 text-[#001E60]">
                         1%
                     </div>
                 </div>
-                <div class="w-full relative bg-[#DAE0E8] rounded-xl p-5">
+                <div class="w-full relative bg-[#DAE0E8] rounded-xl p-[20px]">
                     <canvas id="pieChart3" class="mx-auto"></canvas>
                     <div
                         class="absolute left-20 top-20 inset-0 flex justify-center items-center text-3xl font-bold leading-7 text-[#001E60]">
@@ -431,9 +450,9 @@
         </main>
 
         <!-- Slider -->
-        <main class="w-full bg-tartiary py-1 sm:py-8 px-1.5 md:px-7 lg:px-10 xl:px-16">
+        <main class="w-full bg-tartiary py-[4px] sm:py-[32px] px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
             <div class="w-full">
-                <h1 class="font-bold text-lg sm:text-2xl md:text-4xl py-2 md:py-8">Métricas relevantes</h1>
+                <h1 class="font-bold text-lg sm:text-2xl md:text-4xl py-[8px] md:py-[32px]">Métricas relevantes</h1>
                 <p class="text-sm sm:text-base text-ex1">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -447,8 +466,8 @@
                 <div class="splide__track">
                     <div class="splide__list">
                         <!-- First Card -->
-                        <div class="splide__slide bg-white shadow-md rounded-lg p-6 flex flex-col justify-between">
-                            <div class="flex items-center gap-4 mb-2">
+                        <div class="splide__slide bg-white shadow-md rounded-lg p-[24px] flex flex-col justify-between">
+                            <div class="flex items-center gap-4 mb-[8px]">
                                 <div class="flex items-center gap-2">
                                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -471,8 +490,8 @@
                         </div>
 
                         <!-- Second Card -->
-                        <div class="splide__slide bg-white shadow-md rounded-lg p-6 flex flex-col justify-between">
-                            <div class="flex items-center justify-end gap-4 mb-2">
+                        <div class="splide__slide bg-white shadow-md rounded-lg p-[24px] flex flex-col justify-between">
+                            <div class="flex items-center justify-end gap-4 mb-[8px]">
                                 <span class="text-primary font-semibold text-xl">+ $1.000.000 COP</span>
                             </div>
                             <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -482,7 +501,7 @@
                         </div>
 
                         <!-- Third Card -->
-                        <div class="splide__slide bg-white shadow-md rounded-lg p-6 flex flex-col justify-between">
+                        <div class="splide__slide bg-white shadow-md rounded-lg p-[24px] flex flex-col justify-between">
                             <div class="relative flex items-center bg-[#3E89DD] text-white rounded h-10 w-60">
                                 <span class="bg-[#0047BB] h-full w-4 inline-block rounded"></span>
                                 <span class="absolute top-1/2 translate-y-[-50%] left-4">90% Lorem ipsum.</span>
@@ -494,8 +513,8 @@
                         </div>
 
                         <!-- Fourth Card -->
-                        <div class="splide__slide bg-white shadow-md rounded-lg p-6 flex flex-col justify-between">
-                            <div class="flex items-center gap-4 mb-2">
+                        <div class="splide__slide bg-white shadow-md rounded-lg p-[24px] flex flex-col justify-between">
+                            <div class="flex items-center gap-4 mb-[8px]">
                                 <span class="text-primary font-semibold text-xl">50% dolor sit amet</span>
                             </div>
                             <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -509,42 +528,44 @@
         </main>
 
         <!-- border-card -->
-        <main class="w-full py-1 sm:py-8 px-1.5 md:px-7 lg:px-10 xl:px-16">
+        <main class="w-full py-[4px] sm:py-[16px] px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
             <div class="w-full">
-                <h1 class="font-bold text-lg sm:text-2xl md:text-4xl py-2 md:py-8">Novedades</h1>
+                <h1 class="font-bold text-lg sm:text-2xl md:text-4xl py-[8px] md:py-[16px]">Novedades</h1>
             </div>
             <div
                 class="flex flex-col sm:grid sm:grid-cols-2 sm:gap-y-6 md:flex md:flex-row justify-between gap-7 sm:gap-3">
                 <!-- Card 1-->
-                <div class="flex flex-col justify-between flex-1 basis-1 border-l-2 border-primary px-6">
-                    <h1 class="text-xl font-semibold mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                <div class="flex flex-col justify-between flex-1 basis-1 border-l-2 border-primary px-[24px]">
+                    <h1 class="text-xl font-semibold mb-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed
                         do eiusmod tempor.</h1>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
                         deleniti atque corrupti
                         quos dolores et quas molestias excepturi</p>
                     <button
-                        class="w-48 flex justify-center items-center text-sm mt-5 text-white bg-secondary px-10 py-3 rounded-3xl cursor-pointer">
+                        class="w-48 flex justify-center items-center text-sm mt-[20px] text-white bg-secondary px-[40px] py-[12px] rounded-3xl cursor-pointer">
                         Leer más
-                        <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                        <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
                 </div>
                 <!-- Card 2-->
-                <div class="flex flex-col justify-between flex-1 basis-1 border-l-2 border-primary px-6">
-                    <h1 class="text-xl font-semibold mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                <div class="flex flex-col justify-between flex-1 basis-1 border-l-2 border-primary px-[24px]">
+                    <h1 class="text-xl font-semibold mb-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed
                         do eiusmod tempor.</h1>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
                         deleniti atque corrupti
                         quos dolores et quas molestias excepturi</p>
                     <button
-                        class="w-48 flex justify-center items-center text-sm mt-5 text-white bg-secondary px-10 py-3 rounded-3xl cursor-pointer">
+                        class="w-48 flex justify-center items-center text-sm mt-[20px] text-white bg-secondary px-[40px] py-[12px] rounded-3xl cursor-pointer">
                         Leer más
-                        <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                        <img class="ml-[8px] h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
                 </div>
             </div>
         </main>
 
         <!-- Centros -->
-        <main class="w-full bg-tartiary py-1 sm:py-8 px-1.5 md:px-7 lg:px-10 xl:px-16">
-            <div class="w-full flex items-center justify-between py-2 md:py-8">
+        <main class="w-full bg-tartiary py-[4px] sm:py-[32px] px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
+            <div class="w-full flex items-center justify-between py-[8px] md:py-[32px]">
                 <div class="flex items-center gap-3">
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -555,17 +576,18 @@
                 </div>
                 <span class="text-secondary">Ver todo</span>
             </div>
-            <p class="text-sm sm:text-base py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            <p class="text-sm sm:text-base py-[8px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
                 tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.</p>
-            <div class="flex flex-col md:flex-row items-center gap-6 py-4">
+            <div class="flex flex-col md:flex-row items-center gap-6 py-[16px]">
                 <!-- card-1 -->
-                <div class="bg-white rounded-lg p-5 flex flex-col gap-4">
+                <div class="bg-white rounded-lg p-[20px] flex flex-col gap-4">
                     <h2 class="font-semibold text-primary text-xl">Categoria del recurso</h2>
                     <p class="text-sm sm:text-base">Nombre del recurso particular Lorem Ipsum is simply dummy text.</p>
                     <button
-                        class="py-2 px-4 rounded-full border-secondary border-1 text-secondary flex items-center gap-4 self-end">
+                        class="py-[8px] px-[16px] rounded-full border-secondary border-1 text-secondary flex items-center gap-4 self-end">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12.3531 15.8542V9.06006H11.6472V15.8542L9.30722 13.5142L8.80957 14.0118L11.7496 16.9518C11.8166 17.0189 11.9049 17.0542 12.0002 17.0542C12.0955 17.0542 12.1837 17.0154 12.2507 16.9518L15.1907 14.0118L14.6931 13.5142L12.3531 15.8542Z"
@@ -582,11 +604,11 @@
                 </div>
 
                 <!-- card-2 -->
-                <div class="bg-white rounded-lg p-5 flex flex-col gap-4">
+                <div class="bg-white rounded-lg p-[20px] flex flex-col gap-4">
                     <h2 class="font-semibold text-primary text-xl">Categoria del recurso</h2>
                     <p class="text-sm sm:text-base">Nombre del recurso particular Lorem Ipsum is simply dummy text.</p>
                     <button
-                        class="py-2 px-4 rounded-full border-secondary border-1 text-secondary flex items-center gap-4 self-end">
+                        class="py-[8px] px-[16px] rounded-full border-secondary border-1 text-secondary flex items-center gap-4 self-end">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12.3531 15.8542V9.06006H11.6472V15.8542L9.30722 13.5142L8.80957 14.0118L11.7496 16.9518C11.8166 17.0189 11.9049 17.0542 12.0002 17.0542C12.0955 17.0542 12.1837 17.0154 12.2507 16.9518L15.1907 14.0118L14.6931 13.5142L12.3531 15.8542Z"
@@ -603,11 +625,11 @@
                 </div>
 
                 <!-- card-3 -->
-                <div class="bg-white rounded-lg p-5 flex flex-col gap-4">
+                <div class="bg-white rounded-lg p-[20px] flex flex-col gap-4">
                     <h2 class="font-semibold text-primary text-xl">Categoria del recurso</h2>
                     <p class="text-sm sm:text-base">Nombre del recurso particular Lorem Ipsum is simply dummy text.</p>
                     <button
-                        class="py-2 px-4 rounded-full border-secondary border-1 text-secondary flex items-center gap-4 self-end">
+                        class="py-[8px] px-[16px] rounded-full border-secondary border-1 text-secondary flex items-center gap-4 self-end">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12.3531 15.8542V9.06006H11.6472V15.8542L9.30722 13.5142L8.80957 14.0118L11.7496 16.9518C11.8166 17.0189 11.9049 17.0542 12.0002 17.0542C12.0955 17.0542 12.1837 17.0154 12.2507 16.9518L15.1907 14.0118L14.6931 13.5142L12.3531 15.8542Z"
@@ -627,18 +649,33 @@
 
         <!-- Footer -->
         <footer
-            class="w-full flex-col justify-center text-white text-base font-normal bg-primary px-1.5 md:px-7 lg:px-10 xl:px-16 py-8">
+            class="w-full flex-col justify-center text-white text-base font-normal bg-primary px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] py-[32px]">
             <div class="w-full mx-auto flex flex-col sm:flex-row justify-between">
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
+                        Nuestras compañías SURA</h4>
+                    <ul class="text-xs lg:text-sm">
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">gruposura.com</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">segurossura.com</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#"
+                                class="hover:underline">suraassetmanagement.com</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">sfundacionsura.com</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="mb-3.5">
                     <h4
                         class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
                         Ayudas e Información</h4>
                     <ul class="text-xs lg:text-sm">
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Suscríbete a nuestro Newslatter</a>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Suscríbete a nuestro
+                                Newslatter</a>
                         </li>
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Preguntas Frecuentes</a></li>
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Contacto</a></li>
-                        <li class="py-1 sm:py-3 flex gap-4">
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Contacto</a></li>
+                        <li class="py-[4px] sm:py-[12px] flex gap-4">
                             <a href="#"><img class="w-6 sm:w-8 lg:w-10" src="./assets/icons/X.svg" alt="X"></a>
                             <a href="#"><img class="w-6 sm:w-8 lg:w-10" src="./assets/icons/Linked-in.svg"
                                     alt="Linked-in"></a>
@@ -653,9 +690,12 @@
                         class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
                         Enlaces de Interés</h4>
                     <ul class="text-xs lg:text-sm">
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Centro de Recursos</a></li>
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Términos y Condiciones</a></li>
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Certificado de Renta</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Centro de Recursos</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Términos y Condiciones</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Certificado de Renta</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="mb-3.5">
@@ -663,17 +703,19 @@
                         class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
                         Links de inversiones</h4>
                     <ul class="text-xs lg:text-sm">
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Listados en BVC</a></li>
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Listados en NYSE (ADR nivel 1)</a>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Listados en BVC</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Listados en NYSE (ADR
+                                nivel 1)</a>
                         </li>
-                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Bolsa de Santiago</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Bolsa de Santiago</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="mx-auto text-center py-10 text-xs md:text-sm font-normal">
-                <h1>© Copyright Grupo SURA 2025</h1>
-                <h2>Supervisados por <span class="text-foooter cursor-pointer">Superintendencia Financiera de
-                        Colombia</span></h2>
+            <div class="py-[40px]">
+                <p class="text-center text-xs md:text-sm font-normal mb-0">© Copyright Grupo SURA 2025</p>
+                <p class="text-center text-xs md:text-sm font-normal">Supervisados por <span
+                        class="text-foooter cursor-pointer">Superintendencia Financiera de
+                        Colombia</span></p>
             </div>
         </footer>
 
