@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Negocios | Grupo Sura</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css"
+        integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/themes/splide-sea-green.min.css"
+        integrity="sha512-/oUoxw/jGrD5UopHdKP65VWYXMNzISSafMMcqajF/bPpzpcArjXIBujC7xLDmty9LymRYmdCovi9lZ8ZJz7/ag=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="font-sans text-primary">
+    <div class="w-full">
+        <!-- Header top -->
+        <header
+            class="flex justify-center bg-primary text-white px-1.5 md:px-7 lg:px-10 xl:px-16 py-1.5 lg:py-2.5 xl:py-3.5">
+            <div class="w-full mx-auto flex justify-center sm:justify-end items-center">
+                <nav>
+                    <ul class="flex space-x-6 text-xs md:text-sm lg:text-base">
+                        <li><a href="#">Línea Ética</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Certificado de renta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="bg-white p-2.5 md:p-0 md:opacity-0 md:h-0">
+            <svg class="bar w-6 fill-primary cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+            </svg>
+        </div>
+
+        <!-- Mediam Device Overlay -->
+        <div
+            class="overlay -z-10 invisible h-screen w-screen md:w-0 opacity-0 transition-all duration-300 ease-in-out md:opacity-0 fixed top-0 left-0 bg-primary">
+        </div>
+
+        <!-- Header top / Main Header -->
+        <header
+            class="mainMenu transition-all duration-300 ease-in-out overflow-x-hidden md:overflow-x-visible w-0 font-semibold md:opacity-100 z-20 fixed md:static bg-white md:bg-transparent top-0 left-0 h-screen md:h-auto md:w-full flex flex-col md:flex-row justify-center text-primary shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+            <div class="flex justify-end p-3 md:p-0">
+                <svg class="xmark w-8 md:opacity-0 md:w-0 fill-primary cursor-pointer"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </div>
+            <div class="h-screen md:h-auto w-xs md:w-full px-4 md:px-7 lg:px-10 xl:px-16">
+                <ul
+                    class="w-full mx-auto flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-5 text-sm lg:text-base">
+                    <li class="flex items-center px-2.5 md:px-0">
+                        <img class="w-24 lg:w-32 xl:w-[156px]" src="./assets/images/logo.png" alt="GrupoSURA_Logo">
+                    </li>
+                    <li class="menuParent flex items-center relative">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">¿Quienes somos?</a>
+                            <img class="w-3 ml-1.5 transition-all duration-300" src="./assets/icons/down-arrow.svg"
+                                alt="down-arrow">
+                        </span>
+                        <ul
+                            class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 overflow-hidden flex-col text-sm bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                            <li
+                                class="flex justify-between items-center p-2 mt-4 mb-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Sobre Grupo SURA</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Nuestra Identidad</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Evolucion y Crecimiento</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Talento Humano</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-2 mt-2.5 mb-4 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">#PensarConOtros</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex items-center">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">Gobierno Corporativo</a>
+                        </span>
+                    </li>
+                    <li class="flex items-center">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">Portafolio</a>
+                        </span>
+                    </li>
+                    <li class="flex items-center relative">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">Relación con inversionistas</a>
+                        </span>
+                    </li>
+                    <li class="flex items-center relative">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">Sostenibilidad</a>
+                        </span>
+                    </li>
+                    <li class="flex items-center px-2.5 md:px-0">
+                        <img class="cursor-pointer w-10 md:w-8 lg:w-10 xl:w-12" src="./assets/icons/search-box.svg"
+                            alt="Search">
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Header bottom / Breadcrumbs -->
+        <header class="flex justify-start bg-white text-primary shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+            <div class=" px-1.5 md:px-7 lg:px-10 xl:px-16">
+                <div class="w-full mx-auto flex justify-between items-center">
+                    <div class="flex items-center">
+                        <nav>
+                            <ul class="flex space-x-6 py-1 lg:py-1.5 xl:py-2 text-xs md:text-sm">
+                                <li class="flex items-center">
+                                    <a href="#"
+                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-1 lg:px-2.5 lg:py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">Home</a>
+                                    <img class="w-1.5 ml-1.5" src="./assets/icons/right-arrow.svg" alt="down-arrow">
+                                </li>
+                                <li class="flex items-center">
+                                    <a href="#"
+                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-1 lg:px-2.5 lg:py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer font-semibold">Relación
+                                        con el inversionista</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Main Contents -->
+
+
+        <!-- Slide In Pop Up -->
+        <main class="w-full flex justify-center text-white bg-popup">
+            <div
+                class="w-full justify-between items-center py-1 sm:py-2 lg:py-6 text-sm sm:text-base md:text-lg lg:text-xl font-semibold px-1.5 md:px-7 lg:px-10 xl:px-16 flex">
+                <div class="w-full flex justify-start items-center">
+                    <img class="w-10 mr-3" src="./assets/icons/Calendario_ok.svg" alt="Calendario_ok">
+                    <p>S1 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium.</p>
+                </div>
+                <img class="w-5 self-start cursor-pointer" src="./assets/icons/Equis_linea.svg" alt="Equis_linea">
+            </div>
+        </main>
+
+        <!-- Display video and text overlay -->
+        <main class="w-full flex justify-center bg-tartiary">
+            <div class="relative top-0 left-0 w-full flex">
+                <!-- Text Section -->
+                <div
+                    class="w-[70%] z-10 h-full absolute bg-gradient-to-r from-[rgba(255,255,255,0.8)] via-[rgba(255,255,255,0.8)] to-transparent text-primary px-1.5 md:px-7 lg:px-10 xl:px-16 flex flex-col justify-center">
+                    <div class="w-[60%] flex flex-col gap-2 sm:gap-5">
+                        <h2 class="text-base sm:text-2xl font-bold">H2 Lorem ipsum dolor sit amet</h2>
+                        <p class="text-sm">
+                            H3 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.
+                        </p>
+                        <button
+                            class="w-36 sm:w-40 flex justify-center items-center text-sm text-white bg-secondary mt-2 py-1.5 sm:py-2.5 rounded-3xl cursor-pointer">
+                            Leer más
+                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Video Section -->
+                <div class="w-full flex justify-end h-72 relative">
+                    <video autoplay loop muted class="w-[65%] h-full object-cover">
+                        <source src="./assets/videos/conference.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </main>
+
+
+        <!-- Tab, menu and table together -->
+        <main class="w-full flex justify-center bg-tartiary py-8">
+            <div class="w-full px-1.5 md:px-7 lg:px-10 xl:px-16">
+                <!-- Tabs -->
+                <ul
+                    class="tabs w-full text-sm md:text-base lg:text-xl font-semibold sm:flex sm:justify-between grid grid-cols-2 gap-2 mb-6 text-primary">
+                    <li class="px-3 flex-1 flex justify-center basis-1/4 border-r border-secondary">
+                        <span data-tab="tab-1"
+                            class="rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center bg-primary text-white cursor-pointer">Acciones</span>
+                    </li>
+                    <li class="px-1 flex-1 flex justify-center basis-1/4 border-r border-secondary">
+                        <span data-tab="tab-2"
+                            class=" rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center cursor-pointer">Informes</span>
+                    </li>
+                    <li class="px-1 flex-1 flex justify-center basis-1/4 border-r border-secondary">
+                        <span data-tab="tab-2"
+                            class="rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center cursor-pointer">Inforelevantes</span>
+                    </li>
+                    <li class="flex-1 flex justify-center basis-1/4">
+                        <span data-tab="tab-4"
+                            class="rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center cursor-pointer">Asamblea</span>
+                    </li>
+                </ul>
+
+                <!-- Menu and Content tab-2 -->
+                <div class="menu-content tab-1 overflow-y-hidden p-2">
+                    <p class="font-bold leading-9 text-4xl text-primary pb-4">Informe 2024</p>
+                    <div class="py-2 flex flex-col md:flex-row gap-8 items-start md:items-center">
+                        <div class="w-full h-60 overflow-hidden">
+                            <img class="w-full h-full overflow-hidden object-cover rounded-xl"
+                                src="./assets/images/laughing-girls.jpeg" alt="laughing-guy">
+                        </div>
+                        <div class="w-full">
+                            <h3 class="text-base py-1.5 font-normal text-justify">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h3>
+                            <button
+                                class="flex justify-center items-center text-sm text-white bg-secondary px-10 mt-2 py-2 rounded-3xl cursor-pointer">CTA
+                                <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 items-center py-2">
+                        <p class="font-bold leading-9 text-4xl text-primary pb-4">Informe</p>
+                        <div class="splide splide1 w-full">
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    <div data-year="2024"
+                                        class="splide__slide relative py-2 text-center cursor-pointer bg-white text-[#00AEC7]">
+                                        <span>2024</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div data-year="2023"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2023</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div data-year="2022"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2022</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div data-year="2021"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2021</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div data-year="2020"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2020</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div data-year="2019"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2019</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                    <div data-year="2018"
+                                        class="splide__slide relative py-2 text-center cursor-pointer">
+                                        <span>2018</span>
+                                        <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 flex gap-5 min-w-[800px] sm:min-w-[1100px]">
+                        <!-- Menu -->
+                        <ul
+                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-1 sm:px-1.5 gap-6 justify-start bg-ex2">
+                            <li data-content="content-1"
+                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-semibold cursor-pointer">
+                                <span class="block p-0.5 sm:p-3">Informe Anual</span>
+                            </li>
+                            <li data-content="content-2"
+                                class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="termItem block p-0.5 sm:p-3">1<sup>er</sup> Trimestre</span>
+                            </li>
+                            <li data-content="content-2"
+                                class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="termItem block p-0.5 sm:p-3">2<sup>do</sup> Trimestre</span>
+                            </li>
+                            <li data-content="content-2"
+                                class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="termItem block p-0.5 sm:p-3">3<sup>er</sup> Trimestre</span>
+                            </li>
+                            <li data-content="content-2"
+                                class="menuItem w-full hover:bg-white border-primary rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="termItem block p-0.5 sm:p-3">4<sup>to</sup> Trimestre</span>
+                            </li>
+                        </ul>
+
+                        <!-- Content -->
+                        <div
+                            class="text-sm sm:text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-5">
+                            <div class="informo-content content-1">
+                                <h1 class="text-primary font-bold text-lg sm:text-2xl">Informe Anual <span
+                                        class="year">2024</span></h1>
+                                <p class="sm:text-base">
+                                    Este Informe Anual <span class="year">2024</span> da cuenta de los aspectos más
+                                    relevantes de la evolución,
+                                    resultados y compromisos de Grupo
+                                    SURA, como gestor de inversiones con el objetivo estratégico de una rentabilidad
+                                    sostenible, que reconoce la importancia
+                                    de generar valor a nuestros accionistas contribuyendo al desarrollo armónico de la
+                                    sociedad.
+                                </p>
+                            </div>
+                            <div class="informo-content content-2 hidden">
+                                <h1 class="text-primary font-bold text-lg sm:text-2xl"><span class="year">2024</span> -
+                                    <span class="term">1<sup>er</sup> Trimestre</span>
+                                </h1>
+                                <div class="p-2 flex items-center gap-4">
+                                    <ul class="flex-1 self-start">
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary"><span class="year">2024</span> 1T Boletín
+                                                trimestral</span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary"><span class="year">2024</span> 1T Presentación
+                                                de
+                                                resultadoa</span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary"><span class="year">2024</span> 1T Informe
+                                                completo</span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary"><span class="year">2024</span> 1T Estados
+                                                financieros consolidados</span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary"><span class="year">2024</span> 1T Estados
+                                                financieros separados</span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary"><span class="year">2024</span> 1T Kit del
+                                                inversionista</span>
+                                        </li>
+                                        <li class="flex items-center gap-6 mb-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9339 9.91357H11.1205C10.9539 9.91357 10.8005 10.0136 10.7272 10.1602L10.1805 11.3202H6.22052L5.67385 10.1602C5.60052 10.0069 5.44719 9.91357 5.28052 9.91357H4.06719C3.40719 9.91357 2.86719 10.4536 2.86719 11.1136V12.4469C2.86719 13.1069 3.40719 13.6469 4.06719 13.6469H11.9405C12.6005 13.6469 13.1405 13.1069 13.1405 12.4469V11.1136C13.1405 10.4536 12.6005 9.91357 11.9405 9.91357H11.9339ZM12.2672 12.4402C12.2672 12.6269 12.1205 12.7736 11.9339 12.7736H4.06719C3.88052 12.7736 3.73385 12.6269 3.73385 12.4402V11.1069C3.73385 10.9202 3.88052 10.7736 4.06719 10.7736H5.00719L5.55385 11.9336C5.62719 12.0869 5.78052 12.1802 5.94719 12.1802H10.4539C10.6205 12.1802 10.7739 12.0802 10.8472 11.9336L11.3939 10.7736H11.9339C12.1205 10.7736 12.2672 10.9202 12.2672 11.1069V12.4402Z"
+                                                    fill="#00AEC7" />
+                                                <path
+                                                    d="M8.00055 10.1865C8.11388 10.1865 8.22721 10.1398 8.30721 10.0598L10.9405 7.42649L10.3272 6.81316L8.43388 8.70649V3.31982H7.56721V8.70649L5.67388 6.81316L5.06055 7.42649L7.69388 10.0598C7.77388 10.1398 7.88721 10.1865 8.00055 10.1865Z"
+                                                    fill="#001E60" />
+                                            </svg>
+                                            <span class="text-secondary"><span class="year">2024</span> 1T
+                                                Videoconferencia</span>
+                                        </li>
+                                    </ul>
+                                    <div class="img">
+                                        <img class="rounded-lg w-60 h-full" src="./assets/images/writing-checking.jpeg"
+                                            alt="writing-checking">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </main>
+
+
+        <!-- Centros -->
+        <main class="w-full bg-tartiary py-1 sm:py-8 px-1.5 md:px-7 lg:px-10 xl:px-16">
+            <div class="w-full flex items-center justify-between py-2 md:py-8">
+                <div class="flex items-center gap-3">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M39.711 20.4706C39.3206 20.0504 38.7594 19.7807 38.125 19.7807H34.1661V17.0273C34.1661 15.7729 33.178 14.7632 31.9641 14.7632H27.3952C26.7486 14.8008 26.2362 15.3464 26.2362 16.0175H31.9641C32.507 16.0175 32.9462 16.4691 32.9462 17.0273V19.7807H12.4687C11.6574 19.7807 10.9132 20.2386 10.5289 20.9724L4.88649 31.7225V13.2642C4.88649 12.706 5.32568 12.2544 5.86858 12.2544H14.3292L16.7386 15.7541C16.8545 15.9172 17.0375 16.0175 17.2388 16.0175H23.8573C24.5039 15.9862 25.0163 15.4343 25.0163 14.7632H17.556L15.1466 11.2634C15.0307 11.1004 14.8477 11 14.6464 11H5.86858C4.64859 11 3.6665 12.0161 3.6665 13.2642V34.2061C3.6665 34.319 3.6909 34.4319 3.7519 34.526C3.8617 34.7142 4.063 34.8333 4.2765 34.8333H11.6513C12.2979 34.7957 12.8103 34.25 12.8103 33.5789H5.30128L11.6025 21.5682C11.7733 21.2421 12.1088 21.0351 12.4687 21.0351H38.125C38.4178 21.0351 38.6557 21.1543 38.8326 21.3424C39.0095 21.5306 39.1132 21.7877 39.1132 22.0511C39.1132 22.2079 39.0766 22.371 38.9912 22.5278L33.1902 33.5789H15.7993C15.1527 33.6166 14.6403 34.1622 14.6403 34.8333H33.5562C33.7818 34.8333 33.9892 34.7079 34.0929 34.5009L40.0648 23.1174C40.2478 22.7724 40.3332 22.4024 40.3332 22.0449C40.3332 21.449 40.1014 20.8846 39.711 20.4706Z"
+                            fill="#001E60" />
+                    </svg>
+                    <h1 class="font-bold text-lg sm:text-2xl md:text-4xl">Centro de recursos</h1>
+                </div>
+                <span class="text-secondary">Ver todo</span>
+            </div>
+            <p class="text-sm sm:text-base py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            <div class="flex flex-col md:flex-row items-center gap-6 py-4">
+                <!-- card-1 -->
+                <div class="bg-white rounded-lg p-5 flex flex-col gap-4">
+                    <h2 class="font-semibold text-primary text-xl">Categoria del recurso</h2>
+                    <p class="text-sm sm:text-base">Nombre del recurso particular Lorem Ipsum is simply dummy text.</p>
+                    <button
+                        class="py-2 px-4 rounded-full border-secondary border-1 text-secondary flex items-center gap-4 self-end">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.3531 15.8542V9.06006H11.6472V15.8542L9.30722 13.5142L8.80957 14.0118L11.7496 16.9518C11.8166 17.0189 11.9049 17.0542 12.0002 17.0542C12.0955 17.0542 12.1837 17.0154 12.2507 16.9518L15.1907 14.0118L14.6931 13.5142L12.3531 15.8542Z"
+                                fill="#00AEC7" />
+                            <path
+                                d="M14.499 2.4707H6.11661C5.27308 2.4707 4.58838 3.15541 4.58838 3.99894V9.08835H4.59191C4.60956 9.46247 4.91661 9.75894 5.29426 9.75894V3.99894C5.29426 3.54364 5.66485 3.17659 6.11661 3.17659H13.9978V6.35306C13.9978 7.19659 14.6825 7.88129 15.526 7.88129H18.7025V19.9978C18.7025 20.4531 18.3319 20.8201 17.8801 20.8201H16.786C16.4119 20.8413 16.1154 21.1484 16.1154 21.526H17.8801C18.7237 21.526 19.4084 20.8413 19.4084 19.9978V7.38364L14.4954 2.4707H14.499ZM14.7072 6.35306V3.67423L18.2084 7.17541H15.5296C15.0743 7.17541 14.7072 6.80482 14.7072 6.35306Z"
+                                fill="#00AEC7" />
+                            <path
+                                d="M13.7648 20.8235H6.11661C5.66132 20.8235 5.29426 20.4529 5.29426 20.0011V12.0847H5.29073C5.27308 11.7105 4.96603 11.4141 4.58838 11.4141V20.0011C4.58838 20.8447 5.27308 21.5294 6.11661 21.5294H13.8001C14.1743 21.5082 14.4707 21.2011 14.4707 20.8235H13.7648Z"
+                                fill="#00AEC7" />
+                        </svg>
+                        <span>Descargar</span>
+                    </button>
+                </div>
+
+                <!-- card-2 -->
+                <div class="bg-white rounded-lg p-5 flex flex-col gap-4">
+                    <h2 class="font-semibold text-primary text-xl">Categoria del recurso</h2>
+                    <p class="text-sm sm:text-base">Nombre del recurso particular Lorem Ipsum is simply dummy text.</p>
+                    <button
+                        class="py-2 px-4 rounded-full border-secondary border-1 text-secondary flex items-center gap-4 self-end">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.3531 15.8542V9.06006H11.6472V15.8542L9.30722 13.5142L8.80957 14.0118L11.7496 16.9518C11.8166 17.0189 11.9049 17.0542 12.0002 17.0542C12.0955 17.0542 12.1837 17.0154 12.2507 16.9518L15.1907 14.0118L14.6931 13.5142L12.3531 15.8542Z"
+                                fill="#00AEC7" />
+                            <path
+                                d="M14.499 2.4707H6.11661C5.27308 2.4707 4.58838 3.15541 4.58838 3.99894V9.08835H4.59191C4.60956 9.46247 4.91661 9.75894 5.29426 9.75894V3.99894C5.29426 3.54364 5.66485 3.17659 6.11661 3.17659H13.9978V6.35306C13.9978 7.19659 14.6825 7.88129 15.526 7.88129H18.7025V19.9978C18.7025 20.4531 18.3319 20.8201 17.8801 20.8201H16.786C16.4119 20.8413 16.1154 21.1484 16.1154 21.526H17.8801C18.7237 21.526 19.4084 20.8413 19.4084 19.9978V7.38364L14.4954 2.4707H14.499ZM14.7072 6.35306V3.67423L18.2084 7.17541H15.5296C15.0743 7.17541 14.7072 6.80482 14.7072 6.35306Z"
+                                fill="#00AEC7" />
+                            <path
+                                d="M13.7648 20.8235H6.11661C5.66132 20.8235 5.29426 20.4529 5.29426 20.0011V12.0847H5.29073C5.27308 11.7105 4.96603 11.4141 4.58838 11.4141V20.0011C4.58838 20.8447 5.27308 21.5294 6.11661 21.5294H13.8001C14.1743 21.5082 14.4707 21.2011 14.4707 20.8235H13.7648Z"
+                                fill="#00AEC7" />
+                        </svg>
+                        <span>Descargar</span>
+                    </button>
+                </div>
+
+                <!-- card-3 -->
+                <div class="bg-white rounded-lg p-5 flex flex-col gap-4">
+                    <h2 class="font-semibold text-primary text-xl">Categoria del recurso</h2>
+                    <p class="text-sm sm:text-base">Nombre del recurso particular Lorem Ipsum is simply dummy text.</p>
+                    <button
+                        class="py-2 px-4 rounded-full border-secondary border-1 text-secondary flex items-center gap-4 self-end">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.3531 15.8542V9.06006H11.6472V15.8542L9.30722 13.5142L8.80957 14.0118L11.7496 16.9518C11.8166 17.0189 11.9049 17.0542 12.0002 17.0542C12.0955 17.0542 12.1837 17.0154 12.2507 16.9518L15.1907 14.0118L14.6931 13.5142L12.3531 15.8542Z"
+                                fill="#00AEC7" />
+                            <path
+                                d="M14.499 2.4707H6.11661C5.27308 2.4707 4.58838 3.15541 4.58838 3.99894V9.08835H4.59191C4.60956 9.46247 4.91661 9.75894 5.29426 9.75894V3.99894C5.29426 3.54364 5.66485 3.17659 6.11661 3.17659H13.9978V6.35306C13.9978 7.19659 14.6825 7.88129 15.526 7.88129H18.7025V19.9978C18.7025 20.4531 18.3319 20.8201 17.8801 20.8201H16.786C16.4119 20.8413 16.1154 21.1484 16.1154 21.526H17.8801C18.7237 21.526 19.4084 20.8413 19.4084 19.9978V7.38364L14.4954 2.4707H14.499ZM14.7072 6.35306V3.67423L18.2084 7.17541H15.5296C15.0743 7.17541 14.7072 6.80482 14.7072 6.35306Z"
+                                fill="#00AEC7" />
+                            <path
+                                d="M13.7648 20.8235H6.11661C5.66132 20.8235 5.29426 20.4529 5.29426 20.0011V12.0847H5.29073C5.27308 11.7105 4.96603 11.4141 4.58838 11.4141V20.0011C4.58838 20.8447 5.27308 21.5294 6.11661 21.5294H13.8001C14.1743 21.5082 14.4707 21.2011 14.4707 20.8235H13.7648Z"
+                                fill="#00AEC7" />
+                        </svg>
+                        <span>Descargar</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer
+            class="w-full flex-col justify-center text-white text-base font-normal bg-primary px-1.5 md:px-7 lg:px-10 xl:px-16 py-8">
+            <div class="w-full mx-auto flex flex-col sm:flex-row justify-between">
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
+                        Ayudas e Información</h4>
+                    <ul class="text-xs lg:text-sm">
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Suscríbete a nuestro Newslatter</a>
+                        </li>
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Preguntas Frecuentes</a></li>
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Contacto</a></li>
+                        <li class="py-1 sm:py-3 flex gap-4">
+                            <a href="#"><img class="w-6 sm:w-8 lg:w-10" src="./assets/icons/X.svg" alt="X"></a>
+                            <a href="#"><img class="w-6 sm:w-8 lg:w-10" src="./assets/icons/Linked-in.svg"
+                                    alt="Linked-in"></a>
+                            <a href="#"><img class="w-6 sm:w-8 lg:w-10" src="./assets/icons/Youtube.svg"
+                                    alt="Youtube"></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
+                        Enlaces de Interés</h4>
+                    <ul class="text-xs lg:text-sm">
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Centro de Recursos</a></li>
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Términos y Condiciones</a></li>
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Certificado de Renta</a></li>
+                    </ul>
+                </div>
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
+                        Links de inversiones</h4>
+                    <ul class="text-xs lg:text-sm">
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Listados en BVC</a></li>
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Listados en NYSE (ADR nivel 1)</a>
+                        </li>
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Bolsa de Santiago</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="py-10">
+                <p class="text-center text-xs md:text-sm font-normal mb-0">© Copyright Grupo SURA 2025</p>
+                <p class="text-center text-xs md:text-sm font-normal">Supervisados por <span
+                        class="text-foooter cursor-pointer">Superintendencia Financiera de
+                        Colombia</span></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"
+        integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
+        integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabs = document.querySelectorAll(".tabs li span");
+            const sideMenuLists = document.querySelectorAll(".tab-1 .sidemenu .menuItem");
+
+            const addClickListener = (
+                elements,
+                classesToAdd = [],
+                classesToRemove = [],
+                callback = null
+            ) => {
+                elements.forEach((element) => {
+                    element.addEventListener("click", () => {
+                        elements.forEach((item) => {
+                            classesToRemove.forEach((cls) => item.classList.remove(cls));
+                        });
+                        classesToAdd.forEach((cls) => element.classList.add(cls));
+
+                        if (callback && typeof callback === "function") {
+                            callback(element);
+                        }
+                    });
+                });
+            };
+
+            addClickListener(
+                tabs,
+                ["bg-primary", "text-white"],
+                ["bg-primary", "text-white"]
+            );
+
+            addClickListener(
+                sideMenuLists,
+                ["bg-white", "border-l-4"],
+                ["bg-white", "border-l-4"]
+            );
+
+        });
+    </script>
+</body>
+
+</html>
