@@ -28,22 +28,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Adjust hover and slider styles
     hover2.classList.add("border-l-4");
-    slider.classList.replace("bg-tartiary", "bg-primary");
+    slider.classList.replace("bg-tertiaryColor", "bg-primaryColor");
 
     // Update upper part and text styles
-    upperPart.classList.replace("text-primary", "text-secondary");
+    upperPart.classList.replace("text-primaryColor", "text-secondaryColor");
     upperText.classList.replace("text-tabletext", "text-white");
 
-    upperPart.classList.replace("from-white", "from-primary");
-    upperPart.classList.replace("via-white", "via-primary");
+    upperPart.classList.replace("from-white", "from-primaryColor");
+    upperPart.classList.replace("via-white", "via-primaryColor");
 
     // Update bottom part styles
     bottomPart.classList.replace(
       "from-[rgba(255,255,255,0.8)]",
-      "from-primary"
+      "from-primaryColor"
     );
-    bottomPart.classList.replace("via-[rgba(255,255,255,0.8)]", "via-primary");
-    bottomText.classList.replace("text-primary", "text-white");
+    bottomPart.classList.replace(
+      "via-[rgba(255,255,255,0.8)]",
+      "via-primaryColor"
+    );
+    bottomText.classList.replace("text-primaryColor", "text-white");
 
     // Adjust background sizes
     hover2BG.classList.replace("w-0", "w-[65%]");
@@ -66,22 +69,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Reset hover and slider styles
     hover2.classList.remove("border-l-4");
-    slider.classList.replace("bg-primary", "bg-tartiary");
+    slider.classList.replace("bg-primaryColor", "bg-tertiaryColor");
 
     // Reset upper part and text styles
-    upperPart.classList.replace("text-secondary", "text-primary");
+    upperPart.classList.replace("text-secondaryColor", "text-primaryColor");
     upperText.classList.replace("text-white", "text-tabletext");
 
-    upperPart.classList.replace("from-primary", "from-white");
-    upperPart.classList.replace("via-primary", "via-white");
+    upperPart.classList.replace("from-primaryColor", "from-white");
+    upperPart.classList.replace("via-primaryColor", "via-white");
 
     // Reset bottom part styles
     bottomPart.classList.replace(
-      "from-primary",
+      "from-primaryColor",
       "from-[rgba(255,255,255,0.8)]"
     );
-    bottomPart.classList.replace("via-primary", "via-[rgba(255,255,255,0.8)]");
-    bottomText.classList.replace("text-white", "text-primary");
+    bottomPart.classList.replace(
+      "via-primaryColor",
+      "via-[rgba(255,255,255,0.8)]"
+    );
+    bottomText.classList.replace("text-white", "text-primaryColor");
 
     // Reset background sizes
     hover2BG.classList.replace("w-[65%]", "w-0");
@@ -104,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Adjust hover and slider styles
     hover3.classList.add("border-l-4");
-    slider.classList.replace("bg-tartiary", "bg-primary");
+    slider.classList.replace("bg-tertiaryColor", "bg-primaryColor");
 
     // Adjust background sizes
     hover3BG.classList.replace("w-0", "w-full");
@@ -128,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Reset hover and slider styles
     hover3.classList.remove("border-l-4");
-    slider.classList.replace("bg-primary", "bg-tartiary");
+    slider.classList.replace("bg-primaryColor", "bg-tertiaryColor");
 
     // Reset background sizes
     hover3BG.classList.replace("w-full", "w-0");
@@ -151,22 +157,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Adjust hover and slider styles
     hover4.classList.add("border-l-4");
-    slider.classList.replace("bg-tartiary", "bg-primary");
+    slider.classList.replace("bg-tertiaryColor", "bg-primaryColor");
 
     // Update upper part and text styles
-    upperPart.classList.replace("text-primary", "text-secondary");
+    upperPart.classList.replace("text-primaryColor", "text-secondaryColor");
     upperText.classList.replace("text-tabletext", "text-white");
 
-    upperPart.classList.replace("from-white", "from-primary");
-    upperPart.classList.replace("via-white", "via-primary");
+    upperPart.classList.replace("from-white", "from-primaryColor");
+    upperPart.classList.replace("via-white", "via-primaryColor");
 
     // Update bottom part styles
     bottomPart.classList.replace(
       "from-[rgba(255,255,255,0.8)]",
-      "from-primary"
+      "from-primaryColor"
     );
-    bottomPart.classList.replace("via-[rgba(255,255,255,0.8)]", "via-primary");
-    bottomText.classList.replace("text-primary", "text-white");
+    bottomPart.classList.replace(
+      "via-[rgba(255,255,255,0.8)]",
+      "via-primaryColor"
+    );
+    bottomText.classList.replace("text-primaryColor", "text-white");
 
     // Adjust background sizes
     hover4BG.classList.replace("w-0", "w-[65%]");
@@ -182,22 +191,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Reset hover and slider styles
     hover4.classList.remove("border-l-4");
-    slider.classList.replace("bg-primary", "bg-tartiary");
+    slider.classList.replace("bg-primaryColor", "bg-tertiaryColor");
 
     // Reset upper part and text styles
-    upperPart.classList.replace("text-secondary", "text-primary");
+    upperPart.classList.replace("text-secondaryColor", "text-primaryColor");
     upperText.classList.replace("text-white", "text-tabletext");
 
-    upperPart.classList.replace("from-primary", "from-white");
-    upperPart.classList.replace("via-primary", "via-white");
+    upperPart.classList.replace("from-primaryColor", "from-white");
+    upperPart.classList.replace("via-primaryColor", "via-white");
 
     // Reset bottom part styles
     bottomPart.classList.replace(
-      "from-primary",
+      "from-primaryColor",
       "from-[rgba(255,255,255,0.8)]"
     );
-    bottomPart.classList.replace("via-primary", "via-[rgba(255,255,255,0.8)]");
-    bottomText.classList.replace("text-white", "text-primary");
+    bottomPart.classList.replace(
+      "via-primaryColor",
+      "via-[rgba(255,255,255,0.8)]"
+    );
+    bottomText.classList.replace("text-white", "text-primaryColor");
 
     // Reset background sizes
     hover4BG.classList.replace("w-[65%]", "w-0");

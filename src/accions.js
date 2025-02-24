@@ -158,8 +158,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   addClickListener(
     tabs,
-    ["bg-primary", "text-white"],
-    ["bg-primary", "text-white"],
+    ["bg-primaryColor", "text-white"],
+    ["bg-primaryColor", "text-white"],
     (tab) => {
       const targetTab = tab.getAttribute("data-tab");
       menuContents.forEach((content) => {
