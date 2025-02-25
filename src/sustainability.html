@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sostenibilidad | Grupo Sura</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="font-sans text-primaryColor">
+    <div class="w-full">
+        <!-- Header -->
+        <header
+            class="flex justify-center bg-primaryColor text-white px-[6px] md:px-[28px] lg:px-[40px] xl:px-[64px] py-[6px] lg:py-[10px] xl:py-[14px]">
+            <div class="w-full mx-auto flex justify-center sm:justify-end items-center">
+                <nav>
+                    <ul class="flex space-x-6 text-xs md:text-sm lg:text-base">
+                        <li><a href="#">Línea Ética</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Certificado de renta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="bg-white p-[10px] md:p-0 md:opacity-0 md:h-0">
+            <svg class="bar w-6 fill-primaryColor cursor-pointer" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512">
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+            </svg>
+        </div>
+        <div
+            class="overlay -z-10 invisible h-screen w-screen md:w-0 opacity-0 transition-all duration-300 ease-in-out md:opacity-0 fixed top-0 left-0 bg-primaryColor">
+        </div>
+        <header
+            class="mainMenu transition-all duration-300 ease-in-out overflow-x-hidden md:overflow-visible w-0 font-semibold md:opacity-100 z-20 fixed md:static bg-white md:bg-transparent top-0 left-0 h-screen md:h-auto md:w-full flex flex-col md:flex-row justify-center text-primaryColor shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+            <div class="flex justify-end p-[12px] md:p-0">
+                <svg class="xmark w-8 md:opacity-0 md:w-0 fill-primaryColor cursor-pointer"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </div>
+            <div class="h-screen md:h-auto w-xs md:w-full px-[16px] md:px-[28px] lg:px-[40px] xl:px-[64px]">
+                <ul
+                    class="w-full mx-auto flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-5 text-sm lg:text-base">
+                    <li class="flex items-center px-2.5 md:px-0">
+                        <img class="w-24 lg:w-32 xl:w-[156px]" src="./assets/images/logo.png" alt="GrupoSURA_Logo">
+                    </li>
+                    <li class="menuParent flex items-center relative">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">Quienes somos</a>
+                            <img class="w-3 ml-1.5 transition-all duration-300" src="./assets/icons/down-arrow.svg"
+                                alt="down-arrow">
+                        </span>
+                        <ul
+                            class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 overflow-hidden flex-col text-sm bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                            <li
+                                class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Sobre Grupo SURA</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Nuestra Identidad</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Evolucion y Crecimiento</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Talento Humano</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">#PensarConOtros</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex items-center">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">Portafolio</a>
+                        </span>
+                    </li>
+                    <li class="menuParent flex items-center relative">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">Relación con inversionistas</a>
+                            <img class="w-3 ml-1.5 transition-all duration-300" src="./assets/icons/down-arrow.svg"
+                                alt="down-arrow">
+                        </span>
+                        <ul
+                            class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 overflow-hidden flex-col text-sm bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                            <li
+                                class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Sobre Grupo SURA</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Nuestra Identidad</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Evolucion y Crecimiento</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Talento Humano</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">#PensarConOtros</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex items-center">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">Gobierno Corporativo</a>
+                        </span>
+                    </li>
+                    <li class="menuParent flex items-center relative">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">Sostenibilidad</a>
+                            <img class="w-3 ml-1.5 transition-all duration-300" src="./assets/icons/down-arrow.svg"
+                                alt="down-arrow">
+                        </span>
+                        <ul
+                            class="dropDown z-40 px-2.5 hidden absolute top-10 left-0 w-60 overflow-hidden flex-col text-sm bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                            <li
+                                class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Sobre Grupo SURA</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Nuestra Identidad</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Evolucion y Crecimiento</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Talento Humano</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">#PensarConOtros</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex items-center px-2.5 md:px-0">
+                        <img class="cursor-pointer w-10 md:w-8 lg:w-10 xl:w-12" src="./assets/icons/search-box.svg"
+                            alt="Search">
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <header class="flex justify-start bg-white text-primaryColor pb-[12px] shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+            <div class=" px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
+                <div class="w-full mx-auto flex justify-between items-center">
+                    <div class="flex items-center">
+                        <nav>
+                            <ul class="flex space-x-6 py-[4px] lg:py-1.5 xl:py-[8px] text-xs md:text-sm">
+                                <li class="flex items-center">
+                                    <a href="#"
+                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-[4px] lg:px-2.5 lg:py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">Home</a>
+                                    <img class="w-1.5 ml-1.5" src="./assets/icons/right-arrow.svg" alt="down-arrow">
+                                </li>
+                                <li class="flex items-center">
+                                    <a href="#"
+                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-[4px] lg:px-2.5 lg:py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">¿Quienes
+                                        somos</a>
+                                    <img class="w-1.5 ml-1.5" src="./assets/icons/right-arrow.svg" alt="down-arrow">
+                                </li>
+                                <li class="flex items-center">
+                                    <a href="#"
+                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-[4px] lg:px-2.5 lg:py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer font-semibold">Nuestros
+                                        negocios</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Slide In Pop Up -->
+        <main class="w-full flex justify-center text-white bg-popup">
+            <div
+                class="w-full justify-between items-center py-[4px] sm:py-[8px] lg:py-[24px] text-sm sm:text-base md:text-lg lg:text-xl font-semibold px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] flex">
+                <div class="w-full flex justify-start items-center">
+                    <img class="w-10 mr-[12px]" src="./assets/icons/Calendario_ok.svg" alt="Calendario_ok">
+                    <p>S1 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium.</p>
+                </div>
+                <img class="w-5 self-start cursor-pointer" src="./assets/icons/Equis_linea.svg" alt="Equis_linea">
+            </div>
+        </main>
+
+        <!-- Display video and text overlay -->
+        <main class="w-full flex justify-center bg-tertiaryColor">
+            <div class="relative top-0 left-0 w-full flex">
+                <!-- Text Section -->
+                <div
+                    class="w-[70%] z-10 h-full absolute bg-gradient-to-r from-white via-white to-transparent text-primaryColor px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] flex flex-col justify-center">
+                    <div class="w-[60%] flex flex-col gap-2 sm:gap-5">
+                        <h2 class="text-base sm:text-2xl font-bold">H2 Lorem ipsum dolor sit amet</h2>
+                        <p class="text-sm">
+                            H3 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.
+                        </p>
+                        <button
+                            class="w-36 sm:w-40 flex justify-center items-center gap-2 text-sm text-white bg-secondaryColor mt-[8px] py-1.5 sm:py-2.5 rounded-3xl cursor-pointer">
+                            Leer más
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.8329 7.58152L8.73063 2.72826L7.965 2C7.53077 2.41304 7.51934 3.07065 7.92501 3.49457L12.0502 7.42391H2V8.51087H12.0502L7.8793 12.4783C7.47364 12.9076 7.46221 13.587 7.89644 14L8.66206 13.2717L13.8329 8.35326C14.0557 8.1413 14.0557 7.79891 13.8329 7.58696V7.58152Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Video Section -->
+                <div class="w-full flex justify-end h-72 relative">
+                    <video autoplay loop muted class="w-[65%] h-full object-cover object-top">
+                        <source src="./assets/videos/presentation.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </main>
+
+        <!-- border-card -->
+        <main class="w-full bg-tertiaryColor pt-[32px] pb-[64px] px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
+            <div class="w-full">
+                <h1 class="font-bold text-lg sm:text-2xl md:text-4xl pb-[36px] pt-[16px]">También te puede
+                    interesar
+                </h1>
+            </div>
+            <div
+                class="flex flex-col sm:grid sm:grid-cols-2 sm:gap-y-6 md:flex md:flex-row justify-between gap-7 sm:gap-3">
+                <!-- Card 1-->
+                <div class="flex flex-col justify-between flex-1 basis-1 border-l-2 border-primaryColor px-[24px]">
+                    <h1 class="text-xl font-semibold mb-[20px]">Asamblea de accionistas</h1>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti
+                        quos dolores et quas molestias excepturi</p>
+                    <button
+                        class="w-48 flex justify-center items-center gap-2 text-sm mt-[20px] text-white bg-secondaryColor px-[40px] py-[12px] rounded-3xl cursor-pointer">
+                        Call To Action
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.8329 7.58152L8.73063 2.72826L7.965 2C7.53077 2.41304 7.51934 3.07065 7.92501 3.49457L12.0502 7.42391H2V8.51087H12.0502L7.8793 12.4783C7.47364 12.9076 7.46221 13.587 7.89644 14L8.66206 13.2717L13.8329 8.35326C14.0557 8.1413 14.0557 7.79891 13.8329 7.58696V7.58152Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Card 2-->
+                <div class="flex flex-col justify-between flex-1 basis-1 border-l-2 border-primaryColor px-[24px]">
+                    <h1 class="text-xl font-semibold mb-[20px]">Arquitectura de control.</h1>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti
+                        quos dolores et quas molestias excepturi</p>
+                    <button
+                        class="w-48 flex justify-center items-center gap-2 text-sm mt-[20px] text-white bg-secondaryColor px-[40px] py-[12px] rounded-3xl cursor-pointer">
+                        Call To Action
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.8329 7.58152L8.73063 2.72826L7.965 2C7.53077 2.41304 7.51934 3.07065 7.92501 3.49457L12.0502 7.42391H2V8.51087H12.0502L7.8793 12.4783C7.47364 12.9076 7.46221 13.587 7.89644 14L8.66206 13.2717L13.8329 8.35326C14.0557 8.1413 14.0557 7.79891 13.8329 7.58696V7.58152Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer
+            class="w-full flex-col justify-center text-white text-base font-normal bg-primaryColor px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] py-[32px]">
+            <div class="w-full mx-auto flex flex-col sm:flex-row justify-between">
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
+                        Nuestras compañías SURA</h4>
+                    <ul class="text-xs lg:text-sm">
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">gruposura.com</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">segurossura.com</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#"
+                                class="hover:underline">suraassetmanagement.com</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">sfundacionsura.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
+                        Ayudas e Información</h4>
+                    <ul class="text-xs lg:text-sm">
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Suscríbete a nuestro
+                                Newslatter</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Contacto</a></li>
+                        <li class="py-[4px] sm:py-[12px] flex gap-4">
+                            <a href="#"><img class="w-6 sm:w-8 lg:w-10" src="./assets/icons/X.svg" alt="X"></a>
+                            <a href="#"><img class="w-6 sm:w-8 lg:w-10" src="./assets/icons/Linked-in.svg"
+                                    alt="Linked-in"></a>
+                            <a href="#"><img class="w-6 sm:w-8 lg:w-10" src="./assets/icons/Youtube.svg"
+                                    alt="Youtube"></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
+                        Enlaces de Interés</h4>
+                    <ul class="text-xs lg:text-sm">
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Centro de Recursos</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Términos y Condiciones</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Certificado de Renta</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
+                        Links de inversiones</h4>
+                    <ul class="text-xs lg:text-sm">
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Listados en BVC</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Listados en NYSE (ADR
+                                nivel 1)</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Bolsa de Santiago</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="py-[40px]">
+                <p class="text-center text-xs md:text-sm font-normal mb-0">© Copyright Grupo SURA 2025</p>
+                <p class="text-center text-xs md:text-sm font-normal">Supervisados por <span
+                        class="text-foooter cursor-pointer">Superintendencia Financiera de
+                        Colombia</span></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
