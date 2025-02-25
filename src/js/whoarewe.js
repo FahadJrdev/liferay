@@ -27,3 +27,19 @@ document.addEventListener("DOMContentLoaded", function () {
     ["bg-white", "border-l-4"]
   );
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const splide = new Splide(".splide-we", {
+    perPage: 3,
+    focus: 0,
+    omitEnd: true,
+    pagination: true,
+    gap: 24,
+    breakpoints: {
+      640: {
+        perPage: 1,
+      },
+    },
+  });
+  splide.mount();
+});
