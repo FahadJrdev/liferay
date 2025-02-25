@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestros Negocios | Grupo Sura</title>
+    <title>Talento Humano | Grupo Sura</title>
     <link rel="stylesheet" href="./css/output.css">
 </head>
 
@@ -250,109 +250,223 @@
             </div>
         </header>
 
-        <!-- Main Content -->
-        <main class="w-full bg-primaryColor text-white flex justify-center pb-[32px]">
-            <div class=" px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
-                <!-- Video Wrapper with Reduced Height -->
-                <div class="mb-[20px] w-full h-44 md:h-64 lg:h-[350px] overflow-hidden">
-                    <video class="w-full h-full object-cover" autoplay loop muted
-                        src="./assets/videos/frame.mp4"></video>
+        <!-- Display video and text overlay -->
+        <main class="w-full flex justify-center bg-tertiaryColor">
+            <div class="relative top-0 left-0 w-full flex">
+                <!-- Text Section -->
+                <div
+                    class="w-[70%] z-10 h-full absolute bg-gradient-to-r from-primaryColor via-primaryColor to-transparent text-white px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] flex flex-col justify-center">
+                    <div class="w-[60%] flex flex-col gap-2 sm:gap-5">
+                        <h2 class="text-base sm:text-2xl font-bold">H2 Lorem ipsum dolor sit amet</h2>
+                        <p class="text-sm">
+                            H3 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.
+                        </p>
+                        <button
+                            class="w-36 sm:w-40 flex justify-center items-center gap-2 text-sm text-white bg-secondaryColor mt-[8px] py-1.5 sm:py-2.5 rounded-3xl cursor-pointer">
+                            Leer más
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.8329 7.58152L8.73063 2.72826L7.965 2C7.53077 2.41304 7.51934 3.07065 7.92501 3.49457L12.0502 7.42391H2V8.51087H12.0502L7.8793 12.4783C7.47364 12.9076 7.46221 13.587 7.89644 14L8.66206 13.2717L13.8329 8.35326C14.0557 8.1413 14.0557 7.79891 13.8329 7.58696V7.58152Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
 
-                <!-- Content Section -->
-                <div
-                    class="w-full pl-[16px] md:p-0 border-l-4 border-secondaryColor md:border-none flex flex-col md:flex-row md:justify-evenly gap-5">
-                    <ul class="md:border-l-4 border-secondaryColor md:pl-[16px]">
-                        <li class="flex items-center md:mb-3.5">
-                            <img class="w-8 md:w-10 lg:w-11 self-start mr-2.5 h-11" src="./assets/icons/title-1.svg"
-                                alt="pie-chart">
-                            <h3 class="md:text-base lg:text-xl font-semibold">Nuestros negocios título 1.</h3>
-                        </li>
-                        <li class="text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt</li>
-                    </ul>
-                    <ul>
-                        <li class="flex items-center md:mb-3.5">
-                            <img class="w-8 md:w-10 lg:w-11 self-start mr-2.5 h-11" src="./assets/icons/title-2.svg"
-                                alt="graph">
-                            <h3 class="md:text-base lg:text-xl font-semibold">Nuestros negocios título 2 un poco más
-                                largo para ejemplo.</h3>
-                        </li>
-                        <li class="text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt</li>
-                    </ul>
-                    <ul>
-                        <li class="flex items-center md:mb-3.5">
-                            <img class="w-8 md:w-10 lg:w-11 self-start mr-2.5 h-11" src="./assets/icons/title-3.svg"
-                                alt="govern">
-                            <h3 class="md:text-base lg:text-xl font-semibold">Nuestros negocios title 3.</h3>
-                        </li>
-                        <li class="text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt</li>
-                    </ul>
+                <!-- Video Section -->
+                <div class="w-full flex justify-end h-72 relative">
+                    <video autoplay loop muted class="w-[65%] h-full object-cover">
+                        <source src="./assets/videos/speach.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </main>
 
+        <!-- tab -->
+        <main class="bg-tertiaryColor px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
+            <div class="w-full pt-[20px]">
+                <h1 class="font-bold text-lg sm:text-2xl md:text-4xl py-[16px] md:py-[32px]">
+                    H2 Título de la sección
+                </h1>
+            </div>
+            <div class="w-full py-[20px]">
+                <ul class="flex flex-col md:flex-row">
+                    <div
+                        class="tabs w-full overflow-y-hidden flex pb-[12px] md:pb-0 lg:pb-0 xl:pb-0 border-b-1 md:border-none lg:border-none xl:border-none border-secondaryColor">
+                        <li
+                            class="w-full flex justify-center px-[8px] md:justify-start items-center border-r-1 border-secondaryColor">
+                            <span
+                                class="w-full text-center rounded-lg font-semibold text-sm md:text-base lg:text-xl px-2.5 py-[8px] bg-primaryColor text-white cursor-pointer">
+                                Variable 1
+                            </span>
+                        </li>
+                        <li
+                            class="w-full px-[8px] font-semibold text-sm lg:text-xl flex justify-center items-center border-r-1 border-secondaryColor">
+                            <span
+                                class="w-full text-center rounded-lg font-semibold text-sm md:text-base lg:text-xl px-2.5 py-[8px] cursor-pointer">
+                                Variable 2
+                            </span>
+                        </li>
+                        <li
+                            class="w-full px-[8px] font-semibold text-sm lg:text-xl flex justify-center items-center border-r-1 border-secondaryColor">
+                            <span
+                                class="w-full text-center rounded-lg font-semibold text-sm md:text-base lg:text-xl px-2.5 py-[8px] cursor-pointer">
+                                Variable 3
+                            </span>
+                        </li>
+                        <li
+                            class="w-full px-[8px] font-semibold text-sm lg:text-xl flex justify-center items-center border-r-1 border-secondaryColor">
+                            <span
+                                class="w-full text-center rounded-lg font-semibold text-sm md:text-base lg:text-xl px-2.5 py-[8px] cursor-pointer">
+                                Variable 4
+                            </span>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </main>
 
+        <!-- menu and table together -->
+        <main class="w-full flex justify-center bg-tertiaryColor py-[32px]">
+            <div class="w-full px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
+
+                <div class="w-full mb-[20px]">
+                    <h1 class="font-bold text-lg sm:text-2xl md:text-4xl py-[16px] md:py-[32px]">
+                        ¿Qué hacemos?
+                    </h1>
+                </div>
+
+                <!-- Menu and Content tab-1 -->
+                <div class="menu-content tab-1 overflow-y-hidden">
+                    <div class="flex gap-5 min-w-[800px] sm:min-w-[1100px]">
+                        <!-- Menu -->
+                        <ul
+                            class="sidemenu w-full max-w-[450px] min-w-44 md:min-w-[450px] flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2">
+                            <li data-content="content-1"
+                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primaryColor rounded-r-lg text-sm sm:text-base lg:text-xl font-semibold cursor-pointer">
+                                <span class="block p-0.5 sm:p-[12px]">Ut enim ad minim veniam, quis nostrud
+                                    exercitation.</span>
+                            </li>
+                            <li data-content="content-2"
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="termItem block p-0.5 sm:p-[12px]">Ut enim ad minim veniam, quis nostrud
+                                    exercitation.</span>
+                            </li>
+                            <li data-content="content-2"
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="termItem block p-0.5 sm:p-[12px]">Ut enim ad minim veniam, quis nostrud
+                                    exercitation.</span>
+                            </li>
+                            <li data-content="content-2"
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="termItem block p-0.5 sm:p-[12px]">Ut enim ad minim veniam, quis nostrud
+                                    exercitation.</span>
+                            </li>
+                            <li data-content="content-2"
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="termItem block p-0.5 sm:p-[12px]">Ut enim ad minim veniam, quis nostrud
+                                    exercitation.</span>
+                            </li>
+                        </ul>
+
+                        <!-- Content -->
+                        <div
+                            class="text-sm sm:text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px] max-h-150 overflow-x-hidden">
+                            <div class="informo-content content-1">
+                                <h1 class="text-primaryColor font-bold text-lg sm:text-2xl mb-[20px]">Ut enim ad minim
+                                    veniam,
+                                    quis nostrud exercitation.</h1>
+                                <p class="sm:text-base">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint
+                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    est laborum.
+                                    <br />
+                                    <br />
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam,
+                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                                    sunt explicabo. Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    <br />
+                                    <br />
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium voluptatum deleniti atque corrupti
+                                    quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+                                    similique sunt in culpa qui officia
+                                    deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
+                                    facilis est et expedita distinctio. Nam
+                                    libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
+                                    id quod maxime placeat facere
+                                    possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+                                    quibusdam et aut officiis debitis aut
+                                    rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
+                                    non recusandae. Itaque earum rerum hic
+                                    tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+                                    consequatur aut perferendis doloribus
+                                    asperiores repellat
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        <!-- video-side-card -->
+        <main class="w-full flex justify-center py-[32px]">
+            <div class="px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] flex flex-col sm:flex-row gap-8">
+                <div class="w-full">
+                    <h1
+                        class="text-base sm:text-xl md:text-2xl lg:text-4xl font-bold mb-[8px] sm:mb-2.5 md:mb-[12px] lg:mb-[24px]">
+                        H2 Título de bolsa de empleo SURA</h1>
+                    <p
+                        class="text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-[8px] sm:mb-2.5 md:mb-[12px] lg:mb-[24px]">
+                        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
+                        est eligendi optio cumque
+                        nihil impedit quo minus id quod maxime.</p>
+                    <div class="flex justify-center sm:justify-end">
+                        <button
+                            class="flex justify-center items-center gap-2 text-base font-bold text-white bg-secondaryColor px-[40px] py-[8px] rounded-3xl cursor-pointer">
+                            CTA a trabaja con nosotros
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.8329 7.58152L8.73063 2.72826L7.965 2C7.53077 2.41304 7.51934 3.07065 7.92501 3.49457L12.0502 7.42391H2V8.51087H12.0502L7.8793 12.4783C7.47364 12.9076 7.46221 13.587 7.89644 14L8.66206 13.2717L13.8329 8.35326C14.0557 8.1413 14.0557 7.79891 13.8329 7.58696V7.58152Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <video autoplay loop muted class="w-full h-64 object-cover">
+                    <source src="./assets/videos/graph.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </main>
+
+        <!-- svg-card -->
         <main class="w-full bg-tertiaryColor flex justify-center py-[32px]">
             <div class=" px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
                 <div class="w-full">
-                    <ul class="flex flex-col md:flex-row">
-                        <div
-                            class="tabs w-full md:basis-4/5 overflow-y-hidden flex pb-[12px] md:pb-0 lg:pb-0 xl:pb-0 border-b-1 md:border-none lg:border-none xl:border-none border-secondaryColor">
-                            <li
-                                class="w-full flex justify-center px-[8px] md:justify-start items-center border-r-1 border-secondaryColor">
-                                <span
-                                    class="w-full text-center rounded-lg font-semibold text-sm md:text-base lg:text-xl px-2.5 py-[8px] bg-primaryColor text-white cursor-pointer">
-                                    Servicios Financieros
-                                </span>
-                            </li>
-                            <li
-                                class="w-full px-[8px] font-semibold text-sm lg:text-xl flex justify-center items-center border-r-1 border-secondaryColor">
-                                <span
-                                    class="w-full text-center rounded-lg font-semibold text-sm md:text-base lg:text-xl px-2.5 py-[8px] cursor-pointer">
-                                    Industria
-                                </span>
-                            </li>
-                            <li
-                                class="w-full px-[8px] font-semibold text-sm lg:text-xl flex justify-center items-center border-r-1 border-secondaryColor">
-                                <span
-                                    class="w-full text-center rounded-lg font-semibold text-sm md:text-base lg:text-xl px-2.5 py-[8px] cursor-pointer">
-                                    Venture Corporativo
-                                </span>
-                            </li>
-                            <li
-                                class="w-full px-[8px] font-semibold text-sm lg:text-xl flex justify-center items-center border-r-1 border-secondaryColor">
-                                <span
-                                    class="w-full text-center rounded-lg font-semibold text-sm md:text-base lg:text-xl px-2.5 py-[8px] cursor-pointer">
-                                    Otros Servicios
-                                </span>
-                            </li>
-                        </div>
-                        <div
-                            class="w-full md:basis-1/5 flex pt-[12px] md:pt-0 lg:pt-0 xl:pt-0 gap-2.5 md:gap-0 lg:gap-0 xl:gap-0">
-                            <li class="w-full px-[8px] flex justify-start items-center text-xs lg:text-sm">
-                                <button
-                                    class="flex justify-center items-center text-white bg-secondaryColor px-3.5 py-[8px] rounded-3xl cursor-pointer">Conoce
-                                    nuestro Portafolio</button>
-                            </li>
-                        </div>
-                    </ul>
-                </div>
-                <div class="w-full">
-                    <h1 class="font-bold text-lg sm:text-2xl md:text-4xl py-[8px] md:py-[32px]">Servicios financieros
-                    </h1>
-                    <p class="text-sm sm:text-base text-ex1 mb-[24px] md:mb-[64px]">Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                    <h1 class="font-bold text-lg sm:text-2xl md:text-4xl py-[8px] md:py-[32px]">Algunas cifras de
+                        nuestros empleados</h1>
                 </div>
                 <div class="flex justify-center mb-[56px]">
-                    <div class="px-[8px] sm:px-[16px] md:px-[40px] flex flex-col sm:flex-row justify-evenly gap-5">
-                        <ul>
+                    <div class="flex flex-col sm:flex-row justify-evenly gap-5">
+                        <ul class="bg-white shadow-md px-[12px] py-[24px]">
                             <li class="flex items-center mb-[4px] sm:mb-3.5">
                                 <img class="mr-2.5 h-8" src="./assets/icons/pie-chart.svg" alt="pie-chart">
                                 <h3 class="text-lg sm:text-xl font-semibold">75 % Lorem ipsum</h3>
@@ -361,7 +475,7 @@
                                 adipiscing elit, sed do eiusmod tempor
                                 incididunt</li>
                         </ul>
-                        <ul>
+                        <ul class="bg-white shadow-md px-[12px] py-[24px]">
                             <li class="flex items-center mb-[4px] sm:mb-3.5">
                                 <img class="mr-2.5 h-8" src="./assets/icons/graph.svg" alt="graph">
                                 <h3 class="text-lg sm:text-xl font-semibold">555 Dolor sit amet</h3>
@@ -370,7 +484,7 @@
                                 adipiscing elit, sed do eiusmod tempor
                                 incididunt</li>
                         </ul>
-                        <ul>
+                        <ul class="bg-white shadow-md px-[12px] py-[24px]">
                             <li class="flex items-center mb-[4px] sm:mb-3.5">
                                 <img class="mr-2.5 h-8" src="./assets/icons/govern.svg" alt="govern">
                                 <h3 class="text-lg sm:text-xl font-semibold">$1.000.000 COP</h3>
@@ -394,70 +508,6 @@
                                 fill="white" />
                         </svg>
                     </button>
-                </div>
-            </div>
-        </main>
-        <main class="w-full flex justify-center bg-white py-[32px]">
-            <div class="px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
-                <h1 class=" font-bold text-2xl md:text-4xl mb-[16px] sm:mb-[32px]">¡Conoce cómo lo hemos logrado!</h1>
-                <div class="flex flex-col sm:flex-row justify-between items-center gap-8">
-                    <div class="p-3.5 rounded-lg bg-vid overflow-hidden">
-                        <video class="w-full h-full rounded-lg object-cover" autoplay loop muted>
-                            <source src="./assets/videos/discuss.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="p-3.5 rounded-lg relative overflow-hidden">
-                        <video class="w-full h-full rounded-lg object-cover" autoplay loop muted>
-                            <source src="./assets/videos/chart.mp4" type="video/mp4">
-                        </video>
-                        <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                            src="./assets/icons/video.svg" alt="play-button">
-                    </div>
-                    <div class="p-3.5 rounded-lg relative overflow-hidden">
-                        <video class="w-full h-full rounded-lg object-cover" autoplay loop muted>
-                            <source src="./assets/videos/explain.mp4" type="video/mp4">
-                        </video>
-                        <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                            src="./assets/icons/video.svg" alt="play-button">
-                    </div>
-                </div>
-                <h2 class="font-bold text-lg sm:text-2xl my-[12px] sm:my-[24px]">¿Cómo generamos valor con nuestros
-                    accionistas?
-                </h2>
-                <p class="font-normal text-sm sm:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore.</p>
-            </div>
-        </main>
-        <main class="w-full flex justify-center bg-tertiaryColor py-[32px]">
-            <div class="px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] flex flex-col sm:flex-row gap-8">
-                <div>
-                    <img class="rounded-md" src="./assets/images/project.jpeg" alt="project">
-                </div>
-                <div>
-                    <h1
-                        class="text-base sm:text-xl md:text-2xl lg:text-4xl font-bold mb-[8px] sm:mb-2.5 md:mb-[12px] lg:mb-[24px]">
-                        ¿Por qué invertir en nosotros?</h1>
-                    <p
-                        class="text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-[8px] sm:mb-2.5 md:mb-[12px] lg:mb-[24px]">
-                        Et
-                        harum quidem rerum facilis est et expedita distinctio. Nam
-                        libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-                        maxime.</p>
-                    <div class="flex justify-center sm:justify-end">
-                        <button
-                            class="flex justify-center items-center gap-2 text-base font-bold text-white bg-secondaryColor px-[40px] py-[8px] rounded-3xl cursor-pointer">CTA
-                            a Quienes Somos
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.8329 7.58152L8.73063 2.72826L7.965 2C7.53077 2.41304 7.51934 3.07065 7.92501 3.49457L12.0502 7.42391H2V8.51087H12.0502L7.8793 12.4783C7.47364 12.9076 7.46221 13.587 7.89644 14L8.66206 13.2717L13.8329 8.35326C14.0557 8.1413 14.0557 7.79891 13.8329 7.58696V7.58152Z"
-                                    fill="white" />
-                            </svg>
-                        </button>
-                    </div>
                 </div>
             </div>
         </main>
@@ -536,7 +586,7 @@
     </div>
 
     <script src="./js/script.js"></script>
-    <script src="./js/nuestros.js"></script>
+    <script src="./js/talent-hunt.js"></script>
 </body>
 
 </html>
