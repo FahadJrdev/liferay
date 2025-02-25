@@ -64,3 +64,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   splide.mount();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".direction-card");
+  const allSvg = document.querySelectorAll(".direction-card svg");
+  const allP = document.querySelectorAll(".direction-card p");
+
+  cards.forEach((card, index) => {
+    card.addEventListener("click", () => {
+      if (card.classList.contains("bg-primaryColor")) {
+        card.classList.remove("bg-primaryColor");
+        allSvg[index].classList.remove("fill-white");
+        allSvg[index].classList.add("fill-primaryColor");
+        allP[index].classList.remove("text-white");
+        allP[index].classList.add("text-primaryColor");
+      } else {
+        card.classList.add("bg-primaryColor");
+        allSvg[index].classList.remove("fill-primaryColor");
+        allSvg[index].classList.add("fill-white");
+        allP[index].classList.remove("text-primaryColor");
+        allP[index].classList.add("text-white");
+      }
+    });
+  });
+});
