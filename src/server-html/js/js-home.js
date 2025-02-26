@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // hover effect on slider
+  const sliderPicture = document.querySelector(".bg-slider picture");
   const sliderBG = document.querySelector(".sliderBG");
   const hover1 = document.querySelector(".hover1");
   const hover2 = document.querySelector(".hover2");
@@ -8,6 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const hover2BG = document.querySelector(".hover2BG");
   const hover3BG = document.querySelector(".hover3BG");
   const hover4BG = document.querySelector(".hover4BG");
+  const lastSliderPicture = document.querySelector(
+    ".bg-slider picture:last-of-type"
+  );
   const btn1 = document.querySelector(".btn1");
   const btn2 = document.querySelector(".btn2");
   const btn3 = document.querySelector(".btn3");
@@ -50,7 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Adjust background sizes
     hover2BG.classList.replace("w-0", "w-[65%]");
-    sliderBG.classList.replace("w-[65%]", "w-0");
+    sliderBG.classList.replace("w-full", "w-0");
+    sliderPicture.style.width = "0%";
 
     let video = hover2BG.querySelector("video");
     if (video) {
@@ -91,7 +96,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Reset background sizes
     hover2BG.classList.replace("w-[65%]", "w-0");
-    sliderBG.classList.replace("w-0", "w-[65%]");
+    sliderBG.classList.replace("w-0", "w-full");
+    sliderPicture.style.width = "65%";
 
     let video = hover2BG.querySelector("video");
     if (video) {
@@ -114,7 +120,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Adjust background sizes
     hover3BG.classList.replace("w-0", "w-full");
-    sliderBG.classList.replace("w-[65%]", "w-0");
+    sliderBG.classList.replace("w-full", "w-0");
+    sliderPicture.style.width = "0%";
 
     let video = hover3BG.querySelector("video");
     if (video) {
@@ -138,7 +145,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Reset background sizes
     hover3BG.classList.replace("w-full", "w-0");
-    sliderBG.classList.replace("w-0", "w-[65%]");
+    sliderBG.classList.replace("w-0", "w-full");
+    sliderPicture.style.width = "65%";
 
     let video = hover3BG.querySelector("video");
     if (video) {
@@ -178,8 +186,10 @@ document.addEventListener("DOMContentLoaded", function () {
     bottomText.classList.replace("text-primaryColor", "text-white");
 
     // Adjust background sizes
-    hover4BG.classList.replace("w-0", "w-[65%]");
-    sliderBG.classList.replace("w-[65%]", "w-0");
+    hover4BG.classList.replace("w-0", "w-full");
+    lastSliderPicture.style.width = "65%";
+    sliderBG.classList.replace("w-full", "w-0");
+    sliderPicture.style.width = "0%";
   });
   hover4.addEventListener("mouseout", () => {
     // Reset button visibility and size
@@ -212,8 +222,10 @@ document.addEventListener("DOMContentLoaded", function () {
     bottomText.classList.replace("text-white", "text-primaryColor");
 
     // Reset background sizes
-    hover4BG.classList.replace("w-[65%]", "w-0");
-    sliderBG.classList.replace("w-0", "w-[65%]");
+    hover4BG.classList.replace("w-full", "w-0");
+    lastSliderPicture.style.width = "0%";
+    sliderBG.classList.replace("w-0", "w-full");
+    sliderPicture.style.width = "65%";
   });
 
   // Pie Chart

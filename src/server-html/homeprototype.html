@@ -15,8 +15,17 @@
     <link rel="stylesheet" href="http://4.157.26.114/documents/d/guest/css-global?download=true">
     <link rel="stylesheet" href="http://4.157.26.114/documents/d/guest/css-output?download=true">
     <style>
-        a {
+        header:first-child a,
+        footer a {
             color: #FFFFFF !important;
+        }
+
+        .mainMenu a {
+            color: #001E60 !important;
+        }
+
+        .bg-slider picture:first-child {
+            width: 65%;
         }
     </style>
 </head>
@@ -279,7 +288,7 @@
 
                 <!-- Video Section -->
                 <div class="bg-slider w-full flex justify-end md:h-[510px] lg:h-[550px] relative">
-                    <img class="sliderBG w-[65%] transition-all duration-500 ease-in-out object-cover"
+                    <img class="sliderBG w-full h-full transition-all duration-500 ease-in-out object-cover"
                         src="http://4.157.26.114/documents/d/guest/image-dataAnalyst?download=true">
                     <div class="hover2BG w-0 flex justify-center py-[16px] transition-all duration-500 ease-in-out">
                         <video class="w-[25%] h-full object-cover"
@@ -289,7 +298,7 @@
                         <video class="w-[65%] h-full object-cover"
                             src="http://4.157.26.114/documents/d/guest/video-speach?download=true"></video>
                     </div>
-                    <img class="hover4BG w-0 object-cover transition-all duration-500 ease-in-out"
+                    <img class="hover4BG w-0 h-full object-cover transition-all duration-500 ease-in-out"
                         src="http://4.157.26.114/documents/d/guest/image-conference?download=true">
                 </div>
             </div>
@@ -344,15 +353,16 @@
 
         <!-- Section 3 -->
         <main
-            class="w-full text-white bg-primaryColor flex flex-col gap-8 justify-center py-[4px] sm:py-[32px] px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
-            <div class="flex justify-between items-center">
+            class="w-full text-white bg-primaryColor flex flex-col justify-center py-[4px] sm:py-[32px] px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
+            <div class="flex justify-between items-center pb-[32px]">
                 <h1 class="!text-xl sm:!text-4xl font-bold">Portafolio SURA</h1>
                 <button
                     class="w-36 md:w-40 flex justify-center items-center !text-sm md:font-bold md:!text-base text-white bg-secondaryColor mt-[8px] py-[8px] sm:py-[12px] rounded-3xl cursor-pointer">
                     CTA Portafolio
                 </button>
             </div>
-            <p class="font-bold !text-lg sm:!text-2xl">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            <p class="font-bold !text-lg sm:!text-2xl pb-[32px]">At vero eos et accusamus et iusto odio dignissimos
+                ducimus qui
                 blanditiis
                 praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             <div class="flex justify-between gap-6 h-80 bg-[#001E60] overflow-y-hidden">
@@ -471,7 +481,8 @@
                         elit,
                         sed
                         do eiusmod tempor.</h1>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    <p class="pb-[10px]">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                        praesentium voluptatum
                         deleniti atque corrupti
                         quos dolores et quas molestias excepturi</p>
                     <button
@@ -490,7 +501,8 @@
                         elit,
                         sed
                         do eiusmod tempor.</h1>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    <p class="pb-[10px]">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                        praesentium voluptatum
                         deleniti atque corrupti
                         quos dolores et quas molestias excepturi</p>
                     <button
