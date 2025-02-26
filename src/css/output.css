@@ -329,6 +329,9 @@
   .mb-3\.5 {
     margin-bottom: calc(var(--spacing) * 3.5);
   }
+  .mb-\[4px\] {
+    margin-bottom: 4px;
+  }
   .mb-\[8px\] {
     margin-bottom: 8px;
   }
@@ -337,15 +340,6 @@
   }
   .mb-\[20px\] {
     margin-bottom: 20px;
-  }
-  .mb-\[24px\] {
-    margin-bottom: 24px;
-  }
-  .mb-\[48px\] {
-    margin-bottom: 48px;
-  }
-  .mb-\[4px\] {
-    margin-bottom: 4px;
   }
   .mb-\[56px\] {
     margin-bottom: 56px;
@@ -918,6 +912,15 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-\[4px\] {
+    padding-inline: 4px;
+  }
+  .px-\[6px\] {
+    padding-inline: 6px;
+  }
+  .px-\[8px\] {
+    padding-inline: 8px;
+  }
   .px-\[12px\] {
     padding-inline: 12px;
   }
@@ -930,15 +933,6 @@
   .px-\[40px\] {
     padding-inline: 40px;
   }
-  .px-\[4px\] {
-    padding-inline: 4px;
-  }
-  .px-\[6px\] {
-    padding-inline: 6px;
-  }
-  .px-\[8px\] {
-    padding-inline: 8px;
-  }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
   }
@@ -947,6 +941,15 @@
   }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
+  }
+  .py-\[4px\] {
+    padding-block: 4px;
+  }
+  .py-\[6px\] {
+    padding-block: 6px;
+  }
+  .py-\[8px\] {
+    padding-block: 8px;
   }
   .py-\[10px\] {
     padding-block: 10px;
@@ -968,15 +971,6 @@
   }
   .py-\[40px\] {
     padding-block: 40px;
-  }
-  .py-\[4px\] {
-    padding-block: 4px;
-  }
-  .py-\[6px\] {
-    padding-block: 6px;
-  }
-  .py-\[8px\] {
-    padding-block: 8px;
   }
   .pt-\[8px\] {
     padding-top: 8px;
