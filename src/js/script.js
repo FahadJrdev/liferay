@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   pDropList.forEach((pDrop) => {
     const dropDown = pDrop.querySelector(".dropDown");
-    const svgIcon = pDrop.querySelector("img");
+    const svgIcon = pDrop.querySelector("svg");
 
     if (!dropDown || !svgIcon) return;
 
