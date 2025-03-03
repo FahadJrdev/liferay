@@ -251,6 +251,9 @@
   .-bottom-36 {
     bottom: calc(var(--spacing) * -36);
   }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
   .bottom-\[10px\] {
     bottom: 10px;
   }
@@ -400,6 +403,9 @@
   }
   .h-100 {
     height: calc(var(--spacing) * 100);
+  }
+  .h-\[64px\] {
+    height: 64px;
   }
   .h-\[344px\] {
     height: 344px;
@@ -792,6 +798,9 @@
   .bg-tertiaryColor {
     background-color: var(--color-tertiaryColor);
   }
+  .bg-transparent {
+    background-color: transparent;
+  }
   .bg-vid {
     background-color: var(--color-vid);
   }
@@ -912,14 +921,14 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
-  .px-\[4px\] {
-    padding-inline: 4px;
-  }
   .px-\[6px\] {
     padding-inline: 6px;
   }
   .px-\[8px\] {
     padding-inline: 8px;
+  }
+  .px-\[10px\] {
+    padding-inline: 10px;
   }
   .px-\[12px\] {
     padding-inline: 12px;
@@ -932,6 +941,9 @@
   }
   .px-\[40px\] {
     padding-inline: 40px;
+  }
+  .px-\[4px\] {
+    padding-inline: 4px;
   }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
@@ -1192,6 +1204,20 @@
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
   }
+  .group-hover\:visible {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        visibility: visible;
+      }
+    }
+  }
+  .group-hover\:opacity-100 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
+  }
   .hover\:bg-hover {
     &:hover {
       @media (hover: hover) {
@@ -1203,6 +1229,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-primaryColor);
+      }
+    }
+  }
+  .hover\:bg-secondaryColor {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-secondaryColor);
       }
     }
   }
@@ -1998,6 +2031,28 @@
   .xl\:pb-0 {
     @media (width >= 80rem) {
       padding-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .\32 xl\:h-96 {
+    @media (width >= 96rem) {
+      height: calc(var(--spacing) * 96);
+    }
+  }
+  .\32 xl\:w-72 {
+    @media (width >= 96rem) {
+      width: calc(var(--spacing) * 72);
+    }
+  }
+  .\32 xl\:\!text-lg {
+    @media (width >= 96rem) {
+      font-size: var(--text-lg) !important;
+      line-height: var(--tw-leading, var(--text-lg--line-height)) !important;
+    }
+  }
+  .\32 xl\:\!text-xl {
+    @media (width >= 96rem) {
+      font-size: var(--text-xl) !important;
+      line-height: var(--tw-leading, var(--text-xl--line-height)) !important;
     }
   }
 }

@@ -17,13 +17,11 @@
         <header
             class="flex justify-center bg-primaryColor text-white px-[6px] md:px-[28px] lg:px-[40px] xl:px-[64px] py-[6px] lg:py-[10px] xl:py-[14px]">
             <div class="w-full mx-auto flex justify-center sm:justify-end items-center">
-                <nav>
-                    <ul class="flex space-x-6 !text-xs md:!text-sm lg:!text-base">
-                        <li><a href="#">Línea Ética</a></li>
-                        <li><a href="#">Contáctanos</a></li>
-                        <li><a href="#">Noticias</a></li>
-                        <li><a href="#">Certificado de renta</a></li>
-                    </ul>
+                <nav class="flex space-x-6 !text-xs md:!text-sm lg:!text-base 2xl:!text-lg">
+                    <div><a href="#">Línea Ética</a></div>
+                    <div><a href="#">Contáctanos</a></div>
+                    <div><a href="#">Noticias</a></div>
+                    <div><a href="#">Certificado de renta</a></div>
                 </nav>
             </div>
         </header>
@@ -47,14 +45,14 @@
                 </svg>
             </div>
             <div class="h-screen md:h-auto w-xs md:w-full px-[16px] md:px-[28px] lg:px-[40px] xl:px-[64px]">
-                <ul
-                    class="w-full mx-auto flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-5 !text-sm lg:!text-base">
-                    <li class="flex items-center px-2.5 md:px-0">
+                <div
+                    class="w-full mx-auto flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-5 !text-sm lg:!text-base 2xl:!text-xl">
+                    <div class="flex items-center px-2.5 md:px-0">
                         <a href="./homeprototype.html">
                             <img class="w-24 lg:w-32 xl:w-[156px]" src="./assets/images/logo.png" alt="GrupoSURA_Logo">
                         </a>
-                    </li>
-                    <li class="menuParent flex items-center relative">
+                    </div>
+                    <div class="menuParent flex items-center relative">
                         <span
                             class="flex w-full md:w-auto justify-between md:justify-center items-center gap-3 rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
                             <a href="#">Quienes somos</a>
@@ -65,75 +63,173 @@
                                     fill="#001E60" />
                             </svg>
                         </span>
-                        <ul
-                            class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 overflow-hidden flex-col !text-sm bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
-                            <li
+                        <div
+                            class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 2xl:w-72 overflow-hidden flex-col bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                            <div
                                 class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="./whoarewe.html">Sobre Grupo SURA</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
                                         d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                                 </svg>
-                            </li>
-                            <li
+                            </div>
+                            <div
                                 class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="./nuestros.html">Nuestra Identidad</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
                                         d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                                 </svg>
-                            </li>
-                            <li
+                            </div>
+                            <div
                                 class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">Evolucion y Crecimiento</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
                                         d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                                 </svg>
-                            </li>
-                            <li
+                            </div>
+                            <div
                                 class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="./talent-hunt.html">Talento Humano</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
                                         d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                                 </svg>
-                            </li>
-                            <li
+                            </div>
+                            <div
                                 class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
                                 <a href="#">#PensarConOtros</a>
                                 <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path
                                         d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                                 </svg>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
                         <span
                             class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
                             <a href="./portfolio.html">Portafolio</a>
                         </span>
-                    </li>
-                    <li class="flex items-center relative">
+                    </div>
+                    <div class="menuParent flex items-center relative">
                         <span
                             class="flex w-full md:w-auto justify-between md:justify-center items-center gap-3 rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
-                            <a href="./acciones.html">Relación con inversionistas</a>
+                            <a href="#">Relación con inversionistas</a>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.6575 5.31773C14.3035 4.97416 13.74 4.96512 13.3767 5.28609L7.81077 10.6884L2.23092 5.27253L1.60679 4.66675C1.25281 5.01032 1.24349 5.55733 1.57419 5.90995L7.48474 11.6468C7.57324 11.7327 7.68968 11.7779 7.81543 11.7779C7.94119 11.7779 8.05763 11.7281 8.14613 11.6468L14.0427 5.92351L14.6668 5.31773H14.6575Z"
+                                    fill="#001E60" />
+                            </svg>
                         </span>
-                    </li>
-                    <li class="flex items-center">
+                        <div
+                            class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 2xl:w-72 overflow-hidden flex-col bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                            <div
+                                class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="./whoarewe.html">Inforelevantes</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="./nuestros.html">Acciones</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Bonos</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="./talent-hunt.html">Asambleas</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Centro de Atención</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
                         <span
                             class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
                             <a href="./corporate.html">Gobierno Corporativo</a>
                         </span>
-                    </li>
-                    <li class="flex items-center relative">
+                    </div>
+                    <div class="menuParent flex items-center relative">
                         <span
                             class="flex w-full md:w-auto justify-between md:justify-center items-center gap-3 rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
-                            <a href="./sustainability.html">Sostenibilidad</a>
+                            <a href="#">Sostenibilidad</a>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.6575 5.31773C14.3035 4.97416 13.74 4.96512 13.3767 5.28609L7.81077 10.6884L2.23092 5.27253L1.60679 4.66675C1.25281 5.01032 1.24349 5.55733 1.57419 5.90995L7.48474 11.6468C7.57324 11.7327 7.68968 11.7779 7.81543 11.7779C7.94119 11.7779 8.05763 11.7281 8.14613 11.6468L14.0427 5.92351L14.6668 5.31773H14.6575Z"
+                                    fill="#001E60" />
+                            </svg>
                         </span>
-                    </li>
-                    <li class="flex items-center px-2.5 md:px-0">
+                        <div
+                            class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 2xl:w-72 overflow-hidden flex-col bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                            <div
+                                class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="./whoarewe.html">Sostenibilidad SURA</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="./nuestros.html">Estrategía</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Evolucion y Crecimiento</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="./talent-hunt.html">Materialidad</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Desempeño ASG</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-2.5 md:px-0">
                         <svg class="cursor-pointer" width="48" height="48" viewBox="0 0 48 48" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" fill="white" />
@@ -146,8 +242,8 @@
                                 fill="#001E60" stroke="#001E60" stroke-width="0.72" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -293,37 +389,73 @@
                 Excepteur sint
                 occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class="flex flex-wrap justify-center gap-8 py-[40px] w-full">
-                <div class="flex-1 min-w-[300px] bg-white rounded-lg">
-                    <img class="w-full h-48 object-cover rounded-lg" src="./assets/images/conference.jpeg"
+                <div class="group flex-1 min-w-[300px] bg-white rounded-lg">
+                    <img class="w-full h-48 2xl:h-96 object-cover rounded-lg" src="./assets/images/conference.jpeg"
                         alt="Conference">
-                    <div class="p-[8px]">
-                        <h3 class="!text-xl font-bold text-ex1 mt-[16px]">Quodsi haberent magnalia</h3>
+                    <div class="p-[16px] relative">
+                        <h3 class="!text-xl font-bold text-ex1">Quodsi haberent magnalia</h3>
                         <p class="text-ex1 !text-sm mt-[8px]">Lorem Ipsum is simply dummy text of the printing and
                             typesetting
                             industry. Lorem Ipsum has been the industry's standard
                             dummy text ever since the 1500s. Limitar el número de líneas</p>
+                        <div
+                            class="w-full absolute left-0 bottom-0 z-10 bg-white transition-all duration-300 ease-in-out mt-[8px] invisible opacity-0 h-[64px] px-[10px] group-hover:visible group-hover:opacity-100">
+                            <button
+                                class="w-36 md:w-40 flex justify-center items-center gap-2 !text-sm md:font-bold md:!text-base text-secondaryColor border-secondaryColor border-1 bg-transparent hover:bg-secondaryColor mt-[8px] py-[8px] sm:py-[12px] rounded-3xl cursor-pointer">
+                                CTA tarjeta
+                                <svg class="fill-secondaryColor" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.8329 7.58152L8.73063 2.72826L7.965 2C7.53077 2.41304 7.51934 3.07065 7.92501 3.49457L12.0502 7.42391H2V8.51087H12.0502L7.8793 12.4783C7.47364 12.9076 7.46221 13.587 7.89644 14L8.66206 13.2717L13.8329 8.35326C14.0557 8.1413 14.0557 7.79891 13.8329 7.58696V7.58152Z" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="flex-1 min-w-[300px] bg-white rounded-lg">
-                    <img class="w-full h-48 object-cover rounded-lg" src="./assets/images/project.jpeg"
+                <div class="group flex-1 min-w-[300px] bg-white rounded-lg">
+                    <img class="w-full h-48 2xl:h-96 object-cover rounded-lg" src="./assets/images/project.jpeg"
                         alt="Conference">
-                    <div class="p-[8px]">
-                        <h3 class="!text-xl font-bold text-ex1 mt-[16px]">Quodsi haberent magnalia</h3>
+                    <div class="p-[16px] relative">
+                        <h3 class="!text-xl font-bold text-ex1">Quodsi haberent magnalia</h3>
                         <p class="text-ex1 !text-sm mt-[8px]">Lorem Ipsum is simply dummy text of the printing and
                             typesetting
                             industry. Lorem Ipsum has been the industry's standard
                             dummy text ever since the 1500s. Limitar el número de líneas</p>
+                        <div
+                            class="w-full absolute left-0 bottom-0 z-10 bg-white transition-all duration-300 ease-in-out mt-[8px] invisible opacity-0 h-[64px] px-[10px]  group-hover:visible group-hover:opacity-100">
+                            <button
+                                class="w-36 md:w-40 flex justify-center items-center gap-2 !text-sm md:font-bold md:!text-base text-secondaryColor border-secondaryColor border-1 bg-transparent mt-[8px] py-[8px] sm:py-[12px] rounded-3xl cursor-pointer">
+                                CTA tarjeta
+                                <svg class="fill-secondaryColor" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.8329 7.58152L8.73063 2.72826L7.965 2C7.53077 2.41304 7.51934 3.07065 7.92501 3.49457L12.0502 7.42391H2V8.51087H12.0502L7.8793 12.4783C7.47364 12.9076 7.46221 13.587 7.89644 14L8.66206 13.2717L13.8329 8.35326C14.0557 8.1413 14.0557 7.79891 13.8329 7.58696V7.58152Z" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="flex-1 min-w-[300px] bg-white rounded-lg">
-                    <img class="w-full h-48 object-cover rounded-lg" src="./assets/images/podcast.jpeg"
+                <div class="group flex-1 min-w-[300px] bg-white rounded-lg">
+                    <img class="w-full h-48 2xl:h-96 object-cover rounded-lg" src="./assets/images/podcast.jpeg"
                         alt="Conference">
-                    <div class="p-[8px]">
-                        <h3 class="!text-xl font-bold text-ex1 mt-[16px]">Quodsi haberent magnalia</h3>
+                    <div class="p-[16px] relative">
+                        <h3 class="!text-xl font-bold text-ex1">Quodsi haberent magnalia</h3>
                         <p class="text-ex1 !text-sm mt-[8px]">Lorem Ipsum is simply dummy text of the printing and
                             typesetting
                             industry. Lorem Ipsum has been the industry's standard
                             dummy text ever since the 1500s. Limitar el número de líneas</p>
+                        <div
+                            class="w-full absolute left-0 bottom-0 z-10 bg-white transition-all duration-300 ease-in-out mt-[8px] invisible opacity-0 h-[64px] px-[10px]  group-hover:visible group-hover:opacity-100">
+                            <button
+                                class="w-36 md:w-40 flex justify-center items-center gap-2 !text-sm md:font-bold md:!text-base text-secondaryColor border-secondaryColor border-1 bg-transparent mt-[8px] py-[8px] sm:py-[12px] rounded-3xl cursor-pointer">
+                                CTA tarjeta
+                                <svg class="fill-secondaryColor" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.8329 7.58152L8.73063 2.72826L7.965 2C7.53077 2.41304 7.51934 3.07065 7.92501 3.49457L12.0502 7.42391H2V8.51087H12.0502L7.8793 12.4783C7.47364 12.9076 7.46221 13.587 7.89644 14L8.66206 13.2717L13.8329 8.35326C14.0557 8.1413 14.0557 7.79891 13.8329 7.58696V7.58152Z" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
