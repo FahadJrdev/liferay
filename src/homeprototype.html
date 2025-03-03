@@ -14,238 +14,242 @@
 <body class="font-sans text-primaryColor">
     <div class="w-full">
         <!-- Header -->
-        <header
-            class="flex justify-center bg-primaryColor text-white px-[6px] md:px-[28px] lg:px-[40px] xl:px-[64px] py-[6px] lg:py-[10px] xl:py-[14px]">
-            <div class="w-full mx-auto flex justify-center sm:justify-end items-center">
-                <nav class="flex space-x-6 !text-xs md:!text-sm lg:!text-base 2xl:!text-lg">
-                    <div><a href="#">Línea Ética</a></div>
-                    <div><a href="#">Contáctanos</a></div>
-                    <div><a href="#">Noticias</a></div>
-                    <div><a href="#">Certificado de renta</a></div>
-                </nav>
-            </div>
-        </header>
-        <div class="bg-white p-[10px] md:p-0 md:opacity-0 md:h-0">
-            <svg class="bar w-6 fill-primaryColor cursor-pointer" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512">
-                <path
-                    d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
-            </svg>
-        </div>
-        <div
-            class="overlay -z-10 invisible h-screen w-screen md:w-0 opacity-0 transition-all duration-300 ease-in-out md:opacity-0 fixed top-0 left-0 bg-primaryColor">
-        </div>
-        <header
-            class="mainMenu transition-all duration-300 ease-in-out overflow-x-hidden md:overflow-visible w-0 font-semibold md:opacity-100 z-20 fixed md:static bg-white md:bg-transparent top-0 left-0 h-screen md:h-auto md:w-full flex flex-col md:flex-row justify-center text-primaryColor shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
-            <div class="flex justify-end p-[12px] md:p-0">
-                <svg class="xmark w-8 md:opacity-0 md:w-0 fill-primaryColor cursor-pointer"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+        <div class="header">
+            <header
+                class="flex justify-center bg-primaryColor text-white px-[6px] md:px-[28px] lg:px-[40px] xl:px-[64px] py-[6px] lg:py-[10px] xl:py-[14px]">
+                <div class="w-full mx-auto flex justify-center sm:justify-end items-center">
+                    <nav class="flex space-x-6 !text-xs md:!text-sm lg:!text-base 2xl:!text-lg">
+                        <div><a href="#">Línea Ética</a></div>
+                        <div><a href="#">Contáctanos</a></div>
+                        <div><a href="#">Noticias</a></div>
+                        <div><a href="#">Certificado de renta</a></div>
+                    </nav>
+                </div>
+            </header>
+            <div class="bg-white p-[10px] md:p-0 md:opacity-0 md:h-0">
+                <svg class="bar w-6 fill-primaryColor cursor-pointer" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
                     <path
-                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
                 </svg>
             </div>
-            <div class="h-screen md:h-auto w-xs md:w-full px-[16px] md:px-[28px] lg:px-[40px] xl:px-[64px]">
-                <div
-                    class="w-full mx-auto flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-5 !text-sm lg:!text-base 2xl:!text-xl">
-                    <div class="flex items-center px-2.5 md:px-0">
-                        <a href="./homeprototype.html">
-                            <img class="w-24 lg:w-32 xl:w-[156px]" src="./assets/images/logo.png" alt="GrupoSURA_Logo">
-                        </a>
-                    </div>
-                    <div class="menuParent flex items-center relative">
-                        <span
-                            class="flex w-full md:w-auto justify-between md:justify-center items-center gap-3 rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
-                            <a href="#">Quienes somos</a>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M14.6575 5.31773C14.3035 4.97416 13.74 4.96512 13.3767 5.28609L7.81077 10.6884L2.23092 5.27253L1.60679 4.66675C1.25281 5.01032 1.24349 5.55733 1.57419 5.90995L7.48474 11.6468C7.57324 11.7327 7.68968 11.7779 7.81543 11.7779C7.94119 11.7779 8.05763 11.7281 8.14613 11.6468L14.0427 5.92351L14.6668 5.31773H14.6575Z"
-                                    fill="#001E60" />
-                            </svg>
-                        </span>
-                        <div
-                            class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 2xl:w-72 overflow-hidden flex-col bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
-                            <div
-                                class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="./whoarewe.html">Sobre Grupo SURA</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <div
+                class="overlay -z-10 invisible h-screen w-screen md:w-0 opacity-0 transition-all duration-300 ease-in-out md:opacity-0 fixed top-0 left-0 bg-primaryColor">
+            </div>
+            <header
+                class="mainMenu transition-all duration-300 ease-in-out overflow-x-hidden md:overflow-visible w-0 font-semibold md:opacity-100 z-20 fixed md:static bg-white md:bg-transparent top-0 left-0 h-screen md:h-auto md:w-full flex flex-col md:flex-row justify-center text-primaryColor shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+                <div class="flex justify-end p-[12px] md:p-0">
+                    <svg class="xmark w-8 md:opacity-0 md:w-0 fill-primaryColor cursor-pointer"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                </div>
+                <div class="h-screen md:h-auto w-xs md:w-full px-[16px] md:px-[28px] lg:px-[40px] xl:px-[64px]">
+                    <div
+                        class="w-full mx-auto flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-5 !text-sm lg:!text-base 2xl:!text-xl">
+                        <div class="flex items-center px-2.5 md:px-0">
+                            <a href="./homeprototype.html">
+                                <img class="w-24 lg:w-32 xl:w-[156px]" src="./assets/images/logo.png"
+                                    alt="GrupoSURA_Logo">
+                            </a>
+                        </div>
+                        <div class="menuParent flex items-center relative">
+                            <span
+                                class="flex w-full md:w-auto justify-between md:justify-center items-center gap-3 rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                                <a href="#">Quienes somos</a>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                        d="M14.6575 5.31773C14.3035 4.97416 13.74 4.96512 13.3767 5.28609L7.81077 10.6884L2.23092 5.27253L1.60679 4.66675C1.25281 5.01032 1.24349 5.55733 1.57419 5.90995L7.48474 11.6468C7.57324 11.7327 7.68968 11.7779 7.81543 11.7779C7.94119 11.7779 8.05763 11.7281 8.14613 11.6468L14.0427 5.92351L14.6668 5.31773H14.6575Z"
+                                        fill="#001E60" />
                                 </svg>
-                            </div>
+                            </span>
                             <div
-                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="./nuestros.html">Nuestra Identidad</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                                </svg>
-                            </div>
-                            <div
-                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="#">Evolucion y Crecimiento</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                                </svg>
-                            </div>
-                            <div
-                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="./talent-hunt.html">Talento Humano</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                                </svg>
-                            </div>
-                            <div
-                                class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="#">#PensarConOtros</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                                </svg>
+                                class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 2xl:w-72 overflow-hidden flex-col bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                                <div
+                                    class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./whoarewe.html">Sobre Grupo SURA</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./nuestros.html">Nuestra Identidad</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="#">Evolucion y Crecimiento</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./talent-hunt.html">Talento Humano</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="#">#PensarConOtros</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex items-center">
-                        <span
-                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
-                            <a href="./portfolio.html">Portafolio</a>
-                        </span>
-                    </div>
-                    <div class="menuParent flex items-center relative">
-                        <span
-                            class="flex w-full md:w-auto justify-between md:justify-center items-center gap-3 rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
-                            <a href="#">Relación con inversionistas</a>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M14.6575 5.31773C14.3035 4.97416 13.74 4.96512 13.3767 5.28609L7.81077 10.6884L2.23092 5.27253L1.60679 4.66675C1.25281 5.01032 1.24349 5.55733 1.57419 5.90995L7.48474 11.6468C7.57324 11.7327 7.68968 11.7779 7.81543 11.7779C7.94119 11.7779 8.05763 11.7281 8.14613 11.6468L14.0427 5.92351L14.6668 5.31773H14.6575Z"
-                                    fill="#001E60" />
-                            </svg>
-                        </span>
-                        <div
-                            class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 2xl:w-72 overflow-hidden flex-col bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
-                            <div
-                                class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="./whoarewe.html">Inforelevantes</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <div class="flex items-center">
+                            <span
+                                class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                                <a href="./portfolio.html">Portafolio</a>
+                            </span>
+                        </div>
+                        <div class="menuParent flex items-center relative">
+                            <span
+                                class="flex w-full md:w-auto justify-between md:justify-center items-center gap-3 rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                                <a href="#">Relación con inversionistas</a>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                        d="M14.6575 5.31773C14.3035 4.97416 13.74 4.96512 13.3767 5.28609L7.81077 10.6884L2.23092 5.27253L1.60679 4.66675C1.25281 5.01032 1.24349 5.55733 1.57419 5.90995L7.48474 11.6468C7.57324 11.7327 7.68968 11.7779 7.81543 11.7779C7.94119 11.7779 8.05763 11.7281 8.14613 11.6468L14.0427 5.92351L14.6668 5.31773H14.6575Z"
+                                        fill="#001E60" />
                                 </svg>
-                            </div>
+                            </span>
                             <div
-                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="./nuestros.html">Acciones</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                                </svg>
-                            </div>
-                            <div
-                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="#">Bonos</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                                </svg>
-                            </div>
-                            <div
-                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="./talent-hunt.html">Asambleas</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                                </svg>
-                            </div>
-                            <div
-                                class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="#">Centro de Atención</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                                </svg>
+                                class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 2xl:w-72 overflow-hidden flex-col bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                                <div
+                                    class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./whoarewe.html">Inforelevantes</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./nuestros.html">Acciones</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="#">Bonos</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./talent-hunt.html">Asambleas</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="#">Centro de Atención</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex items-center">
-                        <span
-                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
-                            <a href="./corporate.html">Gobierno Corporativo</a>
-                        </span>
-                    </div>
-                    <div class="menuParent flex items-center relative">
-                        <span
-                            class="flex w-full md:w-auto justify-between md:justify-center items-center gap-3 rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
-                            <a href="#">Sostenibilidad</a>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M14.6575 5.31773C14.3035 4.97416 13.74 4.96512 13.3767 5.28609L7.81077 10.6884L2.23092 5.27253L1.60679 4.66675C1.25281 5.01032 1.24349 5.55733 1.57419 5.90995L7.48474 11.6468C7.57324 11.7327 7.68968 11.7779 7.81543 11.7779C7.94119 11.7779 8.05763 11.7281 8.14613 11.6468L14.0427 5.92351L14.6668 5.31773H14.6575Z"
-                                    fill="#001E60" />
-                            </svg>
-                        </span>
-                        <div
-                            class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 2xl:w-72 overflow-hidden flex-col bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
-                            <div
-                                class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="./whoarewe.html">Sostenibilidad SURA</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <div class="flex items-center">
+                            <span
+                                class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                                <a href="./corporate.html">Gobierno Corporativo</a>
+                            </span>
+                        </div>
+                        <div class="menuParent flex items-center relative">
+                            <span
+                                class="flex w-full md:w-auto justify-between md:justify-center items-center gap-3 rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                                <a href="#">Sostenibilidad</a>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                        d="M14.6575 5.31773C14.3035 4.97416 13.74 4.96512 13.3767 5.28609L7.81077 10.6884L2.23092 5.27253L1.60679 4.66675C1.25281 5.01032 1.24349 5.55733 1.57419 5.90995L7.48474 11.6468C7.57324 11.7327 7.68968 11.7779 7.81543 11.7779C7.94119 11.7779 8.05763 11.7281 8.14613 11.6468L14.0427 5.92351L14.6668 5.31773H14.6575Z"
+                                        fill="#001E60" />
                                 </svg>
-                            </div>
+                            </span>
                             <div
-                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="./nuestros.html">Estrategía</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                                </svg>
-                            </div>
-                            <div
-                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="#">Evolucion y Crecimiento</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                                </svg>
-                            </div>
-                            <div
-                                class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="./talent-hunt.html">Materialidad</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                                </svg>
-                            </div>
-                            <div
-                                class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
-                                <a href="#">Desempeño ASG</a>
-                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path
-                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                                </svg>
+                                class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 2xl:w-72 overflow-hidden flex-col bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                                <div
+                                    class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./whoarewe.html">Sostenibilidad SURA</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./nuestros.html">Estrategía</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="#">Evolucion y Crecimiento</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./talent-hunt.html">Materialidad</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="#">Desempeño ASG</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex items-center px-2.5 md:px-0">
-                        <svg class="cursor-pointer" width="48" height="48" viewBox="0 0 48 48" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" fill="white" />
-                            <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" stroke="#001E60" />
-                            <path
-                                d="M16.153 25.6681C14.3706 23.0003 14.6539 19.3646 17.0088 17.0097C19.6884 14.3301 24.0265 14.3301 26.706 17.0097C29.0078 19.3115 29.3266 22.8351 27.6681 25.4792C27.4025 25.916 27.0778 26.3291 26.7001 26.7069C26.3224 27.0846 25.9092 27.4151 25.4725 27.6748C23.3123 29.0323 20.5619 29.0618 18.3722 27.7692"
-                                stroke="#001E60" stroke-width="0.72" stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M27.6741 25.4792L32.5434 30.3485C33.1513 30.9564 33.1513 31.9362 32.5434 32.5441C31.9354 33.152 30.9557 33.152 30.3478 32.5441L25.4785 27.6748C25.9153 27.4092 26.3284 27.0846 26.7062 26.7069C27.0839 26.3292 27.4144 25.916 27.6741 25.4792Z"
-                                fill="#001E60" stroke="#001E60" stroke-width="0.72" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
+                        <div class="flex items-center px-2.5 md:px-0">
+                            <svg class="cursor-pointer" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" fill="white" />
+                                <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" stroke="#001E60" />
+                                <path
+                                    d="M16.153 25.6681C14.3706 23.0003 14.6539 19.3646 17.0088 17.0097C19.6884 14.3301 24.0265 14.3301 26.706 17.0097C29.0078 19.3115 29.3266 22.8351 27.6681 25.4792C27.4025 25.916 27.0778 26.3291 26.7001 26.7069C26.3224 27.0846 25.9092 27.4151 25.4725 27.6748C23.3123 29.0323 20.5619 29.0618 18.3722 27.7692"
+                                    stroke="#001E60" stroke-width="0.72" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M27.6741 25.4792L32.5434 30.3485C33.1513 30.9564 33.1513 31.9362 32.5434 32.5441C31.9354 33.152 30.9557 33.152 30.3478 32.5441L25.4785 27.6748C25.9153 27.4092 26.3284 27.0846 26.7062 26.7069C27.0839 26.3292 27.4144 25.916 27.6741 25.4792Z"
+                                    fill="#001E60" stroke="#001E60" stroke-width="0.72" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </div>
 
         <!-- Slide In Pop Up -->
         <main
