@@ -672,6 +672,9 @@
   .items-start {
     align-items: flex-start;
   }
+  .items-stretch {
+    align-items: stretch;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -1206,6 +1209,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .\!text-white {
+    color: var(--color-white) !important;
   }
   .text-\[\#001E60\] {
     color: #001E60;
