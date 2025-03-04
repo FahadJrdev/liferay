@@ -2193,6 +2193,11 @@
       height: calc(var(--spacing) * 96);
     }
   }
+  .\32 xl\:h-104 {
+    @media (width >= 96rem) {
+      height: calc(var(--spacing) * 104);
+    }
+  }
   .\32 xl\:h-\[600px\] {
     @media (width >= 96rem) {
       height: 600px;
