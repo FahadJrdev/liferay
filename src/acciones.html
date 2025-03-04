@@ -305,184 +305,26 @@
                 <!-- Tabs -->
                 <ul
                     class="tabs w-full !text-sm md:!text-base lg:!text-xl font-semibold sm:flex sm:justify-between grid grid-cols-2 gap-2 pb-[24px] text-primaryColor">
+                    <li class="px-[4px] flex-1 flex justify-center basis-1/4 border-r border-secondaryColor">
+                        <span data-tab="tab-2"
+                            class="rounded-lg w-full py-0.5 sm:py-[8px] flex justify-center items-center bg-primaryColor text-white cursor-pointer">Informes</span>
+                    </li>
                     <li class="px-[12px] flex-1 flex justify-center basis-1/4 border-r border-secondaryColor">
-                        <span data-tab="tab-1"
-                            class="rounded-lg w-full py-0.5 sm:py-[8px] flex justify-center items-center bg-primaryColor text-white cursor-pointer">Acciones</span>
+                        <span data-tab="tab-3"
+                            class="rounded-lg w-full py-0.5 sm:py-[8px] flex justify-center items-center cursor-pointer">Acciones</span>
                     </li>
-                    <li class="px-[4px] flex-1 flex justify-center basis-1/4 border-r border-secondaryColor">
-                        <span data-tab="tab-2"
-                            class=" rounded-lg w-full py-0.5 sm:py-[8px] flex justify-center items-center cursor-pointer">Informes</span>
-                    </li>
-                    <li class="px-[4px] flex-1 flex justify-center basis-1/4 border-r border-secondaryColor">
-                        <span data-tab="tab-2"
-                            class="rounded-lg w-full py-0.5 sm:py-[8px] flex justify-center items-center cursor-pointer">Inforelevantes</span>
+                    <li class="px-[12px] flex-1 flex justify-center basis-1/4 border-r border-secondaryColor">
+                        <span data-tab="tab-4"
+                            class="rounded-lg w-full py-0.5 sm:py-[8px] flex justify-center items-center cursor-pointer">Bonos</span>
                     </li>
                     <li class="flex-1 flex justify-center basis-1/4">
-                        <span data-tab="tab-4"
+                        <span data-tab="tab-5"
                             class="rounded-lg w-full py-0.5 sm:py-[8px] flex justify-center items-center cursor-pointer">Asamblea</span>
                     </li>
                 </ul>
 
-                <!-- Menu and Content tab-1 -->
-                <div class="menu-content tab-1 overflow-y-hidden">
-                    <div class="p-[8px] flex gap-5 min-w-[800px] sm:min-w-[1100px]">
-                        <!-- Menu -->
-                        <ul
-                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2">
-                            <li
-                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-semibold cursor-pointer">
-                                <span class="block p-0.5 sm:p-[12px]">Indicadores
-                                    Bursátiles</span>
-                            </li>
-                            <li
-                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
-                                <span class="block p-0.5 sm:p-[12px]">ADR-
-                                    American Depositary Receipt</span>
-                            </li>
-                            <li class="tableMenu w-full relative">
-                                <h1
-                                    class="menuLabel w-full flex justify-between p-0.5 sm:p-[12px] hover:bg-white rounded-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
-                                    <span class="font-bold text-xlblock">Dividendos</span>
-                                    <span class="flex items-center justify-center p-0.5 sm:p-[12px]">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M14.6575 5.31773C14.3035 4.97416 13.74 4.96512 13.3767 5.28609L7.81077 10.6884L2.23092 5.27253L1.60679 4.66675C1.25281 5.01032 1.24349 5.55733 1.57419 5.90995L7.48474 11.6468C7.57324 11.7327 7.68968 11.7779 7.81543 11.7779C7.94119 11.7779 8.05763 11.7281 8.14613 11.6468L14.0427 5.92351L14.6668 5.31773H14.6575Z"
-                                                fill="#001E60" />
-                                        </svg>
-                                    </span>
-                                </h1>
-                                <!-- Nested Menu -->
-                                <ul
-                                    class="dropDown !text-sm sm:!text-base lg:!text-xl font-normal bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl overflow-x-hidden w-full flex flex-col gap-3 sm:gap-6 sm:px-[24px] p-[4px] sm:py-[16px] mt-[8px] max-h-92 transition-all duration-300 ease-in-out">
-                                    <li class="hover:bg-tableBG px-[12px] py-[8px] rounded-xl cursor-pointer">Acción
-                                        Ordinaria
-                                    </li>
-                                    <li class="hover:bg-tableBG px-[12px] py-[8px] rounded-xl cursor-pointer">Acción
-                                        Preferencial
-                                    </li>
-                                    <li class="hover:bg-tableBG px-[12px] py-[8px] rounded-xl cursor-pointer">Dividendos
-                                        Históricos</li>
-                                    <li class="hover:bg-tableBG px-[12px] py-[8px] rounded-xl cursor-pointer">
-                                        Composición
-                                        accionaria</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <!-- Content -->
-                        <div
-                            class="content !text-sm sm:!text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
-                            <h1 class="text-primaryColor font-bold !text-lg sm:!text-2xl">Indicadores Bursátiles</h1>
-                            <p class="sm:!text-base">
-                                30 de junio de 2024
-                            </p>
-                            <div class="font-bold">
-                                <p>Tasa de cambio:<span class="ml-1.5 font-normal">COP 4,148</span></p>
-                                <p>Capitalización Bursátil (COP):<span class="ml-1.5 font-normal">12.8 billones</span>
-                                </p>
-                                <p>Valor Patrimonial por Acción (COP):<span class="ml-1.5 font-normal">61,947</span></p>
-                            </div>
-                            <!-- Table -->
-                            <div class="flex gap-4">
-                                <!-- Table 1 -->
-                                <ul
-                                    class="min-w-[340px] max-h-[400px] overflow-x-hidden flex flex-col w-full rounded-lg border border-table sm:!text-base">
-                                    <li
-                                        class="p-2.5 flex justify-center items-center rounded-t-lg font-bold bg-tertiaryColor mb-[8px]">
-                                        ACCIÓN ORDINARIA</li>
-                                    <li class="p-[8px] flex justify-between bg-tableBG">
-                                        <p>Acciones en circulación</p>
-                                        <p>319,830,883</p>
-                                    </li>
-                                    <li class="p-[8px] flex justify-between bg-white">
-                                        <p>Precio de cierre (COP)</p>
-                                        <p>34,400</p>
-                                    </li>
-                                    <li class="p-[8px] flex justify-between bg-tableBG">
-                                        <p>PVL (Precio/Valor en Libros)</p>
-                                        <p>0.8</p>
-                                    </li>
-                                    <li class="p-[8px] flex justify-between bg-white">
-                                        <p>Valorización anual (YTD)</p>
-                                        <p>18.6%</p>
-                                    </li>
-                                    <li class="p-[8px] flex justify-between bg-tableBG">
-                                        <p>Precio máximo (COP)</p>
-                                        <p>36,300</p>
-                                    </li>
-                                    <li class="p-[8px] flex justify-between bg-white">
-                                        <p>Precio mínimo (COP)</p>
-                                        <p>33,040</p>
-                                    </li>
-                                    <li class="p-[8px] flex justify-between bg-tableBG">
-                                        <p>Dividendo Anual (COP)</p>
-                                        <p>1,400</p>
-                                    </li>
-                                    <li class="p-[8px] flex justify-between bg-white rounded-b-lg">
-                                        <p>Retorno del dividendo</p>
-                                        <p>4.07%</p>
-                                    </li>
-
-                                </ul>
-
-                                <!-- Table 2 -->
-                                <ul
-                                    class="min-w-[340px] max-h-[400px] overflow-x-hidden flex flex-col w-full rounded-lg border border-table sm:!text-base">
-                                    <li
-                                        class="p-2.5 flex justify-center items-center rounded-t-lg font-bold bg-tertiaryColor mb-[8px]">
-                                        ACCIÓN PREFERENCIAL</li>
-                                    <li class="p-[8px] flex justify-between bg-tableBG">
-                                        <p>Acciones en circulación</p>
-                                        <p>112,508,173</p>
-                                    </li>
-                                    <li class="p-[8px] flex justify-between bg-white">
-                                        <p>Precio de cierre (COP)</p>
-                                        <p>24,420</p>
-                                    </li>
-                                    <li class="p-[8px] flex justify-between bg-tableBG">
-                                        <p>PVL (Precio/Valor en Libros)</p>
-                                        <p>0.6</p>
-                                    </li>
-                                    <li class="p-[8px] flex justify-between bg-white">
-                                        <p>Valorización anual (YTD)</p>
-                                        <p>80.9%</p>
-                                    </li>
-                                    <li class="p-[8px] flex justify-between bg-tableBG">
-                                        <p>Precio máximo (COP)</p>
-                                        <p>25,500</p>
-                                    </li>
-                                    <li class="p-[8px] flex justify-between bg-white">
-                                        <p>Precio mínimo (COP)</p>
-                                        <p>24,020</p>
-                                    </li>
-                                    <li class="p-[8px] flex justify-between bg-tableBG">
-                                        <p>Dividendo Anual (COP)</p>
-                                        <p>1,400</p>
-                                    </li>
-                                    <li class="p-[8px] flex justify-between bg-white rounded-b-lg">
-                                        <p>Retorno del dividendo</p>
-                                        <p>5.73%</p>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Charts -->
-                    <main class="w-full py-[32px] px-[8px]">
-                        <h1 class="font-bold !text-lg sm:!text-2xl lg:!text-4xl pb-2.5 sm:pb-[40px] text-primaryColor">
-                            Precio de
-                            la
-                            Acción</h1>
-                        <div class="h-100">
-                            <canvas style="background: #119fb9;" id="stockChart" height="400"></canvas>
-                        </div>
-                    </main>
-                </div>
-
                 <!-- Menu and Content tab-2 -->
-                <div class="menu-content tab-2 overflow-y-hidden p-[8px] hidden">
+                <div class="menu-content tab-2 overflow-y-hidden p-[8px]">
                     <p class="font-bold leading-9 !text-4xl text-primaryColor pb-[16px]">Informe 2024</p>
                     <div class="py-[8px] flex flex-col md:flex-row gap-8 items-start md:items-center">
                         <div class="w-full h-60 overflow-hidden">
@@ -725,11 +567,273 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <!-- Menu and Content tab-3 -->
+                <div class="menu-content tab-3 overflow-y-hidden p-[8px] hidden">
+                    <div class="p-[8px] flex gap-5 min-w-[800px] sm:min-w-[1100px]">
+                        <!-- Menu -->
+                        <ul
+                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2">
+                            <li
+                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-semibold cursor-pointer">
+                                <span class="block p-0.5 sm:p-[12px]">Indicadores
+                                    Bursátiles</span>
+                            </li>
+                            <li
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                <span class="block p-0.5 sm:p-[12px]">ADR-
+                                    American Depositary Receipt</span>
+                            </li>
+                            <li class="tableMenu w-full relative">
+                                <h1
+                                    class="menuLabel w-full flex justify-between p-0.5 sm:p-[12px] hover:bg-white rounded-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                    <span class="font-bold text-xlblock">Dividendos</span>
+                                    <span class="flex items-center justify-center p-0.5 sm:p-[12px]">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.6575 5.31773C14.3035 4.97416 13.74 4.96512 13.3767 5.28609L7.81077 10.6884L2.23092 5.27253L1.60679 4.66675C1.25281 5.01032 1.24349 5.55733 1.57419 5.90995L7.48474 11.6468C7.57324 11.7327 7.68968 11.7779 7.81543 11.7779C7.94119 11.7779 8.05763 11.7281 8.14613 11.6468L14.0427 5.92351L14.6668 5.31773H14.6575Z"
+                                                fill="#001E60" />
+                                        </svg>
+                                    </span>
+                                </h1>
+                                <!-- Nested Menu -->
+                                <ul
+                                    class="dropDown !text-sm sm:!text-base lg:!text-xl font-normal bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl overflow-x-hidden w-full flex flex-col gap-3 sm:gap-6 sm:px-[24px] p-[4px] sm:py-[16px] mt-[8px] max-h-92 transition-all duration-300 ease-in-out">
+                                    <li class="hover:bg-tableBG px-[12px] py-[8px] rounded-xl cursor-pointer">Acción
+                                        Ordinaria
+                                    </li>
+                                    <li class="hover:bg-tableBG px-[12px] py-[8px] rounded-xl cursor-pointer">Acción
+                                        Preferencial
+                                    </li>
+                                    <li class="hover:bg-tableBG px-[12px] py-[8px] rounded-xl cursor-pointer">Dividendos
+                                        Históricos</li>
+                                    <li class="hover:bg-tableBG px-[12px] py-[8px] rounded-xl cursor-pointer">
+                                        Composición
+                                        accionaria</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- Content -->
+                        <div
+                            class="content !text-sm sm:!text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
+                            <h1 class="text-primaryColor font-bold !text-lg sm:!text-2xl">Indicadores Bursátiles</h1>
+                            <p class="sm:!text-base">
+                                30 de junio de 2024
+                            </p>
+                            <div class="font-bold">
+                                <p>Tasa de cambio:<span class="ml-1.5 font-normal">COP 4,148</span></p>
+                                <p>Capitalización Bursátil (COP):<span class="ml-1.5 font-normal">12.8 billones</span>
+                                </p>
+                                <p>Valor Patrimonial por Acción (COP):<span class="ml-1.5 font-normal">61,947</span></p>
+                            </div>
+                            <!-- Table -->
+                            <div class="flex gap-4">
+                                <!-- Table 1 -->
+                                <ul
+                                    class="min-w-[340px] max-h-[400px] overflow-x-hidden flex flex-col w-full rounded-lg border border-table sm:!text-base">
+                                    <li
+                                        class="p-2.5 flex justify-center items-center rounded-t-lg font-bold bg-tertiaryColor mb-[8px]">
+                                        ACCIÓN ORDINARIA</li>
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
+                                        <p>Acciones en circulación</p>
+                                        <p>319,830,883</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-white">
+                                        <p>Precio de cierre (COP)</p>
+                                        <p>34,400</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
+                                        <p>PVL (Precio/Valor en Libros)</p>
+                                        <p>0.8</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-white">
+                                        <p>Valorización anual (YTD)</p>
+                                        <p>18.6%</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
+                                        <p>Precio máximo (COP)</p>
+                                        <p>36,300</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-white">
+                                        <p>Precio mínimo (COP)</p>
+                                        <p>33,040</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
+                                        <p>Dividendo Anual (COP)</p>
+                                        <p>1,400</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-white rounded-b-lg">
+                                        <p>Retorno del dividendo</p>
+                                        <p>4.07%</p>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Table 2 -->
+                                <ul
+                                    class="min-w-[340px] max-h-[400px] overflow-x-hidden flex flex-col w-full rounded-lg border border-table sm:!text-base">
+                                    <li
+                                        class="p-2.5 flex justify-center items-center rounded-t-lg font-bold bg-tertiaryColor mb-[8px]">
+                                        ACCIÓN PREFERENCIAL</li>
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
+                                        <p>Acciones en circulación</p>
+                                        <p>112,508,173</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-white">
+                                        <p>Precio de cierre (COP)</p>
+                                        <p>24,420</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
+                                        <p>PVL (Precio/Valor en Libros)</p>
+                                        <p>0.6</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-white">
+                                        <p>Valorización anual (YTD)</p>
+                                        <p>80.9%</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
+                                        <p>Precio máximo (COP)</p>
+                                        <p>25,500</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-white">
+                                        <p>Precio mínimo (COP)</p>
+                                        <p>24,020</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
+                                        <p>Dividendo Anual (COP)</p>
+                                        <p>1,400</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-white rounded-b-lg">
+                                        <p>Retorno del dividendo</p>
+                                        <p>5.73%</p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Charts -->
+                    <main class="w-full py-[32px] px-[8px]">
+                        <h1 class="font-bold !text-lg sm:!text-2xl lg:!text-4xl pb-2.5 sm:pb-[40px] text-primaryColor">
+                            Precio de
+                            la
+                            Acción</h1>
+                        <div class="h-100">
+                            <canvas style="background: #119fb9;" id="stockChart" height="400"></canvas>
+                        </div>
+                    </main>
                 </div>
 
                 <!-- Menu and Content tab-4 -->
                 <div class="menu-content tab-4 overflow-y-hidden p-[8px] hidden">
+                    <div class="p-[8px] flex gap-5 min-w-[800px] sm:min-w-[1100px]">
+                        <!-- Menu -->
+                        <ul
+                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2">
+                            <li
+                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-semibold cursor-pointer">
+                                <span class="block p-0.5 sm:p-[12px]">Emisiones locales</span>
+                            </li>
+                            <li
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                <span class="block p-0.5 sm:p-[12px]">Emisiones internacionales</span>
+                            </li>
+                            <li
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                <span class="block p-0.5 sm:p-[12px]">Programa de emisión y colocación</span>
+                            </li>
+                            <li
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                <span class="block p-0.5 sm:p-[12px]">Asamblea general de tenedores de Bonos</span>
+                            </li>
+                        </ul>
+
+                        <!-- Content -->
+                        <div
+                            class="content !text-sm sm:!text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
+                            <h1 class="text-primaryColor font-bold !text-lg sm:!text-2xl">Programa de emisión y
+                                colocación de bonos ordinarios y papeles comerciales</h1>
+                            <div class="splide4 w-full flex gap-3 items-center py-[8px]">
+                                <div data-year="2024"
+                                    class="year w-full relative py-[8px] text-center cursor-pointer bg-tertiaryColor text-[#00AEC7]">
+                                    <span>2024</span>
+                                    <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                </div>
+                                <div data-year="2023" class="year w-full relative py-[8px] text-center cursor-pointer">
+                                    <span>2023</span>
+                                    <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                </div>
+                                <div data-year="2022" class="year w-full relative py-[8px] text-center cursor-pointer">
+                                    <span>2022</span>
+                                    <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                </div>
+                                <div data-year="2021" class="year w-full relative py-[8px] text-center cursor-pointer">
+                                    <span>2021</span>
+                                    <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                </div>
+                                <div data-year="2020" class="year w-full relative py-[8px] text-center cursor-pointer">
+                                    <span>2020</span>
+                                    <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]" />
+                                </div>
+                            </div>
+                            <p class="text-primaryColor">El 11 de agosto de 2020 la compañía ofreció al mercado bonos
+                                ordinarios, para colocar en cuatro series un valor máximo
+                                de COP 1 billón. Esta emisión corresponde a un tercer tramo del programa de emisión y
+                                colocación de bonos ordinarios y
+                                papeles comerciales que fue aprobada y autorizada en el 2014.</p>
+                            <!-- Table -->
+                            <div class="flex">
+                                <!-- Table 1 -->
+                                <ul
+                                    class="min-w-[340px] max-h-[400px] overflow-x-hidden flex flex-col w-full rounded-lg border border-table sm:!text-base">
+                                    <li
+                                        class="p-2.5 flex justify-between items-center rounded-t-lg font-bold bg-tertiaryColor mb-[8px]">
+                                        <p>ACCIÓN ORDINARIA</p>
+                                        <p>ACCIÓN ORDINARIA</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
+                                        <p>Acciones en circulación</p>
+                                        <p>319,830,883</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-white">
+                                        <p>Precio de cierre (COP)</p>
+                                        <p>34,400</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
+                                        <p>PVL (Precio/Valor en Libros)</p>
+                                        <p>0.8</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-white">
+                                        <p>Valorización anual (YTD)</p>
+                                        <p>18.6%</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
+                                        <p>Precio máximo (COP)</p>
+                                        <p>36,300</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-white">
+                                        <p>Precio mínimo (COP)</p>
+                                        <p>33,040</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-tableBG">
+                                        <p>Dividendo Anual (COP)</p>
+                                        <p>1,400</p>
+                                    </li>
+                                    <li class="p-[8px] flex justify-between bg-white rounded-b-lg">
+                                        <p>Retorno del dividendo</p>
+                                        <p>4.07%</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu and Content tab-5 -->
+                <div class="menu-content tab-5 overflow-y-hidden p-[8px] hidden">
                     <p class="font-bold leading-9 !text-4xl text-primaryColor pb-[16px]">Asamblea Extraordinaria 21 de
                         Octubre
                         2024
@@ -842,7 +946,7 @@
                             class="!text-sm sm:!text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
                             <div class="content">
                                 <h1 class="text-primaryColor font-bold !text-lg sm:!text-2xl">Asamblea <span
-                                        class="tab-4-header">Extraordinaria 22
+                                        class="tab-5-header">Extraordinaria 22
                                         Junio <span class="year">2024</span></span>
                                 </h1>
                                 <div class="p-[8px] flex items-center gap-4">
