@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btn2.classList.replace("md:visible", "md:invisible");
     btn2.classList.replace("md:opacity-100", "md:opacity-0");
 
-    btn1.classList.remove("md:invisible", "md:opacity-0", "h-0");
+    btn1.classList.remove("md:invisible", "md:opacity-0", "md:h-0");
 
     // Reset hover and slider styles
     hover2.classList.remove("border-l-4");
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btn3.classList.replace("md:invisible", "md:visible");
     btn3.classList.replace("md:opacity-0", "md:opacity-100");
 
-    btn1.classList.add("md:invisible", "md:opacity-0", "h-0");
+    btn1.classList.add("md:invisible", "md:opacity-0", "md:h-0");
 
     // Adjust hover and slider styles
     hover3.classList.add("border-l-4");
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btn3.classList.replace("md:visible", "md:invisible");
     btn3.classList.replace("md:opacity-100", "md:opacity-0");
 
-    btn1.classList.remove("invisible", "opacity-0", "md:h-0");
+    btn1.classList.remove("md:invisible", "md:opacity-0", "md:h-0");
 
     // Reset hover and slider styles
     hover3.classList.remove("border-l-4");
