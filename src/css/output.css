@@ -538,6 +538,15 @@
   .min-w-\[340px\] {
     min-width: 340px;
   }
+  .min-w-\[540px\] {
+    min-width: 540px;
+  }
+  .min-w-\[640px\] {
+    min-width: 640px;
+  }
+  .min-w-\[740px\] {
+    min-width: 740px;
+  }
   .min-w-\[800px\] {
     min-width: 800px;
   }
