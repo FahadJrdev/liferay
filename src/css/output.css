@@ -364,17 +364,17 @@
   .mb-\[16px\] {
     margin-bottom: 16px;
   }
-  .mb-\[20px\] {
-    margin-bottom: 20px;
-  }
-  .mb-\[56px\] {
-    margin-bottom: 56px;
-  }
   .mb-\[144px\] {
     margin-bottom: 144px;
   }
   .mb-\[200px\] {
     margin-bottom: 200px;
+  }
+  .mb-\[20px\] {
+    margin-bottom: 20px;
+  }
+  .mb-\[56px\] {
+    margin-bottom: 56px;
   }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
@@ -1051,6 +1051,18 @@
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
   }
+  .py-\[40px\] {
+    padding-block: 40px;
+  }
+  .py-\[4px\] {
+    padding-block: 4px;
+  }
+  .py-\[6px\] {
+    padding-block: 6px;
+  }
+  .py-\[8px\] {
+    padding-block: 8px;
+  }
   .py-\[10px\] {
     padding-block: 10px;
   }
@@ -1068,18 +1080,6 @@
   }
   .py-\[32px\] {
     padding-block: 32px;
-  }
-  .py-\[40px\] {
-    padding-block: 40px;
-  }
-  .py-\[4px\] {
-    padding-block: 4px;
-  }
-  .py-\[6px\] {
-    padding-block: 6px;
-  }
-  .py-\[8px\] {
-    padding-block: 8px;
   }
   .pt-\[8px\] {
     padding-top: 8px;
@@ -2203,6 +2203,11 @@
       height: 600px;
     }
   }
+  .\32 xl\:w-60 {
+    @media (width >= 96rem) {
+      width: calc(var(--spacing) * 60);
+    }
+  }
   .\32 xl\:w-64 {
     @media (width >= 96rem) {
       width: calc(var(--spacing) * 64);
@@ -2211,6 +2216,21 @@
   .\32 xl\:w-72 {
     @media (width >= 96rem) {
       width: calc(var(--spacing) * 72);
+    }
+  }
+  .\32 xl\:w-80 {
+    @media (width >= 96rem) {
+      width: calc(var(--spacing) * 80);
+    }
+  }
+  .\32 xl\:w-\[64\] {
+    @media (width >= 96rem) {
+      width: 64;
+    }
+  }
+  .\32 xl\:w-\[80\] {
+    @media (width >= 96rem) {
+      width: 80;
     }
   }
   .\32 xl\:w-\[320px\] {
