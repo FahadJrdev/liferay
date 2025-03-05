@@ -72,18 +72,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   cards.forEach((card, index) => {
     card.addEventListener("click", () => {
-      if (card.classList.contains("bg-primaryColor")) {
-        card.classList.remove("bg-primaryColor");
-        allSvg[index].classList.remove("fill-white");
+      if (card.classList.contains("border-secondaryColor")) {
+        card.classList.remove("border-secondaryColor");
+        card.classList.add("border-primaryColor");
+        card.classList.remove("bg-white");
+        allSvg[index].classList.remove("fill-secondaryColor");
         allSvg[index].classList.add("fill-primaryColor");
-        allP[index].classList.remove("text-white");
-        allP[index].classList.add("text-primaryColor");
       } else {
-        card.classList.add("bg-primaryColor");
+        card.classList.remove("border-primaryColor");
+        card.classList.add("border-secondaryColor");
+        card.classList.add("bg-white");
         allSvg[index].classList.remove("fill-primaryColor");
-        allSvg[index].classList.add("fill-white");
-        allP[index].classList.remove("text-primaryColor");
-        allP[index].classList.add("text-white");
+        allSvg[index].classList.add("fill-secondaryColor");
       }
     });
   });
