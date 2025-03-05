@@ -309,13 +309,13 @@
                 <div
                     class="w-[70%] z-10 h-full absolute bg-gradient-to-r from-primaryColor via-primaryColor to-transparent text-white px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] flex flex-col justify-center">
                     <div class="w-[60%] flex flex-col gap-2 sm:gap-5">
-                        <h2 class="!text-base sm:!text-2xl font-bold">H2 Lorem ipsum dolor sit amet</h2>
-                        <p class="!text-sm">
+                        <h2 class="!text-base sm:!text-2xl 2xl:!text-4xl font-bold">H2 Lorem ipsum dolor sit amet</h2>
+                        <p class="!text-sm 2xl:!text-xl">
                             H3 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam.
                         </p>
                         <button
-                            class="w-36 sm:w-40 flex justify-center items-center gap-2 !text-sm text-white bg-secondaryColor mt-[8px] py-1.5 sm:py-2.5 rounded-3xl cursor-pointer">
+                            class="w-36 sm:w-40 flex justify-center items-center gap-2 !text-sm 2xl:!text-xl text-white bg-secondaryColor mt-[8px] py-1.5 sm:py-2.5 rounded-3xl cursor-pointer">
                             Leer más
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -328,7 +328,7 @@
                 </div>
 
                 <!-- Video Section -->
-                <div class="w-full flex justify-end h-72 relative">
+                <div class="w-full flex justify-end h-72 2xl:h-104 relative">
                     <video autoplay loop muted class="w-[65%] h-full object-cover">
                         <source src="./assets/videos/accions.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -342,9 +342,10 @@
             <div
                 class="md:relative w-full flex flex-col gap-2.5 md:gap-0 md:flex-row py-[20px] px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
                 <div
-                    class="w-full md:w-[400px] md:h-[500px] bg-primaryColor text-white p-2.5 sm:p-[32px] md:pr-[96px] rounded-lg md:rounded-r-lg">
+                    class="w-full md:w-[400px] md:h-[500px] 2xl:w-[600px] bg-primaryColor text-white p-2.5 sm:p-[32px] md:pr-[96px] rounded-lg md:rounded-r-lg">
                     <h1 class="md:!text-2xl lg:!text-4xl font-bold pb-[24px]">H2 Título de la sección</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    <p class="2xl:!text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                         voluptate velit esse cillum dolore.</p>
@@ -352,19 +353,21 @@
 
                 <!-- floating cards -->
                 <div
-                    class="md:absolute md:pr-[12px] md:top-1/2 md:left-[350px] lg:left-[400px] md:-translate-y-1/2 text-primaryColor flex flex-col m-auto sm:flex-row gap-4 justify-between">
+                    class="md:absolute md:pr-[12px] md:top-1/2 md:left-[350px] lg:left-[400px] 2xl:left-[600px] md:-translate-y-1/2 text-primaryColor flex flex-col m-auto sm:flex-row gap-4 justify-between">
                     <!-- Card 1 -->
-                    <div class="max-w-80 bg-white rounded-xl shadow-[0_2px_4px_rgba(0,0,0,0.3)] flex-1 basis-1">
+                    <div
+                        class="max-w-80 2xl:min-w-100 bg-white rounded-xl shadow-[0_2px_4px_rgba(0,0,0,0.3)] flex-1 basis-1">
                         <div class="w-full h-44 overflow-hidden">
                             <img class="w-full h-full object-cover rounded-t-xl" src="./assets/images/handshake.jpeg"
                                 alt="laughing-guy">
                         </div>
                         <div class="p-[12px]">
-                            <h3 class="!text-base py-1.5 font-normal">Ut enim ad minim veniam, quis nostrud exercitation
+                            <h3 class="!text-base 2xl:!text-xl py-1.5 font-normal">Ut enim ad minim veniam, quis
+                                nostrud exercitation
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                                 reprehenderit in voluptate.</h3>
                             <button
-                                class="flex justify-center items-center gap-2 !text-sm text-white bg-secondaryColor px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">CTA
+                                class="flex justify-center items-center gap-2 !text-sm 2xl:!text-xl text-white bg-secondaryColor px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">CTA
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -375,17 +378,19 @@
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="max-w-80 bg-white rounded-xl shadow-[0_2px_4px_rgba(0,0,0,0.3)] flex-1 basis-1">
+                    <div
+                        class="max-w-80 2xl:min-w-100 bg-white rounded-xl shadow-[0_2px_4px_rgba(0,0,0,0.3)] flex-1 basis-1">
                         <div class="w-full h-44 overflow-hidden">
                             <img class="w-full h-full overflow-hidden object-cover rounded-t-xl"
                                 src="./assets/images/laughing-girl.jpeg" alt="laughing-guy">
                         </div>
                         <div class="p-[12px]">
-                            <h3 class="!text-base py-1.5 font-normal">Ut enim ad minim veniam, quis nostrud exercitation
+                            <h3 class="!text-base 2xl:!text-xl py-1.5 font-normal">Ut enim ad minim veniam, quis nostrud
+                                exercitation
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                                 reprehenderit in voluptate.</h3>
                             <button
-                                class="flex justify-center items-center gap-2 !text-sm text-white bg-secondaryColor px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">CTA
+                                class="flex justify-center items-center gap-2 !text-sm 2xl:!text-xl text-white bg-secondaryColor px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">CTA
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -404,7 +409,7 @@
             <div class="w-full px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
                 <!-- Tabs -->
                 <ul
-                    class="tabs w-full !text-sm md:!text-base lg:!text-xl font-semibold sm:flex sm:justify-between grid grid-cols-2 gap-2 pb-[24px] text-primaryColor">
+                    class="tabs w-full !text-sm md:!text-base lg:!text-xl 2xl:!text-2xl font-semibold sm:flex sm:justify-between grid grid-cols-2 gap-2 pb-[24px] text-primaryColor">
                     <li class="px-[4px] flex-1 flex justify-center basis-1/4 border-r border-secondaryColor">
                         <span data-tab="tab-2"
                             class="rounded-lg w-full py-0.5 sm:py-[8px] flex justify-center items-center bg-primaryColor text-white cursor-pointer">Informes</span>
@@ -427,17 +432,18 @@
                 <div class="menu-content tab-2 overflow-y-hidden p-[8px]">
                     <p class="font-bold leading-9 !text-4xl text-primaryColor pb-[16px]">Informe 2024</p>
                     <div class="py-[8px] flex flex-col md:flex-row gap-8 items-start md:items-center">
-                        <div class="w-full h-60 overflow-hidden">
+                        <div class="w-full h-60 2xl:h-80 overflow-hidden">
                             <img class="w-full h-full overflow-hidden object-cover rounded-xl"
                                 src="./assets/images/laughing-girls.jpeg" alt="laughing-guy">
                         </div>
                         <div class="w-full">
-                            <h3 class="!text-base py-1.5 font-normal text-justify">Lorem ipsum dolor sit amet,
+                            <h3 class="!text-base 2xl:!text-2xl py-1.5 font-normal text-justify">Lorem ipsum dolor sit
+                                amet,
                                 consectetur adipiscing
                                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h3>
                             <button
-                                class="flex justify-center items-center gap-2 !text-sm text-white bg-secondaryColor px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">CTA
+                                class="flex justify-center items-center gap-2 !text-sm 2xl:!text-2xl text-white bg-secondaryColor px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">CTA
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -449,7 +455,7 @@
                     </div>
                     <div class="flex gap-3 items-center py-[8px]">
                         <p class="font-bold leading-9 !text-4xl text-primaryColor pb-[16px]">Informe</p>
-                        <div class="splide splide1 w-full">
+                        <div class="splide splide1 w-full 2xl:!text-2xl">
                             <div class="splide__track">
                                 <div class="splide__list">
                                     <div data-year="2024"
@@ -494,36 +500,36 @@
                     <div class="p-[8px] flex gap-5 min-w-[800px] sm:min-w-[1100px]">
                         <!-- Menu -->
                         <ul
-                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2">
+                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2 !text-sm sm:!text-base lg:!text-xl 2xl:!text-2xl">
                             <li data-content="content-1"
-                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-semibold cursor-pointer">
+                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primaryColor rounded-r-lg font-semibold cursor-pointer">
                                 <span class="block p-0.5 sm:p-[12px]">Informe Anual</span>
                             </li>
                             <li data-content="content-2"
-                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg font-normal cursor-pointer">
                                 <span class="termItem block p-0.5 sm:p-[12px]">1<sup>er</sup> Trimestre</span>
                             </li>
                             <li data-content="content-2"
-                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg font-normal cursor-pointer">
                                 <span class="termItem block p-0.5 sm:p-[12px]">2<sup>do</sup> Trimestre</span>
                             </li>
                             <li data-content="content-2"
-                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg font-normal cursor-pointer">
                                 <span class="termItem block p-0.5 sm:p-[12px]">3<sup>er</sup> Trimestre</span>
                             </li>
                             <li data-content="content-2"
-                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg font-normal cursor-pointer">
                                 <span class="termItem block p-0.5 sm:p-[12px]">4<sup>to</sup> Trimestre</span>
                             </li>
                         </ul>
 
                         <!-- Content -->
                         <div
-                            class="!text-sm sm:!text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
-                            <div class="informo-content content-1">
-                                <h1 class="text-primaryColor font-bold !text-lg sm:!text-2xl">Informe Anual <span
-                                        class="year">2024</span></h1>
-                                <p class="sm:!text-base">
+                            class="!text-sm sm:!text-base flex flex-col flex-1 gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
+                            <div class="informo-content content-1 flex flex-col gap-5">
+                                <h1 class="text-primaryColor font-bold !text-lg sm:!text-2xl 2xl:!text-4xl">Informe
+                                    Anual <span class="year">2024</span></h1>
+                                <p class="sm:!text-base 2xl:!text-2xl">
                                     Este Informe Anual <span class="year">2024</span> da cuenta de los aspectos más
                                     relevantes de la evolución,
                                     resultados y compromisos de Grupo
@@ -534,7 +540,7 @@
                                 </p>
                                 <div class="w-full flex items-center gap-6 py-[8px]">
                                     <button
-                                        class="w-full flex justify-center items-center gap-2 !text-sm text-white bg-secondaryColor px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">
+                                        class="w-full flex justify-center items-center gap-2 !text-sm 2xl:!text-2xl text-white bg-secondaryColor px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">
                                         CTA
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -544,7 +550,7 @@
                                         </svg>
                                     </button>
                                     <button
-                                        class="w-full flex gap-2 justify-center items-center !text-sm text-secondaryColor border-secondaryColor border-1  px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">
+                                        class="w-full flex gap-2 justify-center items-center !text-sm 2xl:!text-2xl text-secondaryColor border-secondaryColor border-1  px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -559,12 +565,12 @@
                                 </div>
                             </div>
                             <div class="informo-content content-2 hidden">
-                                <h1 class="text-primaryColor font-bold !text-lg sm:!text-2xl"><span
+                                <h1 class="text-primaryColor font-bold !text-lg sm:!text-2xl 2xl:!text-4xl"><span
                                         class="year">2024</span> -
                                     <span class="term">1<sup>er</sup> Trimestre</span>
                                 </h1>
                                 <div class="p-[8px] flex items-center gap-4">
-                                    <ul class="flex-1 self-start">
+                                    <ul class="flex-1 self-start 2xl:!text-2xl">
                                         <li class="flex items-center gap-6 mb-[8px]">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -660,8 +666,8 @@
                                         </li>
                                     </ul>
                                     <div class="img">
-                                        <img class="rounded-lg w-60 h-full" src="./assets/images/writing-checking.jpeg"
-                                            alt="writing-checking">
+                                        <img class="rounded-lg w-60 2xl:w-80 h-full"
+                                            src="./assets/images/writing-checking.jpeg" alt="writing-checking">
                                     </div>
                                 </div>
                             </div>
@@ -674,20 +680,20 @@
                     <div class="p-[8px] flex gap-5 min-w-[800px] sm:min-w-[1100px]">
                         <!-- Menu -->
                         <ul
-                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2">
+                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2 !text-sm sm:!text-base lg:!text-xl 2xl:!text-2xl">
                             <li
-                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-semibold cursor-pointer">
+                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primaryColor rounded-r-lg font-semibold cursor-pointer">
                                 <span class="block p-0.5 sm:p-[12px]">Indicadores
                                     Bursátiles</span>
                             </li>
                             <li
-                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg font-normal cursor-pointer">
                                 <span class="block p-0.5 sm:p-[12px]">ADR-
                                     American Depositary Receipt</span>
                             </li>
                             <li class="tableMenu w-full relative">
                                 <h1
-                                    class="menuLabel w-full flex justify-between p-0.5 sm:p-[12px] hover:bg-white rounded-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                    class="menuLabel w-full flex justify-between p-0.5 sm:p-[12px] hover:bg-white rounded-lg font-normal cursor-pointer">
                                     <span class="font-bold text-xlblock">Dividendos</span>
                                     <span class="flex items-center justify-center p-0.5 sm:p-[12px]">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -700,7 +706,7 @@
                                 </h1>
                                 <!-- Nested Menu -->
                                 <ul
-                                    class="dropDown !text-sm sm:!text-base lg:!text-xl font-normal bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl overflow-x-hidden w-full flex flex-col gap-3 sm:gap-6 sm:px-[24px] p-[4px] sm:py-[16px] mt-[8px] max-h-92 transition-all duration-300 ease-in-out">
+                                    class="dropDown font-normal bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl overflow-x-hidden w-full flex flex-col gap-3 sm:gap-6 sm:px-[24px] p-[4px] sm:py-[16px] mt-[8px] max-h-92 transition-all duration-300 ease-in-out">
                                     <li class="hover:bg-tableBG px-[12px] py-[8px] rounded-xl cursor-pointer">Acción
                                         Ordinaria
                                     </li>
@@ -718,12 +724,13 @@
 
                         <!-- Content -->
                         <div
-                            class="content !text-sm sm:!text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
-                            <h1 class="text-primaryColor font-bold !text-lg sm:!text-2xl">Indicadores Bursátiles</h1>
-                            <p class="sm:!text-base">
+                            class="content !text-sm sm:!text-base flex flex-1 flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
+                            <h1 class="text-primaryColor font-bold !text-lg sm:!text-2xl 2xl:!text-2xl">Indicadores
+                                Bursátiles</h1>
+                            <p class="sm:!text-base 2xl:!text-xl">
                                 30 de junio de 2024
                             </p>
-                            <div class="font-bold">
+                            <div class="font-bold 2xl:!text-xl">
                                 <p>Tasa de cambio:<span class="ml-1.5 font-normal">COP 4,148</span></p>
                                 <p>Capitalización Bursátil (COP):<span class="ml-1.5 font-normal">12.8 billones</span>
                                 </p>
@@ -733,7 +740,7 @@
                             <div class="flex gap-4">
                                 <!-- Table 1 -->
                                 <ul
-                                    class="min-w-[340px] max-h-[400px] overflow-x-hidden flex flex-col w-full rounded-lg border border-table sm:!text-base">
+                                    class="min-w-[340px] max-h-[400px] overflow-x-hidden flex flex-col w-full rounded-lg border border-table sm:!text-base 2xl:!text-xl">
                                     <li
                                         class="p-2.5 flex justify-center items-center rounded-t-lg font-bold bg-tertiaryColor mb-[8px]">
                                         ACCIÓN ORDINARIA</li>
@@ -774,7 +781,7 @@
 
                                 <!-- Table 2 -->
                                 <ul
-                                    class="min-w-[340px] max-h-[400px] overflow-x-hidden flex flex-col w-full rounded-lg border border-table sm:!text-base">
+                                    class="min-w-[340px] max-h-[400px] overflow-x-hidden flex flex-col w-full rounded-lg border border-table sm:!text-base 2xl:!text-xl">
                                     <li
                                         class="p-2.5 flex justify-center items-center rounded-t-lg font-bold bg-tertiaryColor mb-[8px]">
                                         ACCIÓN PREFERENCIAL</li>
@@ -810,7 +817,6 @@
                                         <p>Retorno del dividendo</p>
                                         <p>5.73%</p>
                                     </li>
-
                                 </ul>
                             </div>
                         </div>
@@ -832,28 +838,28 @@
                     <div class="p-[8px] flex gap-5 min-w-[800px] sm:min-w-[1100px]">
                         <!-- Menu -->
                         <ul
-                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2">
+                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2 !text-sm sm:!text-base lg:!text-xl 2xl:!text-2xl">
                             <li
-                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-semibold cursor-pointer">
+                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primaryColor rounded-r-lg font-semibold cursor-pointer">
                                 <span class="block p-0.5 sm:p-[12px]">Emisiones locales</span>
                             </li>
                             <li
-                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg font-normal cursor-pointer">
                                 <span class="block p-0.5 sm:p-[12px]">Emisiones internacionales</span>
                             </li>
                             <li
-                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg font-normal cursor-pointer">
                                 <span class="block p-0.5 sm:p-[12px]">Programa de emisión y colocación</span>
                             </li>
                             <li
-                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg font-normal cursor-pointer">
                                 <span class="block p-0.5 sm:p-[12px]">Asamblea general de tenedores de Bonos</span>
                             </li>
                         </ul>
 
                         <!-- Content -->
                         <div
-                            class="content !text-sm sm:!text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
+                            class="content !text-sm sm:!text-base 2xl:!text-xl flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
                             <h1 class="text-primaryColor font-bold !text-lg sm:!text-2xl">Programa de emisión y
                                 colocación de bonos ordinarios y papeles comerciales</h1>
                             <div class="splide4 w-full flex gap-3 items-center py-[8px]">
@@ -888,7 +894,7 @@
                             <div class="flex overflow-x-hidden">
                                 <!-- Table 1 -->
                                 <ul
-                                    class="min-w-[740px] max-h-[400px] flex flex-col w-full rounded-lg border border-table sm:!text-base">
+                                    class="min-w-[740px] max-h-[400px] flex flex-col w-full rounded-lg border border-table">
                                     <li
                                         class="p-2.5 flex justify-between items-center rounded-t-lg font-bold bg-tertiaryColor mb-[8px]">
                                         <div class="w-full">
@@ -987,17 +993,18 @@
                         2024
                     </p>
                     <div class="py-[8px] flex flex-col md:flex-row gap-8 items-start md:items-center">
-                        <div class="w-full h-60 overflow-hidden">
+                        <div class="w-full h-60 2xl:h-80 overflow-hidden">
                             <img class="w-full h-full overflow-hidden object-cover rounded-xl"
                                 src="./assets/images/conference.jpeg" alt="conference">
                         </div>
                         <div class="w-full">
-                            <h3 class="!text-base py-1.5 font-normal text-justify">Lorem ipsum dolor sit amet,
+                            <h3 class="!text-base 2xl:!text-2xl py-1.5 font-normal text-justify">Lorem ipsum dolor sit
+                                amet,
                                 consectetur adipiscing
                                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h3>
                             <button
-                                class="flex justify-center items-center gap-2 !text-sm text-white bg-secondaryColor px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">CTA
+                                class="flex justify-center items-center gap-2 !text-sm 2xl:!text-2xl text-white bg-secondaryColor px-[40px] mt-[8px] py-[8px] rounded-3xl cursor-pointer">CTA
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -1009,7 +1016,7 @@
                     </div>
                     <div class="flex gap-3 items-center py-[8px]">
                         <p class="font-bold leading-9 !text-4xl text-primaryColor pb-[16px]">Asambleas</p>
-                        <div class="splide splide2 w-full">
+                        <div class="splide splide2 w-full 2xl:!text-2xl">
                             <div class="splide__track">
                                 <div class="splide__list">
                                     <div data-year="2024"
@@ -1054,9 +1061,9 @@
                     <div class="p-[8px] flex gap-5 min-w-[800px] sm:min-w-[1100px]">
                         <!-- Menu -->
                         <ul
-                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2">
+                            class="sidemenu w-full max-w-[450px] min-w-44 flex flex-col rounded-lg p-[4px] sm:px-1.5 gap-6 justify-start bg-ex2 !text-sm sm:!text-base lg:!text-xl 2xl:!text-2xl">
                             <li
-                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-semibold cursor-pointer">
+                                class="menuItem w-full bg-white hover:bg-white border-l-4 border-primaryColor rounded-r-lg font-semibold cursor-pointer">
                                 <span class="block p-0.5 sm:p-[12px]">
                                     <div data-date="22 Junio" class="date-content">Extraordinaria 22 Junio <span
                                             class="year">2024</span>
@@ -1064,7 +1071,7 @@
                                 </span>
                             </li>
                             <li
-                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg font-normal cursor-pointer">
                                 <span class="block p-0.5 sm:p-[12px]">
                                     <div data-date="19 Abril" class="date-content">Extraordinaria 19 Abril <span
                                             class="year">2024</span>
@@ -1072,7 +1079,7 @@
                                 </span>
                             </li>
                             <li
-                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg font-normal cursor-pointer">
                                 <span class="block p-0.5 sm:p-[12px]">
                                     <div data-date="31 Marzo" class="date-content">Extraordinaria 31 Marzo <span
                                             class="year">2024</span>
@@ -1080,7 +1087,7 @@
                                 </span>
                             </li>
                             <li
-                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg !text-sm sm:!text-base lg:!text-xl font-normal cursor-pointer">
+                                class="menuItem w-full hover:bg-white border-primaryColor rounded-r-lg font-normal cursor-pointer">
                                 <span class="block p-0.5 sm:p-[12px]">
                                     <div data-date="31 Marzo" class="date-content">Ordinaria 31 Marzo <span
                                             class="year">2024</span>
@@ -1091,16 +1098,16 @@
 
                         <!-- Content -->
                         <div
-                            class="!text-sm sm:!text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
+                            class="!text-sm sm:!text-base 2xl:!text-2xl flex flex-1 flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-[20px]">
                             <div class="content">
                                 <h1 class="text-primaryColor font-bold !text-lg sm:!text-2xl">Asamblea <span
                                         class="tab-5-header">Extraordinaria 22
                                         Junio <span class="year">2024</span></span>
                                 </h1>
                                 <div class="p-[8px] flex items-center gap-4">
-                                    <ul class="flex-1 self-start">
+                                    <ul class="flex-1 self-start flex flex-col 2xl:gap-3">
                                         <button
-                                            class="flex justify-center items-center gap-4 !text-sm text-primaryColor border-primaryColor border-1 px-[40px] mt-[8px] mb-[8px] py-[8px] rounded-3xl cursor-pointer">
+                                            class="flex justify-center items-center self-start gap-4 !text-sm 2xl:!text-xl text-primaryColor border-primaryColor border-1 px-[40px] mt-[8px] mb-[8px] py-[8px] rounded-3xl cursor-pointer">
                                             Convocatoria
                                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1189,7 +1196,7 @@
                                         </li>
                                     </ul>
                                     <div class="img">
-                                        <img class="rounded-lg w-60 h-full" src="./assets/images/gossip.jpeg"
+                                        <img class="rounded-lg w-60 2xl:w-100 h-full" src="./assets/images/gossip.jpeg"
                                             alt="gossip">
                                     </div>
                                 </div>
@@ -1208,7 +1215,8 @@
                     class="flex flex-col sm:grid sm:grid-cols-2 sm:gap-y-6 md:flex md:flex-row justify-between gap-7 sm:gap-3">
                     <!-- Card 1-->
                     <div class="flex flex-col justify-between flex-1 basis-1 border-l-2 border-primaryColor pl-[12px]">
-                        <h1 class="!text-xl font-semibold pb-[20px]">Video conferencia presentación Informe 4T 2024</h1>
+                        <h1 class="!text-xl 2xl:!text-2xl font-semibold pb-[20px]">Video conferencia presentación
+                            Informe 4T 2024</h1>
                         <div class="flex justify-start items-center gap-2.5">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1220,12 +1228,12 @@
                                     fill="#001E60" />
                             </svg>
                             <div>
-                                <p class="font-normal !text-base p-[4px]">18 de Diciembre del 2024</p>
-                                <p class="font-normal !text-base p-[4px]">14:00 GTM</p>
+                                <p class="font-normal !text-base 2xl:!text-xl p-[4px]">18 de Diciembre del 2024</p>
+                                <p class="font-normal !text-base 2xl:!text-xl p-[4px]">14:00 GTM</p>
                             </div>
                         </div>
                         <button
-                            class="w-48 flex justify-center items-center gap-2 !text-sm mt-[20px] text-white bg-secondaryColor px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
+                            class="w-48 2xl:w-64 flex justify-center items-center gap-2 !text-sm 2xl:!text-xl mt-[20px] text-white bg-secondaryColor px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
                             To Action
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1237,7 +1245,7 @@
                     </div>
                     <!-- Card 2-->
                     <div class="flex-1 basis-1 flex flex-col justify-between border-l-2 border-primaryColor pl-[12px]">
-                        <h1 class="!text-xl font-semibold pb-[20px]">Nombre del evento número 2</h1>
+                        <h1 class="!text-xl 2xl:!text-2xl font-semibold pb-[20px]">Nombre del evento número 2</h1>
                         <div class="flex justify-start items-center gap-2.5">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1249,12 +1257,12 @@
                                     fill="#001E60" />
                             </svg>
                             <div>
-                                <p class="font-normal !text-base p-[4px]">18 de Diciembre del 2024</p>
-                                <p class="font-normal !text-base p-[4px]">14:00 GTM</p>
+                                <p class="font-normal !text-base 2xl:!text-xl p-[4px]">18 de Diciembre del 2024</p>
+                                <p class="font-normal !text-base 2xl:!text-xl p-[4px]">14:00 GTM</p>
                             </div>
                         </div>
                         <button
-                            class="w-48 flex justify-center items-center gap-2 !text-sm mt-[20px] text-white bg-secondaryColor px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
+                            class="w-48 2xl:w-64 flex justify-center items-center gap-2 !text-sm 2xl:!text-xl mt-[20px] text-white bg-secondaryColor px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
                             To Action
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1266,7 +1274,7 @@
                     </div>
                     <!-- Card 3-->
                     <div class="flex flex-col justify-between flex-1 basis-1 border-l-2 border-primaryColor pl-[12px]">
-                        <h1 class="!text-xl font-semibold pb-[20px]">Nombre del evento</h1>
+                        <h1 class="!text-xl 2xl:!text-2xl font-semibold pb-[20px]">Nombre del evento</h1>
                         <div class="flex justify-start items-center gap-2.5">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1278,12 +1286,12 @@
                                     fill="#001E60" />
                             </svg>
                             <div>
-                                <p class="font-normal !text-base p-[4px]">18 de Diciembre del 2024</p>
-                                <p class="font-normal !text-base p-[4px]">14:00 GTM</p>
+                                <p class="font-normal !text-base 2xl:!text-xl p-[4px]">18 de Diciembre del 2024</p>
+                                <p class="font-normal !text-base 2xl:!text-xl p-[4px]">14:00 GTM</p>
                             </div>
                         </div>
                         <button
-                            class="w-48 flex justify-center items-center gap-2 !text-sm mt-[20px] text-white bg-secondaryColor px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
+                            class="w-48 2xl:w-64 flex justify-center items-center gap-2 !text-sm 2xl:!text-xl mt-[20px] text-white bg-secondaryColor px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
                             To Action
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1308,13 +1316,15 @@
                 <div class="flex flex-col lg:flex-row justify-between gap-6">
                     <!-- Card 1-->
                     <div
-                        class="bg-white flex flex-col justify-between shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-[24px]">
-                        <h1 class="!text-base sm:!text-xl font-semibold pb-[20px]">Resultados Trimestrales</h1>
-                        <p class="font-normal !text-sm sm:!text-base p-[4px]">At vero eos et accusamus et iusto odio
+                        class="bg-white flex flex-col justify-between items-center shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-[24px]">
+                        <h1 class="!text-base sm:!text-xl 2xl:!text-2xl font-semibold pb-[20px]">Resultados Trimestrales
+                        </h1>
+                        <p class="font-normal !text-sm sm:!text-base 2xl:!text-xl p-[4px]">At vero eos et accusamus et
+                            iusto odio
                             dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
                             dolores et quas molestias excepturi</p>
                         <button
-                            class="self-end w-48 flex justify-center items-center gap-2 !text-sm mt-[20px] text-white bg-secondaryColor px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
+                            class="w-48 2xl:w-64 flex justify-center items-center gap-2 !text-sm 2xl:!text-xl mt-[20px] text-white bg-secondaryColor px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
                             To Action
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1326,13 +1336,14 @@
                     </div>
                     <!-- Card 2-->
                     <div
-                        class="bg-white flex flex-col justify-between shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-[24px]">
-                        <h1 class="!text-xl font-semibold pb-[20px]">Asamblea de Accionistas</h1>
-                        <p class="font-normal !text-sm sm:!text-base p-[4px]">At vero eos et accusamus et iusto odio
+                        class="bg-white flex flex-col justify-between items-center shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-[24px]">
+                        <h1 class="!text-xl 2xl:!text-2xl font-semibold pb-[20px]">Asamblea de Accionistas</h1>
+                        <p class="font-normal !text-sm sm:!text-base 2xl:!text-xl p-[4px]">At vero eos et accusamus et
+                            iusto odio
                             dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
                             dolores et quas molestias excepturi</p>
                         <button
-                            class="self-end w-48 flex justify-center items-center gap-2 !text-sm mt-[20px] text-white bg-secondaryColor px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
+                            class="w-48 2xl:w-64 flex justify-center items-center gap-2 !text-sm 2xl:!text-xl mt-[20px] text-white bg-secondaryColor px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
                             To Action
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1344,13 +1355,14 @@
                     </div>
                     <!-- Card 3-->
                     <div
-                        class="bg-white flex flex-col justify-between shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-[24px]">
-                        <h1 class="!text-xl font-semibold pb-[20px]">Pago de Dividendos</h1>
-                        <p class="font-normal !text-sm sm:!text-base p-[4px]">At vero eos et accusamus et iusto odio
+                        class="bg-white flex flex-col justify-between items-center shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-[24px]">
+                        <h1 class="!text-xl 2xl:!text-2xl font-semibold pb-[20px]">Pago de Dividendos</h1>
+                        <p class="font-normal !text-sm sm:!text-base 2xl:!text-xl p-[4px]">At vero eos et accusamus et
+                            iusto odio
                             dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
                             dolores et quas molestias excepturi</p>
                         <button
-                            class="self-end w-48 flex justify-center items-center gap-2 !text-sm mt-[20px] text-white bg-secondaryColor px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
+                            class="w-48 2xl:w-64 flex justify-center items-center gap-2 !text-sm 2xl:!text-xl mt-[20px] text-white bg-secondaryColor px-[40px] py-[12px] rounded-3xl cursor-pointer">Call
                             To Action
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1371,7 +1383,8 @@
                 <div class="p-[16px] flex flex-col gap-2 justify-center items-center flex-1 basis-1/3">
                     <h1 class="text-secondaryColor !text-xl sm:!text-4xl font-bold">Centro de atención al inversionista
                     </h1>
-                    <p class="text-white !text-base sm:!text-xl font-normal">En caso que necesites información adicional
+                    <p class="text-white !text-base sm:!text-xl 2xl:!text-2xl font-normal">En caso que necesites
+                        información adicional
                         a
                         la que aquí se encuentra, puedes contactar a las siguientes personas:</p>
                 </div>
@@ -1385,13 +1398,15 @@
                                 src="./assets/images/laughing-guy.jpeg" alt="laughing-guy">
                         </div>
                         <div class="p-[12px]">
-                            <h2 class="!text-xl py-1.5 font-semibold">Carlos Eduardo Gonzalez Tabares</h2>
-                            <h3 class="!text-base py-1.5 font-normal">Gerente de Inversionistas y Mercado de Capitales
+                            <h2 class="!text-xl 2xl:!text-2xl py-1.5 font-semibold">Carlos Eduardo Gonzalez Tabares</h2>
+                            <h3 class="!text-base 2xl:!text-xl py-1.5 font-normal">Gerente de Inversionistas y Mercado
+                                de Capitales
                             </h3>
-                            <p class="!text-sm py-1.5"><a href="tel:+576043197039">(+57) 604 319 7039</a></p>
-                            <p class="!text-sm py-1.5"><a
+                            <p class="!text-sm 2xl:!text-lg py-1.5"><a href="tel:+576043197039">(+57) 604 319 7039</a>
+                            </p>
+                            <p class="!text-sm 2xl:!text-lg py-1.5"><a
                                     href="mailto:cegonzalezt@gruposura.com.co">cegonzalezt@gruposura.com.co</a></p>
-                            <p class="!text-sm py-1.5">Carrera 43A # 5A - 113</p>
+                            <p class="!text-sm 2xl:!text-lg py-1.5">Carrera 43A # 5A - 113</p>
                         </div>
                     </div>
                     <!-- Card 2 -->
@@ -1401,13 +1416,15 @@
                                 src="./assets/images/moody-guy.jpeg" alt="moody-guy-guy">
                         </div>
                         <div class="p-[12px]">
-                            <h2 class="!text-xl py-1.5 font-semibold">Daniel Mesa Gómez</h2>
-                            <h3 class="!text-base py-1.5 font-normal">Director de Inversionistas y Mercado de Capitales
+                            <h2 class="!text-xl 2xl:!text-2xl py-1.5 font-semibold">Daniel Mesa Gómez</h2>
+                            <h3 class="!text-base 2xl:!text-xl py-1.5 font-normal">Director de Inversionistas y Mercado
+                                de Capitales
                             </h3>
-                            <p class="!text-sm py-1.5"><a href="tel:+576043197039">(+57) 604 319 7039</a></p>
-                            <p class="!text-sm py-1.5"><a
+                            <p class="!text-sm 2xl:!text-lg py-1.5"><a href="tel:+576043197039">(+57) 604 319 7039</a>
+                            </p>
+                            <p class="!text-sm 2xl:!text-lg py-1.5"><a
                                     href="mailto:cegonzalezt@gruposura.com.co">cegonzalezt@gruposura.com.co</a></p>
-                            <p class="!text-sm py-1.5">Carrera 43A # 5A - 113</p>
+                            <p class="!text-sm 2xl:!text-lg py-1.5">Carrera 43A # 5A - 113</p>
                         </div>
                     </div>
                 </div>
@@ -1423,20 +1440,20 @@
                     <!-- Card 1-->
                     <div
                         class="flex flex-col justify-between gap-2 flex-1 basis-1 border-l-2 border-primaryColor pl-[16px]">
-                        <h1 class="!text-xl font-semibold">Medellín</h1>
-                        <p class="font-normal !text-base text-[#484949]">+57 604 444 7231</p>
+                        <h1 class="!text-xl 2xl:!text-2xl font-semibold">Medellín</h1>
+                        <p class="font-normal !text-base 2xl:!text-xl text-[#484949]">+57 604 444 7231</p>
                     </div>
                     <!-- Card 2-->
                     <div
                         class="flex flex-col justify-between gap-2 flex-1 basis-1 border-l-2 border-primaryColor pl-[16px]">
-                        <h1 class="!text-xl font-semibold">Resto del país</h1>
-                        <p class="font-normal !text-base text-[#484949]">01 8000 954 242</p>
+                        <h1 class="!text-xl 2xl:!text-2xl font-semibold">Resto del país</h1>
+                        <p class="font-normal !text-base 2xl:!text-xl text-[#484949]">01 8000 954 242</p>
                     </div>
                     <!-- Card 3-->
                     <div
                         class="flex flex-col justify-between gap-2 flex-1 basis-1 border-l-2 border-primaryColor pl-[16px]">
-                        <h1 class="!text-xl font-semibold">Email</h1>
-                        <p class="font-normal !text-base text-[#484949]">caa@bancolombia.com.co</p>
+                        <h1 class="!text-xl 2xl:!text-2xl font-semibold">Email</h1>
+                        <p class="font-normal !text-base 2xl:!text-xl text-[#484949]">caa@bancolombia.com.co</p>
                     </div>
                 </div>
             </div>
