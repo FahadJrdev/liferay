@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfile | Grupo Sura</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="font-sans text-primaryColor">
+    <div class="w-full">
+        <!-- Header -->
+        <div class="header">
+            <header
+                class="flex justify-center bg-primaryColor text-white px-[6px] md:px-[28px] lg:px-[40px] xl:px-[64px] py-[6px] lg:py-[10px] xl:py-[14px]">
+                <div class="w-full mx-auto flex justify-center sm:justify-end items-center">
+                    <nav class="flex space-x-6 !text-xs md:!text-sm lg:!text-base 2xl:!text-lg">
+                        <div><a href="#">Línea Ética</a></div>
+                        <div><a href="#">Contáctanos</a></div>
+                        <div><a href="#">Noticias</a></div>
+                        <div><a href="#">Certificado de renta</a></div>
+                    </nav>
+                </div>
+            </header>
+            <div class="bg-white p-[10px] md:p-0 md:opacity-0 md:h-0">
+                <svg class="bar w-6 fill-primaryColor cursor-pointer" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </div>
+            <div
+                class="overlay -z-10 invisible h-screen w-screen md:w-0 opacity-0 transition-all duration-300 ease-in-out md:opacity-0 fixed top-0 left-0 bg-primaryColor">
+            </div>
+            <header
+                class="mainMenu transition-all duration-300 ease-in-out overflow-x-hidden md:overflow-visible w-0 font-semibold md:opacity-100 z-20 fixed md:static bg-white md:bg-transparent top-0 left-0 h-screen md:h-auto md:w-full flex flex-col md:flex-row justify-center text-primaryColor shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+                <div class="flex justify-end p-[12px] md:p-0">
+                    <svg class="xmark w-8 md:opacity-0 md:w-0 fill-primaryColor cursor-pointer"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                </div>
+                <div class="h-screen md:h-auto w-xs md:w-full px-[16px] md:px-[28px] lg:px-[40px] xl:px-[64px]">
+                    <div
+                        class="w-full mx-auto flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-5 !text-sm lg:!text-base 2xl:!text-xl">
+                        <div class="flex items-center px-2.5 md:px-0">
+                            <a href="./homeprototype.html">
+                                <img class="w-24 lg:w-32 xl:w-[156px]" src="./assets/images/logo.png"
+                                    alt="GrupoSURA_Logo">
+                            </a>
+                        </div>
+                        <div class="menuParent flex items-center relative">
+                            <span
+                                class="flex w-full md:w-auto justify-between md:justify-center items-center gap-3 rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                                <a href="#">Quienes somos</a>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.6575 5.31773C14.3035 4.97416 13.74 4.96512 13.3767 5.28609L7.81077 10.6884L2.23092 5.27253L1.60679 4.66675C1.25281 5.01032 1.24349 5.55733 1.57419 5.90995L7.48474 11.6468C7.57324 11.7327 7.68968 11.7779 7.81543 11.7779C7.94119 11.7779 8.05763 11.7281 8.14613 11.6468L14.0427 5.92351L14.6668 5.31773H14.6575Z"
+                                        fill="#001E60" />
+                                </svg>
+                            </span>
+                            <div
+                                class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 2xl:w-72 overflow-hidden flex-col bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                                <div
+                                    class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./whoarewe.html">Sobre Grupo SURA</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./nuestros.html">Nuestra Identidad</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="#">Evolucion y Crecimiento</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./talent-hunt.html">Talento Humano</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="#">#PensarConOtros</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span
+                                class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                                <a href="./portfolio.html">Portafolio</a>
+                            </span>
+                        </div>
+                        <div class="menuParent flex items-center relative">
+                            <span
+                                class="flex w-full md:w-auto justify-between md:justify-center items-center gap-3 rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                                <a href="#">Relación con inversionistas</a>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.6575 5.31773C14.3035 4.97416 13.74 4.96512 13.3767 5.28609L7.81077 10.6884L2.23092 5.27253L1.60679 4.66675C1.25281 5.01032 1.24349 5.55733 1.57419 5.90995L7.48474 11.6468C7.57324 11.7327 7.68968 11.7779 7.81543 11.7779C7.94119 11.7779 8.05763 11.7281 8.14613 11.6468L14.0427 5.92351L14.6668 5.31773H14.6575Z"
+                                        fill="#001E60" />
+                                </svg>
+                            </span>
+                            <div
+                                class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 2xl:w-72 overflow-hidden flex-col bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                                <div
+                                    class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./whoarewe.html">Inforelevantes</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./nuestros.html">Acciones</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="#">Bonos</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./talent-hunt.html">Asambleas</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="#">Centro de Atención</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span
+                                class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                                <a href="./corporate.html">Gobierno Corporativo</a>
+                            </span>
+                        </div>
+                        <div class="menuParent flex items-center relative">
+                            <span
+                                class="flex w-full md:w-auto justify-between md:justify-center items-center gap-3 rounded-3xl px-2.5 py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                                <a href="#">Sostenibilidad</a>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.6575 5.31773C14.3035 4.97416 13.74 4.96512 13.3767 5.28609L7.81077 10.6884L2.23092 5.27253L1.60679 4.66675C1.25281 5.01032 1.24349 5.55733 1.57419 5.90995L7.48474 11.6468C7.57324 11.7327 7.68968 11.7779 7.81543 11.7779C7.94119 11.7779 8.05763 11.7281 8.14613 11.6468L14.0427 5.92351L14.6668 5.31773H14.6575Z"
+                                        fill="#001E60" />
+                                </svg>
+                            </span>
+                            <div
+                                class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 2xl:w-72 overflow-hidden flex-col bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                                <div
+                                    class="flex justify-between items-center p-[8px] mt-[16px] mb-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./whoarewe.html">Sostenibilidad SURA</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./nuestros.html">Estrategía</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="#">Evolucion y Crecimiento</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] my-2.5 rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="./talent-hunt.html">Materialidad</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center p-[8px] mt-2.5 mb-[16px] rounded-lg hover:bg-primaryColor hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                    <a href="#">Desempeño ASG</a>
+                                    <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center px-2.5 md:px-0">
+                            <svg class="cursor-pointer" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" fill="white" />
+                                <rect x="0.5" y="0.5" width="47" height="47" rx="11.5" stroke="#001E60" />
+                                <path
+                                    d="M16.153 25.6681C14.3706 23.0003 14.6539 19.3646 17.0088 17.0097C19.6884 14.3301 24.0265 14.3301 26.706 17.0097C29.0078 19.3115 29.3266 22.8351 27.6681 25.4792C27.4025 25.916 27.0778 26.3291 26.7001 26.7069C26.3224 27.0846 25.9092 27.4151 25.4725 27.6748C23.3123 29.0323 20.5619 29.0618 18.3722 27.7692"
+                                    stroke="#001E60" stroke-width="0.72" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M27.6741 25.4792L32.5434 30.3485C33.1513 30.9564 33.1513 31.9362 32.5434 32.5441C31.9354 33.152 30.9557 33.152 30.3478 32.5441L25.4785 27.6748C25.9153 27.4092 26.3284 27.0846 26.7062 26.7069C27.0839 26.3292 27.4144 25.916 27.6741 25.4792Z"
+                                    fill="#001E60" stroke="#001E60" stroke-width="0.72" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <header class="flex justify-start bg-white text-primaryColor pb-[12px] shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+                <div class=" px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
+                    <div class="w-full mx-auto flex justify-between items-center">
+                        <div class="flex items-center">
+                            <nav>
+                                <ul
+                                    class="flex space-x-6 py-[4px] lg:py-1.5 xl:py-[8px] !text-xs md:!text-sm 2xl:!text-xl">
+                                    <li class="flex items-center">
+                                        <a href="#"
+                                            class="rounded-3xl p-0.5 md:px-1.5 md:py-[4px] lg:px-2.5 lg:py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">Home</a>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0922 7.85852L6.38793 1.97646L5.76416 1.33325C5.42064 1.68748 5.4116 2.25145 5.73252 2.615L11.1339 8.18478L5.71896 13.7685L5.11328 14.3931C5.4568 14.7473 6.00372 14.7567 6.35628 14.4257L12.0922 8.51104C12.2685 8.32927 12.2685 8.03563 12.0922 7.85385V7.85852Z"
+                                                fill="#001E60" />
+                                        </svg>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <a href="#"
+                                            class="rounded-3xl p-0.5 md:px-1.5 md:py-[4px] lg:px-2.5 lg:py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">¿Quienes
+                                            somos</a>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0922 7.85852L6.38793 1.97646L5.76416 1.33325C5.42064 1.68748 5.4116 2.25145 5.73252 2.615L11.1339 8.18478L5.71896 13.7685L5.11328 14.3931C5.4568 14.7473 6.00372 14.7567 6.35628 14.4257L12.0922 8.51104C12.2685 8.32927 12.2685 8.03563 12.0922 7.85385V7.85852Z"
+                                                fill="#001E60" />
+                                        </svg>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <a href="#"
+                                            class="rounded-3xl p-0.5 md:px-1.5 md:py-[4px] lg:px-2.5 lg:py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer">Talento
+                                            Humano</a>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0922 7.85852L6.38793 1.97646L5.76416 1.33325C5.42064 1.68748 5.4116 2.25145 5.73252 2.615L11.1339 8.18478L5.71896 13.7685L5.11328 14.3931C5.4568 14.7473 6.00372 14.7567 6.35628 14.4257L12.0922 8.51104C12.2685 8.32927 12.2685 8.03563 12.0922 7.85385V7.85852Z"
+                                                fill="#001E60" />
+                                        </svg>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <a href="#"
+                                            class="rounded-3xl p-0.5 md:px-1.5 md:py-[4px] lg:px-2.5 lg:py-[8px] hover:bg-hover transition ease-in-out duration-300 cursor-pointer font-semibold">Perfiles
+                                            Junta Directiva</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- Slide In Pop Up -->
+        <main
+            class="popup-slide w-full flex gap-2 justify-between items-center text-white bg-popup py-[4px] sm:py-[8px] lg:py-[24px] !text-sm sm:!text-base md:!text-lg lg:!text-xl font-semibold px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] transform translate-x-full transition-transform duration-500 ease-in-out">
+            <div class="w-full flex justify-start items-center gap-3">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.9367 27.0782L16.8117 22.9532L15.125 24.6399L20.0933 29.6082C20.3133 29.8282 20.625 29.9566 20.9367 29.9566C21.2483 29.9566 21.56 29.8282 21.78 29.6082L30.1767 21.2116L28.49 19.5249L20.9367 27.0782Z"
+                        fill="#00AEC7" />
+                    <path
+                        d="M36.1169 13.9334C36.1169 12.65 35.6036 11.4767 34.7786 10.615C34.7602 10.5967 34.7419 10.56 34.7236 10.5417C34.7052 10.5234 34.6686 10.505 34.6502 10.4867C33.7886 9.6617 32.6336 9.14837 31.3319 9.14837H30.9286V6.45337H28.5452V9.14837H15.4002V6.45337H13.0169V9.14837H12.6502C11.6602 9.14837 10.7436 9.4417 9.97357 9.97337C8.70857 10.835 7.86523 12.2834 7.86523 13.9334V16.7384V31.35C7.86523 33.99 10.0102 36.135 12.6502 36.135H31.3319C33.9719 36.135 36.1169 33.99 36.1169 31.35V16.7384V13.9334ZM31.3502 33.7517H12.6502C11.3302 33.7517 10.2486 32.67 10.2486 31.35V17.93H33.7336V31.35C33.7336 32.67 32.6519 33.7517 31.3319 33.7517H31.3502Z"
+                        fill="white" />
+                </svg>
+                <p>S1 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium.</p>
+            </div>
+            <svg class="close cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M18.2614 17.4843L12.7772 12L18.2614 6.51575L19 5.77717C18.5811 5.35827 17.9142 5.34724 17.4843 5.73858L12 11.2228L6.51575 5.73858L5.77717 5C5.35827 5.4189 5.34724 6.08583 5.73858 6.51575L11.2228 12L5.73858 17.4843L5 18.2228C5.4189 18.6417 6.08583 18.6528 6.51575 18.2614L12 12.7772L17.4843 18.2614L18.2228 19C18.6417 18.5811 18.6528 17.9142 18.2614 17.4843Z"
+                    fill="white" />
+            </svg>
+        </main>
+
+        <!-- Section 1 -->
+        <main class="w-full bg-primaryColor py-[16px] sm:py-[32px] px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
+            <h1 class="!text-white !text-2xl 2xl:!text-4xl">Junta Directiva</h1>
+        </main>
+
+        <!-- Section-2 -->
+        <main class="px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] py-[20px]">
+            <div class="flex flex-col md:flex-row gap-5 2xl:gap-8 border-b border-primaryColor pb-[32px]">
+                <div class="w-full md:w-[40%]">
+                    <div class="profile w-full overflow-hidden h-77">
+                        <img class="w-full h-full object-cover rounded-t-lg" src="./assets/images/member5.jpeg"
+                            alt="member">
+                    </div>
+                    <P class="text-secondaryColor 2xl:!text-xl py-[10px] font-semibold">Carta de aceptación</P>
+                    <P class="text-secondaryColor 2xl:!text-xl py-[20px] font-semibold">Carta de aceptación para seer
+                        incluido en la
+                        lista de candidatos a integrar la junta directiva</P>
+                </div>
+                <div class="flex-1 flex flex-col gap-8">
+                    <div class="info">
+                        <h2 class="text-primaryColor !text-2xl 2xl:!text-4xl font-bold">Jaime Alberto Arrubla Paucar
+                        </h2>
+                        <p class="text-primaryColor 2xl:!text-xl font-semibold py-[12px]">Decano de la Facultad de
+                            Derecho y
+                            Ciencias Políticas
+                            de la Universidad Pontificia Bolivariana y como miembro de la
+                            Junta Directiva de Grupo de Inversiones Suramericana S.A.</p>
+                    </div>
+                    <div class="info">
+                        <p class="text-primaryColor 2xl:!text-xl font-semibold">Es abogado de la Universidad Pontificia
+                            Bolivariana
+                            (UPB) de Medellín, de la cual también es especialista en Derecho
+                            Civil y Comercial; Derecho Canónico; Relaciones Laborales y magister en Derecho Privado.</p>
+                        <p class="text-primaryColor 2xl:!text-xl font-semibold">Es doctor en Derecho Privado por la
+                            Universidad de
+                            Salamanca, con distinción Cum Laude, universidad en la que también ha
+                            recibido el título de magister en Estudios Avanzados en Derecho Privado.</p>
+                        <p class="text-primaryColor 2xl:!text-xl font-semibold">Socio fundador de la firma Arrubla Devis
+                            Asociados.
+                            Ejerció como magistrado de la Sala Civil de la Corte Suprema de
+                            Justicia entre los años 2004 y 2012, es experto en Derecho Civil y Comercial, catedrático de
+                            las principales facultades
+                            de derecho del país y autor del tratado Contratos Mercantiles.</p>
+                        <p class="text-primaryColor 2xl:!text-xl font-semibold">Se encuentra inscrito como árbitro de
+                            los centros de
+                            arbitraje de las cámaras de comercio de Bogotá y Medellín. En 1983
+                            fue Secretario General de la Gobernación de Antioquia y en 1998 fue designado Secretario
+                            Jurídico de la Presidencia de
+                            la República de Colombia.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Section-3 -->
+        <main class="px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] py-[20px]">
+            <div class="w-full">
+                <h1 class="font-bold !text-lg sm:!text-2xl md:!text-4xl py-[8px] text-center md:text-left">
+                    Integrantes de la junta directiva
+                </h1>
+            </div>
+            <div class="flex gap-6 items-center justify-center sm:justify-start flex-wrap py-[16px]">
+                <div class="member-card w-[280px] 2xl:w-[320px] shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg">
+                    <a href="#">
+                        <div class="w-full overflow-hidden h-57">
+                            <img class="w-full h-full overflow-hidden object-cover rounded-t-lg"
+                                src="./assets/images/member1.jpeg" alt="member">
+                        </div>
+                        <div class="p-[8px] flex flex-col gap-1">
+                            <p class="text-primaryColor 2xl:!text-xl">Nombre Nombre Apellido</p>
+                            <p class="text-primaryColor !text-sm 2xl:!text-lg font-light">Cargo en la compañia</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="member-card w-[280px] 2xl:w-[320px] shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg">
+                    <a href="#">
+                        <div class="w-full overflow-hidden h-57">
+                            <img class="w-full h-full overflow-hidden object-cover rounded-t-lg"
+                                src="./assets/images/member2.jpeg" alt="member">
+                        </div>
+                        <div class="p-[8px] flex flex-col gap-1">
+                            <p class="text-primaryColor 2xl:!text-xl">Nombre Nombre Apellido</p>
+                            <p class="text-primaryColor !text-sm 2xl:!text-lg font-light">Cargo en la compañia</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="member-card w-[280px] 2xl:w-[320px] shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg">
+                    <a href="#">
+                        <div class="w-full overflow-hidden h-57">
+                            <img class="w-full h-full overflow-hidden object-cover rounded-t-lg"
+                                src="./assets/images/member3.jpeg" alt="member">
+                        </div>
+                        <div class="p-[8px] flex flex-col gap-1">
+                            <p class="text-primaryColor 2xl:!text-xl">Nombre Nombre Apellido</p>
+                            <p class="text-primaryColor !text-sm 2xl:!text-lg font-light">Cargo en la compañia</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="member-card w-[280px] 2xl:w-[320px] shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg">
+                    <a href="#">
+                        <div class="w-full overflow-hidden h-57">
+                            <img class="w-full h-full overflow-hidden object-cover rounded-t-lg"
+                                src="./assets/images/member4.jpeg" alt="member">
+                        </div>
+                        <div class="p-[8px] flex flex-col gap-1">
+                            <p class="text-primaryColor 2xl:!text-xl">Nombre Nombre Apellido</p>
+                            <p class="text-primaryColor !text-sm 2xl:!text-lg font-light">Cargo en la compañia</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="member-card w-[280px] 2xl:w-[320px] shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg">
+                    <a href="#">
+                        <div class="w-full overflow-hidden h-57">
+                            <img class="w-full h-full overflow-hidden object-cover rounded-t-lg"
+                                src="./assets/images/member6.jpeg" alt="member">
+                        </div>
+                        <div class="p-[8px] flex flex-col gap-1">
+                            <p class="text-primaryColor 2xl:!text-xl">Nombre Nombre Apellido</p>
+                            <p class="text-primaryColor !text-sm 2xl:!text-lg font-light">Cargo en la compañia</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer
+            class="w-full flex-col justify-center text-white font-normal bg-primaryColor px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px] py-[32px]">
+            <div class="w-full mx-auto flex flex-col sm:flex-row justify-between">
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white !text-xs md:!text-sm lg:!text-base 2xl:!text-xl font-bold">
+                        Nuestras compañías SURA</h4>
+                    <ul class="!text-xs lg:!text-sm 2xl:!text-lg">
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">gruposura.com</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">segurossura.com</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#"
+                                class="hover:underline">suraassetmanagement.com</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">sfundacionsura.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white !text-xs md:!text-sm lg:!text-base 2xl:!text-xl font-bold">
+                        Ayudas e Información</h4>
+                    <ul class="!text-xs lg:!text-sm 2xl:!text-lg">
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Suscríbete a nuestro
+                                Newslatter</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Contacto</a></li>
+                        <li class="py-[4px] sm:py-[12px] flex gap-4">
+                            <a href="#">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M34.5748 27.7109L24.1281 17.2643L31.9455 9.43683C32.6608 8.64099 32.6406 7.42205 31.875 6.6665L30.5251 8.01641L21.9925 16.549C21.5996 16.9419 21.5996 17.5766 21.9925 17.9694L31.4317 27.4087H26.7977L25.2866 25.8976L24.6419 25.2529L19.6855 20.2965C19.4941 20.1051 19.2423 20.0044 18.9703 20.0044C18.6983 20.0044 18.4465 20.1152 18.2551 20.2965L9.65193 28.9097C8.93669 29.7055 8.95683 30.9245 9.72245 31.68L11.0724 30.3301L11.1127 30.2898L11.1429 30.2596L18.9703 22.4322L23.2215 26.6834L23.8662 27.3281L25.6795 29.1414C25.8709 29.3328 26.1228 29.4336 26.3948 29.4336H33.8797C34.2826 29.4336 34.6554 29.1918 34.8065 28.809C34.9576 28.4262 34.877 28.0031 34.5849 27.7109H34.5748Z"
+                                        fill="white" />
+                                    <path
+                                        d="M14.7494 18.2111C15.5352 18.9263 16.7642 18.9062 17.5197 18.1405L16.1698 16.7906L8.55396 9.17476H13.198L18.92 14.8967C19.7058 15.612 20.9348 15.5918 21.6903 14.8262L20.3404 13.4763L14.3263 7.46219C14.1349 7.27079 13.8831 7.17005 13.6211 7.17005L6.11607 7.1499C5.71312 7.1499 5.34038 7.39168 5.1792 7.77448C5.01802 8.15729 5.10868 8.59047 5.40083 8.87254L14.7494 18.2111Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.0297 15.2847H8.01546C7.74776 15.2847 7.48006 15.3979 7.28443 15.5833C7.0888 15.7789 6.98584 16.0363 6.98584 16.3143V20.6284V22.6362C8.08753 22.6362 8.98331 21.7713 9.03479 20.6799V19.4958V18.7545V17.3542H11.9898V31.0379H9.03479V23.7996C7.93309 23.7996 7.03732 24.6645 6.98584 25.7559V26.7443V27.6813V32.0675C6.98584 32.3352 7.0991 32.6029 7.28443 32.7985C7.48006 32.9942 7.73746 33.0971 8.01546 33.0971H13.0297C13.2974 33.0971 13.5651 32.9839 13.7607 32.7985C13.9564 32.6029 14.0593 32.3455 14.0593 32.0675V16.3246C14.0593 16.0569 13.9461 15.7892 13.7607 15.5936C13.5651 15.3979 13.3077 15.295 13.0297 15.295V15.2847Z"
+                                        fill="white" />
+                                    <path
+                                        d="M10.4866 6.6667C9.47756 6.6667 8.49942 7.06825 7.78898 7.78898C7.05795 8.50972 6.6564 9.48786 6.6667 10.5175C6.6667 11.5265 7.06825 12.5046 7.78898 13.2151C8.50972 13.9461 9.48786 14.3477 10.5175 14.3374C11.5265 14.3477 12.5046 13.9358 13.2151 13.2151C13.9461 12.4944 14.3477 11.5162 14.3374 10.4866C14.3477 9.47756 13.9358 8.49942 13.2151 7.78898C12.4944 7.05795 11.5162 6.6564 10.4866 6.6667ZM11.7633 11.7633C11.3721 12.1443 11.0323 12.2781 10.5278 12.2884C9.98208 12.2781 9.6423 12.134 9.26134 11.7633C8.89068 11.3721 8.74653 11.0323 8.73623 10.5278C8.74653 9.98208 8.89068 9.6423 9.26134 9.26134C9.6526 8.89068 9.99237 8.74653 10.4969 8.73624C11.0426 8.74653 11.3824 8.89068 11.7736 9.26134C12.1443 9.6526 12.2884 9.99237 12.2987 10.4969C12.2884 11.0426 12.1443 11.3824 11.7736 11.7633H11.7633Z"
+                                        fill="white" />
+                                    <path
+                                        d="M32.3239 18.3526C31.6649 17.2406 30.7177 16.3551 29.5542 15.727C28.3804 15.0887 27.0522 14.7798 25.6417 14.7798C24.2002 14.7798 22.8102 15.1093 21.5335 15.7682C21.2349 15.9227 20.9569 16.0874 20.6892 16.2624C19.5978 15.3873 18.146 14.996 16.4368 14.996C16.1691 14.996 15.9014 15.1093 15.7058 15.2946C15.5102 15.4902 15.4072 15.7476 15.4072 16.0256V32.0568C15.4072 32.3245 15.5205 32.5922 15.7058 32.7879C15.9014 32.9835 16.1588 33.0864 16.4368 33.0864H21.4511C21.7188 33.0864 21.9865 32.9732 22.1821 32.7879C22.3778 32.5922 22.4807 32.3348 22.4807 32.0568V21.9459C22.7175 21.8018 22.9543 21.668 23.2015 21.565C23.5309 21.4208 23.9222 21.3488 24.4061 21.3488C24.7562 21.3488 25.0136 21.4002 25.2195 21.4929C25.4254 21.5753 25.5799 21.6885 25.7343 21.8636C26.0638 22.2548 26.2285 22.6873 26.2285 23.3359V32.0671C26.2285 32.3348 26.3418 32.6025 26.5271 32.7981C26.7228 32.9938 26.9802 33.0967 27.2582 33.0967H32.3033C32.571 33.0967 32.8387 32.9835 33.0343 32.7981C33.23 32.6025 33.3329 32.3451 33.3329 32.0671V30.8728V26.9911C32.2312 26.9911 31.3355 27.9589 31.2737 29.0503V30.8728V30.9757V31.0375H28.2878V23.3359C28.2878 22.296 27.9583 21.2973 27.2993 20.5251C26.9493 20.1132 26.5065 19.794 26.0123 19.5881C25.5181 19.3822 24.9724 19.2895 24.4061 19.2895C23.6957 19.2895 23.0161 19.4131 22.4086 19.6705C21.8527 19.9073 21.3275 20.2059 20.8436 20.5765C20.5862 20.7722 20.4318 21.0708 20.4318 21.4002V31.0375H17.4768V17.1273C18.4137 17.2509 19.0727 17.5392 19.5051 17.9304C19.5875 18.0025 19.6802 18.1158 19.814 18.2702C20.1744 18.7026 20.8024 18.7644 21.2452 18.4143C21.6364 18.0952 22.0483 17.8275 22.491 17.6009C23.4795 17.0964 24.5194 16.839 25.652 16.839C26.7742 16.839 27.7318 17.0758 28.5864 17.5392C29.4513 18.0128 30.0896 18.6203 30.5735 19.4131C31.0472 20.2059 31.284 21.0708 31.284 22.0901V25.3746C32.3857 25.3746 33.2814 24.5097 33.3329 23.4183V22.8726V22.1004C33.3329 20.7516 33.0034 19.4749 32.3342 18.3629L32.3239 18.3526Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.6357 18.4091L18.2113 13.5617C17.8938 13.3183 17.4599 13.276 17.1 13.4559C16.7402 13.6358 16.5179 13.9957 16.5179 14.3979V24.1137C16.5074 24.5159 16.7296 24.8864 17.0895 25.0663C17.4493 25.2462 17.8832 25.2039 18.2008 24.9604L24.6357 20.1025C24.9003 19.9014 25.059 19.5945 25.059 19.2558C25.059 18.9171 24.9003 18.6102 24.6357 18.4091ZM18.6241 21.9864V16.5252L22.2438 19.2558L18.6241 21.9864Z"
+                                        fill="white" />
+                                    <path
+                                        d="M20.5184 28.0193L19.3224 28.0087H9.68064C7.79673 28.0087 6.27267 26.4846 6.27267 24.6007V13.8582C6.27267 11.9743 7.79673 10.4502 9.68064 10.4502H15.1207C15.1207 9.31779 14.2317 8.397 13.1098 8.34408L12.9299 8.3335H9.69123C6.64311 8.3335 4.1665 10.8101 4.1665 13.8582V24.6007C4.1665 27.6489 6.64311 30.1255 9.69123 30.1255H22.5399C22.5399 28.993 21.6509 28.0722 20.529 28.0193H20.5184Z"
+                                        fill="white" />
+                                    <path
+                                        d="M30.3194 8.34375H17.4707C17.4707 9.47621 18.3597 10.397 19.4816 10.4499L23.2494 10.4605H30.3194C32.2033 10.4605 33.7274 11.9846 33.7274 13.8685V24.611C33.7274 26.4949 32.2033 28.019 30.3194 28.019H24.8793C24.8793 29.1514 25.7684 30.0722 26.8903 30.1251L27.0702 30.1357H30.3088C33.3569 30.1357 35.8335 27.6591 35.8335 24.611V13.8685C35.8335 10.8204 33.3569 8.34375 30.3088 8.34375H30.3194Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white !text-xs md:!text-sm lg:!text-base 2xl:!text-xl font-bold">
+                        Enlaces de Interés</h4>
+                    <ul class="!text-xs lg:!text-sm 2xl:!text-lg">
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Centro de Recursos</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Términos y Condiciones</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Certificado de Renta</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white !text-xs md:!text-sm lg:!text-base 2xl:!text-xl font-bold">
+                        Links de inversiones</h4>
+                    <ul class="!text-xs lg:!text-sm 2xl:!text-lg">
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Listados en BVC</a></li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Listados en NYSE (ADR
+                                nivel 1)</a>
+                        </li>
+                        <li class="py-[4px] sm:py-[12px]"><a href="#" class="hover:underline">Bolsa de Santiago</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="py-[40px]">
+                <p class="text-center !text-xs md:!text-sm 2xl:text-lg font-normal mb-0">© Copyright Grupo SURA 2025</p>
+                <p class="text-center !text-xs md:!text-sm 2xl:text-lg font-normal">Supervisados por <span
+                        class="text-foooter cursor-pointer">Superintendencia Financiera de
+                        Colombia</span></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/slide-popup.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
