@@ -278,7 +278,7 @@
 
         <!-- Section 1 -->
         <div class="bg-primaryColor py-[16px] sm:py-[32px] px-1.5 md:px-[28px] lg:px-[40px] xl:px-[64px]">
-            <div class="flex items-center justify-between gap-10 mb-[20px]">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-10 mb-[20px]">
                 <h1 class="w-full font-bold !text-4xl text-white leading-10">Huella de Servicios</h1>
                 <div class="w-full flex flex-col gap-6">
                     <p class="font-semibold !text-xl leading 5 text-white">H3 Sed ut perspiciatis unde omnis iste natus
@@ -297,7 +297,69 @@
             <div class="flex flex-col md:flex-row justify-center gap-8 py-[30px]">
                 <div class="map flex-1 relative">
                     <img class="object-contain w-full h-full" src="./assets/images/south-america.png" alt="map">
-                    <div class="absolute top-0 left-0 z-10 cursor-pointer">
+                    <div data-country="Mexico" data-asset-employee="38.498" data-asset-clients="38.498"
+                        data-insurance-employee="38.498" data-insurance-clients="38.498"
+                        class="absolute top-[10%] left-[12%] z-10 cursor-pointer">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.3499 4.63339C20.9665 2.25006 17.6332 0.766724 13.9999 0.766724C10.3665 0.766724 7.0332 2.25006 4.64987 4.63339C2.26654 7.01672 0.783203 10.3501 0.783203 13.9834C0.783203 17.6167 2.26654 20.9501 4.64987 23.3334C7.0332 25.7167 10.3665 27.2001 13.9999 27.2001C17.6332 27.2001 20.9665 25.7167 23.3499 23.3334C25.7332 20.9501 27.2165 17.6167 27.2165 13.9834C27.2165 10.3501 25.7332 7.01672 23.3499 4.63339ZM16.2665 16.2667C15.6665 16.8501 14.8999 17.2001 13.9999 17.2167C13.0999 17.2167 12.3165 16.8667 11.7332 16.2667C11.1499 15.6667 10.7999 14.9001 10.7832 14.0001C10.7832 13.1001 11.1332 12.3167 11.7332 11.7334C12.3332 11.1501 13.0999 10.8001 13.9999 10.7834C14.8999 10.7834 15.6832 11.1334 16.2665 11.7334C16.8499 12.3334 17.1999 13.1001 17.2165 14.0001C17.2165 14.9001 16.8665 15.6834 16.2665 16.2667Z"
+                                fill="#CEDC00" />
+                        </svg>
+                    </div>
+                    <div data-country="República Dominicana" data-insurance-employee="38.498"
+                        data-insurance-clients="38.498" class="absolute top-[16%] left-[53%] z-10 cursor-pointer">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.3499 4.63339C20.9665 2.25006 17.6332 0.766724 13.9999 0.766724C10.3665 0.766724 7.0332 2.25006 4.64987 4.63339C2.26654 7.01672 0.783203 10.3501 0.783203 13.9834C0.783203 17.6167 2.26654 20.9501 4.64987 23.3334C7.0332 25.7167 10.3665 27.2001 13.9999 27.2001C17.6332 27.2001 20.9665 25.7167 23.3499 23.3334C25.7332 20.9501 27.2165 17.6167 27.2165 13.9834C27.2165 10.3501 25.7332 7.01672 23.3499 4.63339ZM16.2665 16.2667C15.6665 16.8501 14.8999 17.2001 13.9999 17.2167C13.0999 17.2167 12.3165 16.8667 11.7332 16.2667C11.1499 15.6667 10.7999 14.9001 10.7832 14.0001C10.7832 13.1001 11.1332 12.3167 11.7332 11.7334C12.3332 11.1501 13.0999 10.8001 13.9999 10.7834C14.8999 10.7834 15.6832 11.1334 16.2665 11.7334C16.8499 12.3334 17.1999 13.1001 17.2165 14.0001C17.2165 14.9001 16.8665 15.6834 16.2665 16.2667Z"
+                                fill="#CEDC00" />
+                        </svg>
+                    </div>
+                    <div data-country="Panama" data-insurance-employee="38.498" data-insurance-clients="38.498"
+                        data-ban-employee="38.498" data-ban-clients="38.498"
+                        class="absolute top-[28%] left-[39%] z-10 cursor-pointer">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.3499 4.63339C20.9665 2.25006 17.6332 0.766724 13.9999 0.766724C10.3665 0.766724 7.0332 2.25006 4.64987 4.63339C2.26654 7.01672 0.783203 10.3501 0.783203 13.9834C0.783203 17.6167 2.26654 20.9501 4.64987 23.3334C7.0332 25.7167 10.3665 27.2001 13.9999 27.2001C17.6332 27.2001 20.9665 25.7167 23.3499 23.3334C25.7332 20.9501 27.2165 17.6167 27.2165 13.9834C27.2165 10.3501 25.7332 7.01672 23.3499 4.63339ZM16.2665 16.2667C15.6665 16.8501 14.8999 17.2001 13.9999 17.2167C13.0999 17.2167 12.3165 16.8667 11.7332 16.2667C11.1499 15.6667 10.7999 14.9001 10.7832 14.0001C10.7832 13.1001 11.1332 12.3167 11.7332 11.7334C12.3332 11.1501 13.0999 10.8001 13.9999 10.7834C14.8999 10.7834 15.6832 11.1334 16.2665 11.7334C16.8499 12.3334 17.1999 13.1001 17.2165 14.0001C17.2165 14.9001 16.8665 15.6834 16.2665 16.2667Z"
+                                fill="#CEDC00" />
+                        </svg>
+                    </div>
+                    <div data-country="Colombia" data-asset-employee="38.498" data-asset-clients="38.498"
+                        data-insurance-employee="38.498" data-insurance-clients="38.498" data-ban-employee="38.498"
+                        data-ban-clients="38.498" class="absolute top-[34%] left-[49%] z-10 cursor-pointer">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.3499 4.63339C20.9665 2.25006 17.6332 0.766724 13.9999 0.766724C10.3665 0.766724 7.0332 2.25006 4.64987 4.63339C2.26654 7.01672 0.783203 10.3501 0.783203 13.9834C0.783203 17.6167 2.26654 20.9501 4.64987 23.3334C7.0332 25.7167 10.3665 27.2001 13.9999 27.2001C17.6332 27.2001 20.9665 25.7167 23.3499 23.3334C25.7332 20.9501 27.2165 17.6167 27.2165 13.9834C27.2165 10.3501 25.7332 7.01672 23.3499 4.63339ZM16.2665 16.2667C15.6665 16.8501 14.8999 17.2001 13.9999 17.2167C13.0999 17.2167 12.3165 16.8667 11.7332 16.2667C11.1499 15.6667 10.7999 14.9001 10.7832 14.0001C10.7832 13.1001 11.1332 12.3167 11.7332 11.7334C12.3332 11.1501 13.0999 10.8001 13.9999 10.7834C14.8999 10.7834 15.6832 11.1334 16.2665 11.7334C16.8499 12.3334 17.1999 13.1001 17.2165 14.0001C17.2165 14.9001 16.8665 15.6834 16.2665 16.2667Z"
+                                fill="#CEDC00" />
+                        </svg>
+                    </div>
+                    <div data-country="Peru" data-asset-employee="38.498" data-asset-clients="38.498"
+                        class="absolute top-[48%] left-[45%] z-10 cursor-pointer">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.3499 4.63339C20.9665 2.25006 17.6332 0.766724 13.9999 0.766724C10.3665 0.766724 7.0332 2.25006 4.64987 4.63339C2.26654 7.01672 0.783203 10.3501 0.783203 13.9834C0.783203 17.6167 2.26654 20.9501 4.64987 23.3334C7.0332 25.7167 10.3665 27.2001 13.9999 27.2001C17.6332 27.2001 20.9665 25.7167 23.3499 23.3334C25.7332 20.9501 27.2165 17.6167 27.2165 13.9834C27.2165 10.3501 25.7332 7.01672 23.3499 4.63339ZM16.2665 16.2667C15.6665 16.8501 14.8999 17.2001 13.9999 17.2167C13.0999 17.2167 12.3165 16.8667 11.7332 16.2667C11.1499 15.6667 10.7999 14.9001 10.7832 14.0001C10.7832 13.1001 11.1332 12.3167 11.7332 11.7334C12.3332 11.1501 13.0999 10.8001 13.9999 10.7834C14.8999 10.7834 15.6832 11.1334 16.2665 11.7334C16.8499 12.3334 17.1999 13.1001 17.2165 14.0001C17.2165 14.9001 16.8665 15.6834 16.2665 16.2667Z"
+                                fill="#CEDC00" />
+                        </svg>
+                    </div>
+                    <div data-country="Brasil" data-insurance-employee="38.498" data-insurance-clients="38.498"
+                        class="absolute top-[50%] left-[77%] z-10 cursor-pointer">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.3499 4.63339C20.9665 2.25006 17.6332 0.766724 13.9999 0.766724C10.3665 0.766724 7.0332 2.25006 4.64987 4.63339C2.26654 7.01672 0.783203 10.3501 0.783203 13.9834C0.783203 17.6167 2.26654 20.9501 4.64987 23.3334C7.0332 25.7167 10.3665 27.2001 13.9999 27.2001C17.6332 27.2001 20.9665 25.7167 23.3499 23.3334C25.7332 20.9501 27.2165 17.6167 27.2165 13.9834C27.2165 10.3501 25.7332 7.01672 23.3499 4.63339ZM16.2665 16.2667C15.6665 16.8501 14.8999 17.2001 13.9999 17.2167C13.0999 17.2167 12.3165 16.8667 11.7332 16.2667C11.1499 15.6667 10.7999 14.9001 10.7832 14.0001C10.7832 13.1001 11.1332 12.3167 11.7332 11.7334C12.3332 11.1501 13.0999 10.8001 13.9999 10.7834C14.8999 10.7834 15.6832 11.1334 16.2665 11.7334C16.8499 12.3334 17.1999 13.1001 17.2165 14.0001C17.2165 14.9001 16.8665 15.6834 16.2665 16.2667Z"
+                                fill="#CEDC00" />
+                        </svg>
+                    </div>
+                    <div data-country="Chile" data-asset-employee="38.498" data-asset-clients="38.498"
+                        data-insurance-employee="38.498" data-insurance-clients="38.498"
+                        class="absolute top-[66%] left-[53%] z-10 cursor-pointer">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.3499 4.63339C20.9665 2.25006 17.6332 0.766724 13.9999 0.766724C10.3665 0.766724 7.0332 2.25006 4.64987 4.63339C2.26654 7.01672 0.783203 10.3501 0.783203 13.9834C0.783203 17.6167 2.26654 20.9501 4.64987 23.3334C7.0332 25.7167 10.3665 27.2001 13.9999 27.2001C17.6332 27.2001 20.9665 25.7167 23.3499 23.3334C25.7332 20.9501 27.2165 17.6167 27.2165 13.9834C27.2165 10.3501 25.7332 7.01672 23.3499 4.63339ZM16.2665 16.2667C15.6665 16.8501 14.8999 17.2001 13.9999 17.2167C13.0999 17.2167 12.3165 16.8667 11.7332 16.2667C11.1499 15.6667 10.7999 14.9001 10.7832 14.0001C10.7832 13.1001 11.1332 12.3167 11.7332 11.7334C12.3332 11.1501 13.0999 10.8001 13.9999 10.7834C14.8999 10.7834 15.6832 11.1334 16.2665 11.7334C16.8499 12.3334 17.1999 13.1001 17.2165 14.0001C17.2165 14.9001 16.8665 15.6834 16.2665 16.2667Z"
+                                fill="#CEDC00" />
+                        </svg>
+                    </div>
+                    <div data-country="Uruguay" data-asset-employee="38.498" data-asset-clients="38.498"
+                        data-insurance-employee="38.498" data-insurance-clients="38.498"
+                        class="absolute top-[75%] left-[68%] z-10 cursor-pointer">
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M23.3499 4.63339C20.9665 2.25006 17.6332 0.766724 13.9999 0.766724C10.3665 0.766724 7.0332 2.25006 4.64987 4.63339C2.26654 7.01672 0.783203 10.3501 0.783203 13.9834C0.783203 17.6167 2.26654 20.9501 4.64987 23.3334C7.0332 25.7167 10.3665 27.2001 13.9999 27.2001C17.6332 27.2001 20.9665 25.7167 23.3499 23.3334C25.7332 20.9501 27.2165 17.6167 27.2165 13.9834C27.2165 10.3501 25.7332 7.01672 23.3499 4.63339ZM16.2665 16.2667C15.6665 16.8501 14.8999 17.2001 13.9999 17.2167C13.0999 17.2167 12.3165 16.8667 11.7332 16.2667C11.1499 15.6667 10.7999 14.9001 10.7832 14.0001C10.7832 13.1001 11.1332 12.3167 11.7332 11.7334C12.3332 11.1501 13.0999 10.8001 13.9999 10.7834C14.8999 10.7834 15.6832 11.1334 16.2665 11.7334C16.8499 12.3334 17.1999 13.1001 17.2165 14.0001C17.2165 14.9001 16.8665 15.6834 16.2665 16.2667Z"
@@ -312,44 +374,45 @@
                                 d="M23.3499 4.63339C20.9665 2.25006 17.6332 0.766724 13.9999 0.766724C10.3665 0.766724 7.0332 2.25006 4.64987 4.63339C2.26654 7.01672 0.783203 10.3501 0.783203 13.9834C0.783203 17.6167 2.26654 20.9501 4.64987 23.3334C7.0332 25.7167 10.3665 27.2001 13.9999 27.2001C17.6332 27.2001 20.9665 25.7167 23.3499 23.3334C25.7332 20.9501 27.2165 17.6167 27.2165 13.9834C27.2165 10.3501 25.7332 7.01672 23.3499 4.63339ZM16.2665 16.2667C15.6665 16.8501 14.8999 17.2001 13.9999 17.2167C13.0999 17.2167 12.3165 16.8667 11.7332 16.2667C11.1499 15.6667 10.7999 14.9001 10.7832 14.0001C10.7832 13.1001 11.1332 12.3167 11.7332 11.7334C12.3332 11.1501 13.0999 10.8001 13.9999 10.7834C14.8999 10.7834 15.6832 11.1334 16.2665 11.7334C16.8499 12.3334 17.1999 13.1001 17.2165 14.0001C17.2165 14.9001 16.8665 15.6834 16.2665 16.2667Z"
                                 fill="#CEDC00" />
                         </svg>
-                        <p class="text-white 2xl:!text-lg">Clic en una ubicación para ver sus datos</p>
+                        <p class="country_placeholder text-white 2xl:!text-lg">Clic en una ubicación para ver sus datos
+                        </p>
                         <h2 class="country text-[#dae0e8] !text-4xl font-bold hidden"></h2>
                     </div>
-                    <div class="flex flex-col gap-1">
+                    <div class="asset hidden flex-col gap-1">
                         <div class="logo">
                             <img class="object-contain" src="./assets/images/logo-white.png" alt="sura">
                         </div>
                         <div class="text-white 2xl:!text-lg">ASSET MANAGEMENT</div>
-                        <div class="asset pt-[20px] flex flex-col gap-2 h-28">
+                        <div class="pt-[20px] flex flex-col gap-2 h-28">
                             <p class="text-[#00AEC7] !2xl:!text-lg">Vlsita la pagina web</p>
-                            <p class="text-white !2xl:!text-lg">Empleados: <span class="empl">38.498</span></p>
-                            <p class="text-white !2xl:!text-lg">CLinetes: <span class="clients">38.498</span></p>
+                            <p class="text-white !2xl:!text-lg">Empleados: <span class="employee"></span></p>
+                            <p class="text-white !2xl:!text-lg">Clinetes: <span class="clients"></span></p>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-1">
+                    <div class="insurance hidden flex-col gap-1">
                         <div class="logo">
                             <img class="object-contain" src="./assets/images/logo-white.png" alt="sura">
                         </div>
                         <div class="text-white 2xl:!text-lg">SEGUROS</div>
-                        <div class="insurence pt-[20px] flex flex-col gap-2 h-28">
+                        <div class="pt-[20px] flex flex-col gap-2 h-28">
                             <p class="text-[#00AEC7] !2xl:!text-lg">Vlsita la pagina web</p>
-                            <p class="text-white !2xl:!text-lg">Empleados: <span class="empl">38.498</span></p>
-                            <p class="text-white !2xl:!text-lg">CLinetes: <span class="clients">38.498</span></p>
+                            <p class="text-white !2xl:!text-lg">Empleados: <span class="employee"></span></p>
+                            <p class="text-white !2xl:!text-lg">CLinetes: <span class="clients"></span></p>
                         </div>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="ban hidden flex-col">
                         <div class="logo">
                             <img class="object-contain" src="./assets/images/logo-colombia.png" alt="sura">
                         </div>
-                        <div class="bancolombia pt-[20px] flex flex-col gap-2 h-28">
+                        <div class="pt-[20px] flex flex-col gap-2 h-28">
                             <p class="text-[#00AEC7] !2xl:!text-lg">Vlsita la pagina web</p>
-                            <p class="text-white !2xl:!text-lg">Empleados: <span class="empl">38.498</span></p>
-                            <p class="text-white !2xl:!text-lg">CLinetes: <span class="clients">38.498</span></p>
+                            <p class="text-white !2xl:!text-lg">Empleados: <span class="employee"></span></p>
+                            <p class="text-white !2xl:!text-lg">CLinetes: <span class="clients"></span></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="flex items-end justify-between gap-10 mb-[20px]">
+            <div class="flex flex-col md:flex-row items-end justify-between gap-10 mb-[20px]">
                 <div class="pie-card">
                     <div class="w-full relative h-60 rounded-xl p-[20px]">
                         <canvas id="pieChart1" class="mx-auto"></canvas>
