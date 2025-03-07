@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Remove from DOM after animation completes
     setTimeout(() => {
-      popup.classList.add("hidden");
+      popup.classList.add("!hidden");
     }, 500);
   });
 });
