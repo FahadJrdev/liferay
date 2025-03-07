@@ -125,15 +125,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuContents = document.querySelectorAll(".menu-content");
   const splideItems1 = document.querySelectorAll(".splide1 .splide__slide");
   const splideItems2 = document.querySelectorAll(".splide2 .splide__slide");
+  const splideItems4 = document.querySelectorAll(".splide4 .year");
   const tab2Years = document.querySelectorAll(".tab-2 .year");
-  const tab4Years = document.querySelectorAll(".tab-4 .year");
-  const sideMenuLists = document.querySelectorAll(".tab-1 .sidemenu .menuItem");
+  const tab5Years = document.querySelectorAll(".tab-5 .year");
+  const informContents = document.querySelectorAll(".informo-content");
   const sideMenu2Lists = document.querySelectorAll(
     ".tab-2 .sidemenu .menuItem"
   );
-  const informContents = document.querySelectorAll(".informo-content");
+  const sideMenu3Lists = document.querySelectorAll(
+    ".tab-3 .sidemenu .menuItem"
+  );
   const sideMenu4Lists = document.querySelectorAll(
     ".tab-4 .sidemenu .menuItem"
+  );
+  const sideMenu5Lists = document.querySelectorAll(
+    ".tab-5 .sidemenu .menuItem"
   );
 
   const addClickListener = (
@@ -187,16 +193,10 @@ document.addEventListener("DOMContentLoaded", function () {
     ["bg-white", "text-[#00AEC7]"],
     (item) => {
       const targetItem = item.getAttribute("data-year");
-      tab4Years.forEach((year) => {
+      tab5Years.forEach((year) => {
         year.innerHTML = targetItem;
       });
     }
-  );
-
-  addClickListener(
-    sideMenuLists,
-    ["bg-white", "border-l-4"],
-    ["bg-white", "border-l-4"]
   );
 
   addClickListener(
@@ -220,7 +220,19 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   addClickListener(
+    sideMenu3Lists,
+    ["bg-white", "border-l-4"],
+    ["bg-white", "border-l-4"]
+  );
+
+  addClickListener(
     sideMenu4Lists,
+    ["bg-white", "border-l-4"],
+    ["bg-white", "border-l-4"]
+  );
+
+  addClickListener(
+    sideMenu5Lists,
     ["bg-white", "border-l-4"],
     ["bg-white", "border-l-4"],
     (content) => {
@@ -228,9 +240,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetData = content
         .querySelector(".date-content")
         .getAttribute("data-date");
-      const dateContent = document.querySelector(".tab-4 .tab-4-header");
+      const dateContent = document.querySelector(".tab-5 .tab-5-header");
       const dateContentInside = document.querySelectorAll(
-        ".tab-4 .content .date-content"
+        ".tab-5 .content .date-content"
       );
       dateContent.innerHTML = targetContent.innerHTML;
       dateContentInside.forEach((item) => {
@@ -238,4 +250,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   );
+
+  addClickListener(splideItems4, ["bg-tertiaryColor"], ["bg-tertiaryColor"]);
 });

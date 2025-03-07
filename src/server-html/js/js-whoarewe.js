@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     omitEnd: true,
     pagination: true,
     gap: 24,
+    padding: 12,
     breakpoints: {
       640: {
         perPage: 1,
