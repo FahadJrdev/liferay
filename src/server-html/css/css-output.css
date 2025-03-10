@@ -399,6 +399,9 @@
   .mb-\[16px\] {
     margin-bottom: 16px;
   }
+  .mb-\[56px\] {
+    margin-bottom: 56px;
+  }
   .mb-\[144px\] {
     margin-bottom: 144px;
   }
@@ -408,11 +411,11 @@
   .mb-\[20px\] {
     margin-bottom: 20px;
   }
-  .mb-\[56px\] {
-    margin-bottom: 56px;
-  }
   .ml-1\.5 {
     margin-left: calc(var(--spacing) * 1.5);
+  }
+  .\!block {
+    display: block !important;
   }
   .\!flex {
     display: flex !important;
@@ -461,6 +464,9 @@
   }
   .h-44 {
     height: calc(var(--spacing) * 44);
+  }
+  .h-46 {
+    height: calc(var(--spacing) * 46);
   }
   .h-48 {
     height: calc(var(--spacing) * 48);
@@ -533,15 +539,6 @@
   }
   .min-h-80 {
     min-height: calc(var(--spacing) * 80);
-  }
-  .\!w-0 {
-    width: calc(var(--spacing) * 0) !important;
-  }
-  .\!w-\[65\%\] {
-    width: 65% !important;
-  }
-  .\!w-full {
-    width: 100% !important;
   }
   .w-0 {
     width: calc(var(--spacing) * 0);
@@ -720,8 +717,20 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .\!flex-col {
+    flex-direction: column !important;
+  }
+  .\!flex-row {
+    flex-direction: row !important;
+  }
   .flex-col {
     flex-direction: column;
+  }
+  .\!flex-nowrap {
+    flex-wrap: nowrap !important;
+  }
+  .\!flex-wrap {
+    flex-wrap: wrap !important;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -807,6 +816,9 @@
   }
   .overflow-y-hidden {
     overflow-y: hidden;
+  }
+  .\!rounded-xl {
+    border-radius: var(--radius-xl) !important;
   }
   .rounded {
     border-radius: 0.25rem;
@@ -913,9 +925,6 @@
   }
   .\!bg-primaryColor {
     background-color: var(--color-primaryColor) !important;
-  }
-  .\!bg-tertiaryColor {
-    background-color: var(--color-tertiaryColor) !important;
   }
   .bg-\[\#001E60\] {
     background-color: #001E60;
@@ -1315,9 +1324,6 @@
   .\!text-secondaryColor {
     color: var(--color-secondaryColor) !important;
   }
-  .\!text-tabletext {
-    color: var(--color-tabletext) !important;
-  }
   .\!text-white {
     color: var(--color-white) !important;
   }
@@ -1431,6 +1437,13 @@
     --tw-outline-style: none;
     outline-style: none;
   }
+  .group-hover\:\!visible {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        visibility: visible !important;
+      }
+    }
+  }
   .group-hover\:visible {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1456,6 +1469,13 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         color: var(--color-secondaryColor);
+      }
+    }
+  }
+  .group-hover\:\!opacity-100 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 100% !important;
       }
     }
   }
@@ -1781,11 +1801,6 @@
       line-height: var(--tw-leading, var(--text-xl--line-height)) !important;
     }
   }
-  .md\:\!invisible {
-    @media (width >= 48rem) {
-      visibility: hidden !important;
-    }
-  }
   .md\:\!visible {
     @media (width >= 48rem) {
       visibility: visible !important;
@@ -1856,14 +1871,14 @@
       margin-bottom: 12px;
     }
   }
+  .md\:\!flex {
+    @media (width >= 48rem) {
+      display: flex !important;
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
-    }
-  }
-  .md\:\!h-0 {
-    @media (width >= 48rem) {
-      height: calc(var(--spacing) * 0) !important;
     }
   }
   .md\:\!h-full {
@@ -1988,6 +2003,16 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
+  .md\:\!flex-col {
+    @media (width >= 48rem) {
+      flex-direction: column !important;
+    }
+  }
+  .md\:\!flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row !important;
+    }
+  }
   .md\:flex-col {
     @media (width >= 48rem) {
       flex-direction: column;
@@ -1996,6 +2021,16 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:\!flex-nowrap {
+    @media (width >= 48rem) {
+      flex-wrap: nowrap !important;
+    }
+  }
+  .md\:\!flex-wrap {
+    @media (width >= 48rem) {
+      flex-wrap: wrap !important;
     }
   }
   .md\:items-center {
@@ -2201,11 +2236,6 @@
     @media (width >= 48rem) {
       --tw-font-weight: var(--font-weight-bold);
       font-weight: var(--font-weight-bold);
-    }
-  }
-  .md\:\!opacity-0 {
-    @media (width >= 48rem) {
-      opacity: 0% !important;
     }
   }
   .md\:\!opacity-100 {
