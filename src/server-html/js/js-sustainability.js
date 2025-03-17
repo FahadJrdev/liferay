@@ -66,9 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const cards = document.querySelectorAll(".direction-card");
-  const allSvg = document.querySelectorAll(".direction-card svg");
-  const allP = document.querySelectorAll(".direction-card p");
+  const cards = document.querySelectorAll(".svg-card");
+  const allSvg = document.querySelectorAll(".svg-card svg");
 
   cards.forEach((card, index) => {
     card.addEventListener("click", () => {

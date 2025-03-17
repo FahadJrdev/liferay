@@ -123,7 +123,6 @@ document.addEventListener("DOMContentLoaded", function () {
       video.play();
     }
   });
-
   hover3.addEventListener("mouseout", () => {
     // Reset button visibility and size
     btn3.classList.replace("md:h-full", "md:h-0");
@@ -215,53 +214,6 @@ document.addEventListener("DOMContentLoaded", function () {
     hover4BG.classList.replace("w-[65%]", "w-0");
     sliderBG.classList.replace("w-0", "w-[65%]");
   });
-
-  // Pie Chart
-  const createPieChart = (id, data, colors, borders) => {
-    new Chart(document.getElementById(id), {
-      type: "pie",
-      data: {
-        labels: ["Category A", "Category B"],
-        datasets: [
-          {
-            data: data,
-            backgroundColor: colors,
-            borderColor: borders,
-            borderWidth: [12, 0],
-            hoverOffset: 8,
-            rotation: 250,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            display: false,
-          },
-        },
-      },
-    });
-  };
-
-  createPieChart(
-    "pieChart1",
-    [7, 93],
-    ["#0047BB", "#FFFFFF"],
-    ["#0047BB", "transparent"]
-  );
-  createPieChart(
-    "pieChart2",
-    [7, 93],
-    ["#0093B2", "#FFFFFF"],
-    ["#0093B2", "transparent"]
-  );
-  createPieChart(
-    "pieChart3",
-    [7, 93],
-    ["#3E89DD", "#FFFFFF"],
-    ["#3E89DD", "transparent"]
-  );
 });
 
 document.addEventListener("DOMContentLoaded", function () {

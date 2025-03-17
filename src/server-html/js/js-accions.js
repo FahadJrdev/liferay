@@ -121,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
   splide2.mount();
+
   const tabs = document.querySelectorAll(".tabs li span");
   const menuContents = document.querySelectorAll(".menu-content");
   const splideItems1 = document.querySelectorAll(".splide1 .splide__slide");
@@ -252,4 +253,25 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   addClickListener(splideItems4, ["bg-tertiaryColor"], ["bg-tertiaryColor"]);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropDown = document.querySelector(".multi-Tabs3 .VTab-dropdown");
+  const dropDownItem = document.querySelector(
+    ".multi-Tabs3 .VTab-dropdown-item"
+  );
+  const dropDownArrow = document.querySelector(
+    ".multi-Tabs3 .vtab-dropdown-arrow"
+  );
+  dropDownItem.addEventListener("click", () => {
+    if (dropDown.classList.contains("max-h-92")) {
+      dropDown.classList.remove("max-h-92");
+      dropDown.classList.add("max-h-0");
+      dropDownArrow.classList.add("rotate-180");
+    } else {
+      dropDown.classList.remove("max-h-0");
+      dropDown.classList.add("max-h-92");
+      dropDownArrow.classList.remove("rotate-180");
+    }
+  });
 });

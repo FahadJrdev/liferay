@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const sideMenuLists = document.querySelectorAll(".tab-1 .sidemenu .menuItem");
+  const verticalSideMenuLists = document.querySelectorAll(
+    ".VTab .VTab-menu-item"
+  );
+  const verticalSideMenuContents = document.querySelectorAll(
+    ".VTab .VTab-menu-content"
+  );
 
   const addClickListener = (
     elements,
@@ -7,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     classesToRemove = [],
     callback = null
   ) => {
-    elements.forEach((element) => {
+    elements.forEach((element, index) => {
       element.addEventListener("click", () => {
         elements.forEach((item) => {
           classesToRemove.forEach((cls) => item.classList.remove(cls));
@@ -15,16 +20,22 @@ document.addEventListener("DOMContentLoaded", function () {
         classesToAdd.forEach((cls) => element.classList.add(cls));
 
         if (callback && typeof callback === "function") {
-          callback(element);
+          callback(element, index);
         }
       });
     });
   };
 
   addClickListener(
-    sideMenuLists,
-    ["bg-white", "border-l-4"],
-    ["bg-white", "border-l-4"]
+    verticalSideMenuLists,
+    ["bg-white", "border-l-4", "font-semibold"],
+    ["bg-white", "border-l-4", "font-semibold"],
+    (item, index) => {
+      verticalSideMenuContents.forEach((content) => {
+        content.classList.add("!hidden");
+      });
+      verticalSideMenuContents[index].classList.remove("!hidden");
+    }
   );
 });
 
