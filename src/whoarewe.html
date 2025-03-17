@@ -925,7 +925,75 @@
                         Colombia</span></p>
             </div>
         </footer>
+
+        <!-- Open Popup Buttons -->
+        <button id="open-popup-1" class="px-4 py-2 bg-blue-500 text-white rounded">Open Popup 1</button>
+        <button id="open-popup-2" class="px-4 py-2 bg-green-500 text-white rounded">Open Popup 2</button>
+
+        <!-- Popup 1 -->
+        <div
+            class="popup popup-1 fixed inset-0 flex items-center justify-center bg-black/50 transition-all ease-in-out duration-300 opacity-0 invisible -z-10">
+            <div class="popup-content bg-white p-6 rounded-lg shadow-lg relative w-96 text-center">
+                <button
+                    class="close-popup absolute top-2 right-2 text-gray-500 hover:text-red-500 text-lg">&times;</button>
+                <h2 class="text-xl font-semibold">Popup 1</h2>
+                <p class="mt-2 text-gray-600">This is the first popup.</p>
+            </div>
+        </div>
+
+        <!-- Popup 2 -->
+        <div
+            class="popup popup-2 fixed inset-0 flex items-center justify-center bg-black/50 transition-all ease-in-out duration-300 opacity-0 invisible -z-10">
+            <div class="popup-content bg-white p-6 rounded-lg shadow-lg relative w-96 text-center">
+                <button
+                    class="close-popup absolute top-2 right-2 text-gray-500 hover:text-red-500 text-lg">&times;</button>
+                <h2 class="text-xl font-semibold">Popup 2</h2>
+                <p class="mt-2 text-gray-600">This is the second popup.</p>
+            </div>
+        </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const popups = document.querySelectorAll(".popup");
+            const closePopups = document.querySelectorAll(".close-popup");
+
+            function togglePopup(popup, show) {
+                if (show) {
+                    popup.classList.remove("opacity-0", "invisible", "-z-10");
+                    popup.classList.add("opacity-100", "visible", "z-10");
+                } else {
+                    popup.classList.remove("opacity-100", "visible", "z-10");
+                    popup.classList.add("opacity-0", "invisible", "-z-10");
+                }
+            }
+
+            // Close popup event listeners
+            closePopups.forEach(button => {
+                button.addEventListener("click", function () {
+                    const popup = this.closest(".popup");
+                    togglePopup(popup, false);
+                });
+            });
+
+            // Close popup when clicking the overlay (but not inside popup-content)
+            popups.forEach(popup => {
+                popup.addEventListener("click", function (e) {
+                    if (e.target === this) { // Ensures only the overlay click triggers close
+                        togglePopup(this, false);
+                    }
+                });
+            });
+
+            // Open popup event listeners
+            document.getElementById("open-popup-1")?.addEventListener("click", function () {
+                const popup = document.querySelector(".popup-1");
+                togglePopup(popup, true);
+            });
+
+        });
+    </script>
+
 
     <script src="./js/plugin/splide/splide.min.js"></script>
     <script src="./js/slide-popup.js"></script>
