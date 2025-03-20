@@ -288,100 +288,76 @@
             </header>
         </div>
 
-        <div class="yearSlider">
-            <div class="flex items-center space-x-4 bg-tertiaryColor">
-                <div class="w-[255px] text-xl text-primaryColor font-bold">Selección por años</div>
-                <div class="custom-slider flex items-center justify-center w-full">
-                    <!-- Left Button -->
-                    <button id="prev" class="p-2 cursor-pointer">
-                        <svg class="fill-secondaryColor" width="20" height="38" viewBox="0 0 20 38" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M18.3011 33.8212L3.38143 18.453L18.2637 3.13613L19.9325 1.41859C18.986 0.444462 17.4791 0.418828 16.5077 1.32887L0.741226 17.543C0.255529 18.0429 0.255529 18.8504 0.741226 19.3502L16.4579 35.5259L16.5451 35.6156L18.2139 37.3332C19.1604 36.359 19.1853 34.8081 18.3011 33.8084V33.8212Z" />
-                        </svg>
-                    </button>
-
-                    <!-- Slider Container -->
-                    <div id="sliderContainerTab" class="relative w-full text-primaryColor overflow-hidden">
-                        <div id="sliderYearItems" class="flex transition-transform duration-300 w-full mx-auto">
-                            <!-- Years -->
-                            <div
-                                class="HTab yearItem px-[1.5rem] py-[0.5rem] w-full bg-white text-[#00AEC7] text-center font-semibold border-r-1 border-secondaryColor cursor-pointer">
-                                2024</div>
-                            <div
-                                class="HTab yearItem px-[1.5rem] py-[0.5rem] w-full text-center font-semibold border-r-1 border-secondaryColor cursor-pointer">
-                                2023</div>
-                            <div
-                                class="HTab yearItem px-[1.5rem] py-[0.5rem] w-full text-center font-semibold border-r-1 border-secondaryColor cursor-pointer">
-                                2022</div>
-                            <div
-                                class="HTab yearItem px-[1.5rem] py-[0.5rem] w-full text-center font-semibold border-r-1 border-secondaryColor cursor-pointer">
-                                2021</div>
-                            <div
-                                class="HTab yearItem px-[1.5rem] py-[0.5rem] w-full text-center font-semibold border-r-1 border-secondaryColor cursor-pointer">
-                                2020</div>
-                        </div>
-                    </div>
-
-                    <!-- Right Button -->
-                    <button id="next" class="p-2 cursor-pointer">
-                        <svg class="fill-secondaryColor" width="20" height="38" viewBox="0 0 20 38" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M19.2545 18.611L3.56777 2.43531L1.85243 0.666504C0.907743 1.64063 0.882883 3.19155 1.76542 4.19131L16.6193 19.5082L1.72813 34.8635L0.0625 36.5811C1.00718 37.5552 2.51122 37.5808 3.48076 36.6708L19.2545 20.4054C19.7393 19.9055 19.7393 19.098 19.2545 18.5982V18.611Z" />
-                        </svg>
-                    </button>
+        <section class="py-[1.5rem] px-[3rem]">
+            <!-- main content -->
+            <div class="year-tab flex justify-center items-center overflow-y-hidden">
+                <div
+                    class="year w-[96px] h-[54px] flex items-center justify-center rounded-[35px] bg-primaryColor text-white font-semibold p-[16px] cursor-pointer">
+                    1944
+                </div>
+                <div
+                    class="bar w-[59px] h-[8px] bg-[#DAE0E8] font-semibold cursor-pointer transition-all ease-in-out duration-300 origin-left">
+                </div>
+                <div
+                    class="year w-[96px] h-[54px] flex items-center justify-center rounded-[35px] bg-[#DAE0E8] text-primaryColor font-semibold cursor-pointer p-[16px] transition-all ease-in-out duration-300 origin-left">
+                    1954
+                </div>
+                <div
+                    class="bar w-[59px] h-[8px] bg-[#DAE0E8] font-semibold cursor-pointer transition-all ease-in-out duration-300 origin-left">
+                </div>
+                <div
+                    class="year w-[96px] h-[54px] flex items-center justify-center rounded-[35px] bg-[#DAE0E8] text-primaryColor font-semibold cursor-pointer p-[16px] transition-all ease-in-out duration-300 origin-left">
+                    1964
+                </div>
+                <div
+                    class="bar w-[59px] h-[8px] bg-[#DAE0E8] font-semibold cursor-pointer transition-all ease-in-out duration-300 origin-left">
+                </div>
+                <div
+                    class="year w-[96px] h-[54px] flex items-center justify-center rounded-[35px] bg-[#DAE0E8] text-primaryColor font-semibold cursor-pointer p-[16px] transition-all ease-in-out duration-300 origin-left">
+                    1974
+                </div>
+                <div
+                    class="bar w-[59px] h-[8px] bg-[#DAE0E8] font-semibold cursor-pointer transition-all ease-in-out duration-300 origin-left">
+                </div>
+                <div
+                    class="year w-[96px] h-[54px] flex items-center justify-center rounded-[35px] bg-[#DAE0E8] text-primaryColor font-semibold cursor-pointer p-[16px] transition-all ease-in-out duration-300 origin-left">
+                    1984
+                </div>
+                <div
+                    class="bar w-[59px] h-[8px] bg-[#DAE0E8] font-semibold cursor-pointer transition-all ease-in-out duration-300 origin-left">
+                </div>
+                <div
+                    class="year w-[96px] h-[54px] flex items-center justify-center rounded-[35px] bg-[#DAE0E8] text-primaryColor font-semibold cursor-pointer p-[16px] transition-all ease-in-out duration-300 origin-left">
+                    1994
+                </div>
+                <div
+                    class="bar w-[59px] h-[8px] bg-[#DAE0E8] font-semibold cursor-pointer transition-all ease-in-out duration-300 origin-left">
+                </div>
+                <div
+                    class="year w-[96px] h-[54px] flex items-center justify-center rounded-[35px] bg-[#DAE0E8] text-primaryColor font-semibold cursor-pointer p-[16px] transition-all ease-in-out duration-300 origin-left">
+                    2004
+                </div>
+                <div
+                    class="bar w-[59px] h-[8px] bg-[#DAE0E8] font-semibold cursor-pointer transition-all ease-in-out duration-300 origin-left">
+                </div>
+                <div
+                    class="year w-[96px] h-[54px] flex items-center justify-center rounded-[35px] bg-[#DAE0E8] text-primaryColor font-semibold cursor-pointer p-[16px] transition-all ease-in-out duration-300 origin-left">
+                    2014
+                </div>
+                <div
+                    class="bar w-[59px] h-[8px] bg-[#DAE0E8] font-semibold cursor-pointer transition-all ease-in-out duration-300 origin-left">
+                </div>
+                <div
+                    class="year w-[96px] h-[54px] flex items-center justify-center rounded-[35px] bg-[#DAE0E8] text-primaryColor font-semibold cursor-pointer p-[16px] transition-all ease-in-out duration-300 origin-left">
+                    2024
                 </div>
             </div>
-        </div>
-        <script>
-            const slider = document.getElementById('sliderYearItems');
-            const years = document.querySelectorAll('.yearItem');
-            const sliderContainer = document.getElementById('sliderContainerTab');
-            const nextItem = document.getElementById('next');
-            const prevItem = document.getElementById('prev');
-
-            let index = 0;
-            const visibleItems = 4; // Show exactly 4 items
-            let yearWidth = years[0].offsetWidth; // Width of a single item
-            let maxIndex = 0;
-            // Function to update widths dynamically
-            function updateWidths() {
-                yearWidth = years[0].offsetWidth; // Update single item width
-                sliderContainer.style.width = `${visibleItems * yearWidth}px`; // Set container width for 4 items
-
-                const totalItems = years.length;
-                const extraItems = Math.max(0, totalItems - visibleItems);
-                slider.style.width = `${(visibleItems + extraItems) * yearWidth}px`; // Full width including extra items
-
-                maxIndex = extraItems; // Number of times we can move
-            }
-
-            // Move slider to the next item
-            nextItem?.addEventListener('click', () => {
-                if (index < maxIndex) {
-                    index++;
-                    slider.style.transform = `translateX(-${index * yearWidth}px)`;
-                }
-            });
-
-            // Move slider to the previous item
-            prevItem.addEventListener('click', () => {
-                if (index > 0) {
-                    index--;
-                    slider.style.transform = `translateX(-${index * yearWidth}px)`;
-                }
-            });
-
-            // Handle window resize
-            window.addEventListener('resize', () => {
-                updateWidths();
-                slider.style.transform = `translateX(-${index * yearWidth}px)`;
-            });
-
-            // Initialize on load
-            updateWidths();
-        </script>
+        </section>
+        <section class="h-screen relative py-[1.5rem] px-[3rem]">
+            <div class="history-1 pl-16 w-full">
+                <img src="./assets/historia/history-direct/image-history-1.png" alt="">
+            </div>
+        </section>
 
         <!-- Footer -->
         <footer
@@ -490,45 +466,40 @@
     </div>
 
     <script src="./js/script.js"></script>
-    <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-    <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"></script>
     <script>
-        const sideMenuLists = document.querySelectorAll(".multi-Tabs .HTab");
-        const sideMenuContents = document.querySelectorAll(".multi-Tabs .HContent");
+        document.addEventListener("DOMContentLoaded", function () {
+            const years = document.querySelectorAll(".year");
+            const bars = document.querySelectorAll(".bar");
 
-        const addClickListener = (
-            elements,
-            classesToAdd = [],
-            classesToRemove = [],
-            callback = null
-        ) => {
-            elements.forEach((element, index) => {
-                element.addEventListener("click", () => {
-                    elements.forEach((item) => {
-                        classesToRemove.forEach((cls) => item.classList.remove(cls));
-                    });
-                    classesToAdd.forEach((cls) => element.classList.add(cls));
+            years.forEach((year, index) => {
+                year.addEventListener("click", function () {
+                    resetYearsAndBars(); // Reset everything first
 
-                    if (callback && typeof callback === "function") {
-                        callback(element, index);
+                    for (let i = 0; i <= index; i++) {
+                        years[i].classList.remove("bg-[#DAE0E8]", "text-primaryColor");
+                        years[i].classList.add("bg-primaryColor", "text-white");
+
+                        if (i < bars.length) {
+                            bars[i].classList.remove("bg-[#DAE0E8]");
+                            bars[i].classList.add("bg-primaryColor");
+                        }
                     }
                 });
             });
-        };
 
-        addClickListener(
-            sideMenuLists,
-            ["bg-white", "text-[#00AEC7]"],
-            ["bg-white", "text-[#00AEC7]"],
-            (item, index) => {
-                sideMenuContents.forEach((content) => {
-                    content.classList.add("!hidden");
+            function resetYearsAndBars() {
+                years.forEach((year) => {
+                    year.classList.remove("bg-primaryColor", "text-white");
+                    year.classList.add("bg-[#DAE0E8]", "text-primaryColor");
                 });
-                sideMenuContents[index].classList.remove("!hidden");
-            }
-        );
-    </script>
 
+                bars.forEach((bar) => {
+                    bar.classList.remove("bg-primaryColor");
+                    bar.classList.add("bg-[#DAE0E8]");
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

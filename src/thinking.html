@@ -1017,6 +1017,50 @@
             <p class="font-bold leading-9 !text-4xl text-primaryColor pb-[16px]">Proyectos seleccionados
                 #PensarConOtros</p>
             <div class="flex gap-3 items-center py-[8px]">
+                <p class="font-bold leading-9 !text-xl 2xl:!text-2xl text-primaryColor pb-[16px]">Selección por años</p>
+                <div class="splide splide1 flex-1 2xl:!text-2xl">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div data-year="2024"
+                                class="HTab splide__slide relative py-[8px] text-center cursor-pointer bg-white text-[#00AEC7]">
+                                <span>2024</span>
+                                <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]">
+                            </div>
+                            <div data-year="2023"
+                                class="HTab splide__slide relative py-[8px] text-center cursor-pointer">
+                                <span>2023</span>
+                                <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]">
+                            </div>
+                            <div data-year="2022"
+                                class="HTab splide__slide relative py-[8px] text-center cursor-pointer">
+                                <span>2022</span>
+                                <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]">
+                            </div>
+                            <div data-year="2021"
+                                class="HTab splide__slide relative py-[8px] text-center cursor-pointer">
+                                <span>2021</span>
+                                <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]">
+                            </div>
+                            <div data-year="2020"
+                                class="HTab splide__slide relative py-[8px] text-center cursor-pointer">
+                                <span>2020</span>
+                                <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]">
+                            </div>
+                            <div data-year="2019"
+                                class="HTab splide__slide relative py-[8px] text-center cursor-pointer">
+                                <span>2019</span>
+                                <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]">
+                            </div>
+                            <div data-year="2018"
+                                class="HTab splide__slide relative py-[8px] text-center cursor-pointer">
+                                <span>2018</span>
+                                <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-3 items-center py-[8px]">
                 <p class="font-bold leading-9 !text-xl 2xl:!text-2xl text-primaryColor pb-[16px]">Selección por
                     años</p>
                 <div class="splide splide1 flex-1 2xl:!text-2xl">
@@ -1202,3 +1246,98 @@
         </div>
     </div>
 </main>
+
+
+<script type="">
+    document.addEventListener("DOMContentLoaded", function () {
+      const splide2 = new Splide(".splide2", {
+        perPage: 2,
+        perMove: 1,
+        gap: 36,
+        padding: "1rem",
+        breakpoints: {
+          640: {
+            perPage: 1,
+          },
+        },
+      });
+      splide2.mount();
+    
+      const sideMenuLists = document.querySelectorAll(".multi-Tabs .HTab");
+      const sideMenuContents = document.querySelectorAll(".multi-Tabs .HContent");
+    
+      const addClickListener = (
+        elements,
+        classesToAdd = [],
+        classesToRemove = [],
+        callback = null
+      ) => {
+        elements.forEach((element, index) => {
+          element.addEventListener("click", () => {
+            elements.forEach((item) => {
+              classesToRemove.forEach((cls) => item.classList.remove(cls));
+            });
+            classesToAdd.forEach((cls) => element.classList.add(cls));
+    
+            if (callback && typeof callback === "function") {
+              callback(element, index);
+            }
+          });
+        });
+      };
+    
+      addClickListener(
+        sideMenuLists,
+        ["bg-white", "text-[#00AEC7]"],
+        ["bg-white", "text-[#00AEC7]"],
+        (item, index) => {
+          sideMenuContents.forEach((content) => {
+            content.classList.add("!hidden");
+          });
+          sideMenuContents[index].classList.remove("!hidden");
+        }
+      );
+    });
+    </script>
+
+
+
+<div class="flex gap-3 items-center py-[8px]">
+    <p class="font-bold leading-9 !text-xl 2xl:!text-2xl text-primaryColor pb-[16px]">Selección por
+        años</p>
+    <div class="splide splide1 flex-1 2xl:!text-2xl">
+        <div class="splide__track">
+            <div class="splide__list">
+                <div data-year="2024"
+                    class="HTab splide__slide relative py-[8px] text-center cursor-pointer bg-white text-[#00AEC7]">
+                    <span>2024</span>
+                    <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]">
+                </div>
+                <div data-year="2023" class="HTab splide__slide relative py-[8px] text-center cursor-pointer">
+                    <span>2023</span>
+                    <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]">
+                </div>
+                <div data-year="2022" class="HTab splide__slide relative py-[8px] text-center cursor-pointer">
+                    <span>2022</span>
+                    <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]">
+                </div>
+                <div data-year="2021" class="HTab splide__slide relative py-[8px] text-center cursor-pointer">
+                    <span>2021</span>
+                    <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]">
+                </div>
+                <div data-year="2020" class="HTab splide__slide relative py-[8px] text-center cursor-pointer">
+                    <span>2020</span>
+                    <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]">
+                </div>
+                <div data-year="2019" class="HTab splide__slide relative py-[8px] text-center cursor-pointer">
+                    <span>2019</span>
+                    <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]">
+                </div>
+                <div data-year="2018" class="HTab splide__slide relative py-[8px] text-center cursor-pointer">
+                    <span>2018</span>
+                    <hr class="absolute right-0 top-0 w-[1px] h-full bg-[#00AEC7]">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
