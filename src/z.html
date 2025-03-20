@@ -737,21 +737,21 @@
                 gsap.registerPlugin(ScrollTrigger);
 
                 // Wrap your horizontally scrolling section inside a container
-                let container = document.querySelector(".sura-history main");
+                // let container = document.querySelector(".sura-history main");
 
                 // Enable horizontal scrolling using GSAP
-                gsap.to(container, {
-                    x: () => -(container.scrollWidth - window.innerWidth), // Moves container left
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: container,
-                        start: "top top",
-                        end: () => `+=${container.scrollWidth}`, // Ends after full width scroll
-                        pin: true, // Pins the section while scrolling
-                        scrub: 1, // Smooth scrolling effect
-                        anticipatePin: 1
-                    }
-                });
+                // gsap.to(container, {
+                //     x: () => -(container.scrollWidth - window.innerWidth), // Moves container left
+                //     ease: "none",
+                //     scrollTrigger: {
+                //         trigger: container,
+                //         start: "top top",
+                //         end: () => `+=${container.scrollWidth}`, // Ends after full width scroll
+                //         pin: true, // Pins the section while scrolling
+                //         scrub: 1, // Smooth scrolling effect
+                //         anticipatePin: 1
+                //     }
+                // });
 
                 // Function to create ScrollTrigger animations for each element
                 function animateOnScroll(element, animation) {
@@ -932,10 +932,10 @@
 
             function animation1() {
                 const years = document.querySelectorAll(".year");
+                const suraHistory = document.querySelector('.sura-history');
 
                 if (!isCollapsed) {
                     // Select the .sura-history container
-                    const suraHistory = document.querySelector('.sura-history');
 
                     // Select the pin-spacer element
                     const pinSpacer = suraHistory?.querySelector('.pin-spacer');
@@ -1011,8 +1011,8 @@
                                 duration: 0.5,
                                 ease: "power3.out"
                             }, "<");
-                        yearTabChange(years.length - 1);
                         thirdAnimation(collapseTl);
+                        suraHistory.classList.replace("overflow-hidden", "overflow-y-hidden");
                     }
                 } else {
                     if (!isAnimating) {
@@ -1081,9 +1081,9 @@
                                 duration: 0.5,
                                 ease: "power3.out"
                             }, "<");
-                        yearTabChange(0);
                         undoThirdAnimation();
                         defaultView();
+                        suraHistory.classList.replace("overflow-y-hidden", "overflow-hidden");
                     }
                 }
                 isCollapsed = !isCollapsed;
@@ -1099,18 +1099,7 @@
 
             const years = document.querySelectorAll(".year");
             const bars = document.querySelectorAll(".bar");
-
-            years.forEach((year, index) => {
-                year.addEventListener("click", function () {
-                    if (years[index].dataset.year === "1944") {
-                        isCollapsed = true;
-                        animation1();
-                    } else {
-                        isCollapsed = false;
-                        animation1();
-                    }
-                });
-            });
+            const historySection = document.querySelector(".sura-history");
 
             function yearTabChange(index) {
                 resetYearsAndBars();
@@ -1137,6 +1126,19 @@
                 });
             }
 
+            function updateYearTab() {
+                const scrollLeft = historySection.scrollLeft;
+                const maxScrollLeft = historySection.scrollWidth - historySection.clientWidth;
+
+                const scrollProgress = scrollLeft / maxScrollLeft;
+
+                const totalYears = years.length;
+                const filledIndex = Math.round(scrollProgress * (totalYears - 1));
+
+                yearTabChange(filledIndex);
+            }
+
+            historySection.addEventListener("scroll", updateYearTab);
         });
     </script>
     <script src="./js/script.js"></script>
