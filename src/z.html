@@ -703,34 +703,38 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             let isAnimating = false;
+            let autoPlay = false;
+
             function defaultView() {
-                let tl = gsap.timeline();
+                return new Promise((resolve) => {
+                    let tl = gsap.timeline({
+                        onComplete: resolve
+                    });
 
-                tl.fromTo(".line-1",
-                    { clipPath: "inset(0% 100% 0% 0%)" },
-                    { clipPath: "inset(0% 0% 0% 0%)", duration: 1.5, ease: "power3.in" }
-                ).fromTo([".history-image-1"],
-                    { opacity: 0, y: 100 },
-                    { opacity: 1, y: 0, duration: 1, ease: "slowMo.in" },
-                    "<"
-                ).fromTo([".small-year-1"],
-                    { opacity: 0, x: 100 },
-                    { opacity: 1, x: 0, duration: 1, ease: "slowMo.in" },
-                    "<"
-                ).fromTo([".small-para-1"],
-                    { opacity: 0, y: 100 },
-                    { opacity: 1, y: 0, duration: 1, ease: "slowMo.in" },
-                    "<"
-                ).fromTo(".line-2",
-                    { clipPath: "inset(100% 0% 0% 0%)" },
-                    { clipPath: "inset(0% 0% 0% 0%)", duration: 0.8, ease: "power3.out" }
-                ).fromTo(".bigYear-1",
-                    { clipPath: "inset(0% 0% 100% 0%)" },
-                    { clipPath: "inset(0% 0% 0% 0%)", duration: 0.5, ease: "power3.in" }
-                );
+                    tl.fromTo(".line-1",
+                        { clipPath: "inset(0% 100% 0% 0%)" },
+                        { clipPath: "inset(0% 0% 0% 0%)", duration: 1.5, ease: "power3.in" }
+                    ).fromTo([".history-image-1"],
+                        { opacity: 0, y: 100 },
+                        { opacity: 1, y: 0, duration: 1, ease: "slowMo.in" },
+                        "<"
+                    ).fromTo([".small-year-1"],
+                        { opacity: 0, x: 100 },
+                        { opacity: 1, x: 0, duration: 1, ease: "slowMo.in" },
+                        "<"
+                    ).fromTo([".small-para-1"],
+                        { opacity: 0, y: 100 },
+                        { opacity: 1, y: 0, duration: 1, ease: "slowMo.in" },
+                        "<"
+                    ).fromTo(".line-2",
+                        { clipPath: "inset(100% 0% 0% 0%)" },
+                        { clipPath: "inset(0% 0% 0% 0%)", duration: 0.8, ease: "power3.out" }
+                    ).fromTo(".bigYear-1",
+                        { clipPath: "inset(0% 0% 100% 0%)" },
+                        { clipPath: "inset(0% 0% 0% 0%)", duration: 0.5, ease: "power3.in" }
+                    );
+                });
             }
-
-            defaultView();
 
             function thirdAnimation(collapseTl) {
                 // Third Animation
@@ -767,125 +771,6 @@
                 }
 
                 // Apply animations when elements appear in viewport
-                // 3rd
-                animateOnScroll(".line-5", {
-                    from: { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll(".line-6", {
-                    from: { clipPath: "inset(0% 0% 100% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll(".line-7", {
-                    from: { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll([".history-description-3", ".history-video-image-2", ".history-description-4", ".history-image-3"], {
-                    from: { opacity: 0, x: -50 },
-                    to: { opacity: 1, x: 0, duration: 0.5, ease: "power3.in" }
-                });
-
-                // 4th
-                animateOnScroll(".line-8", {
-                    from: { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll(".blue-frame", {
-                    from: { clipPath: "inset(0% 100% 0% 0%)" },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", duration: 1, ease: "power3.in" }
-                });
-
-                // 5th
-                animateOnScroll(".line-9", {
-                    from: { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll(".line-10", {
-                    from: { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll(".bigYear-2", {
-                    from: { fontSize: "200px", lineHeight: "200px", opacity: 0 },
-                    to: { fontSize: "42px", lineHeight: "42px", opacity: 1, duration: 1, ease: "elastic.in" }
-                });
-
-                animateOnScroll(".line-11", {
-                    from: { clipPath: "inset(0% 0% 100% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll(".line-12", {
-                    from: { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll([".history-description-5", ".history-image-4", ".history-image-5", ".history-image-6"], {
-                    from: { opacity: 0, x: -50 },
-                    to: { opacity: 1, x: 0, duration: 0.5, ease: "power3.in" }
-                });
-
-                // 6th Part
-                animateOnScroll(".line-13", {
-                    from: { clipPath: "inset(100% 0% 0% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll(".line-14", {
-                    from: { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll(".line-15", {
-                    from: { clipPath: "inset(0% 0% 1000% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll(".line-16", {
-                    from: { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll(".bigYear-3", {
-                    from: { fontSize: "200px", lineHeight: "200px", opacity: 0 },
-                    to: { fontSize: "42px", lineHeight: "42px", opacity: 1, duration: 1, ease: "elastic.in" }
-                });
-
-                animateOnScroll([".history-description-6", ".history-description-7", ".history-description-8", ".history-image-7", ".history-image-8"], {
-                    from: { opacity: 0, x: -50 },
-                    to: { opacity: 1, x: 0, duration: 0.5, ease: "power3.in" }
-                });
-
-                // 7th part
-                animateOnScroll(".line-17", {
-                    from: { clipPath: "inset(100% 0% 0% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll(".line-18", {
-                    from: { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll(".line-19", {
-                    from: { clipPath: "inset(0% 0% 1000% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll(".line-20", {
-                    from: { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
-                    to: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
-                });
-
-                animateOnScroll([".history-description-9", ".history-description-10", ".history-image-9", ".history-image-10"], {
-                    from: { opacity: 0, x: -50 },
-                    to: { opacity: 1, x: 0, duration: 0.5, ease: "power3.in" }
-                });
 
             }
 
@@ -928,172 +813,260 @@
             }
 
             let isCollapsed;
-            let collapseTl = gsap.timeline();
 
             function animation1() {
-                const years = document.querySelectorAll(".year");
-                const suraHistory = document.querySelector('.sura-history');
+                if (!autoPlay) {
+                    let collapseTl = gsap.timeline({
+                        onComplete: () => {
+                            isAnimating = false;
+                        }
+                    });
+                    const years = document.querySelectorAll(".year");
+                    const suraHistory = document.querySelector('.sura-history');
 
-                if (!isCollapsed) {
-                    // Select the .sura-history container
+                    if (!isCollapsed) {
+                        // Select the .sura-history container
 
-                    // Select the pin-spacer element
-                    const pinSpacer = suraHistory?.querySelector('.pin-spacer');
+                        // Select the pin-spacer element
+                        const pinSpacer = suraHistory?.querySelector('.pin-spacer');
 
-                    if (!pinSpacer && !isAnimating) {
-                        isAnimating = true;
-                        collapseTl.to(".line-1", {
-                            opacity: 0,
-                            top: "-100px",
-                            left: "-676px",
-                            duration: 0.5,
-                            ease: "power3.out"
-                        }).to([".line-2"], {
-                            top: "-100px",
-                            left: "214px",
-                            duration: 0.5,
-                            ease: "power3.Out"
-                        }, "<").to(".bigYear-1", {
-                            fontSize: "42px",
-                            lineHeight: "42px",
-                            top: "70px",
-                            left: "178px",
-                            duration: 0.5,
-                            ease: "power3.out"
-                        }, "<").to([".history-image-1"], {
-                            opacity: 0,
-                            top: "-620px",
-                            left: "-400px",
-                            duration: 0.5,
-                            ease: "power3.Out"
-                        }, "<").to([".history-description-1"], {
-                            opacity: 0,
-                            top: "-190px",
-                            left: "-230px",
-                            duration: 0.5,
-                            ease: "power3.out"
-                        }, "<")
-                            // second part
-                            .to([".line-3"], {
-                                opacity: 1,
-                                top: "130px",
-                                left: "200px",
-                                duration: 0.5,
-                                ease: "power3.Out"
-                            }, "<").to([".line-4"], {
-                                opacity: 1,
-                                top: "273px",
-                                left: "212px",
-                                duration: 0.5,
-                                ease: "power3.Out"
-                            }, "<").fromTo(".line-3",
-                                { clipPath: "inset(0% 0% 100% 0%)" },
-                                { clipPath: "inset(0% 0% 0% 0%)", duration: 0.8, ease: "power3.in" },
-                            ).fromTo(".line-4",
-                                { clipPath: "inset(0% 100% 0% 0%)" },
-                                { clipPath: "inset(0% 0% 0% 0%)", duration: 1, ease: "power3.in" },
-                            ).to([".history-image-2"], {
-                                opacity: 1,
-                                top: "71px",
-                                left: "740px",
-                                duration: 0.5,
-                                ease: "power3.Out"
-                            }, "<").to([".history-description-2"], {
-                                opacity: 1,
-                                top: "90px",
-                                left: "335px",
+                        if (!pinSpacer && !isAnimating) {
+                            isAnimating = true;
+                            collapseTl.to(".line-1", {
+                                opacity: 0,
+                                top: "-100px",
+                                left: "-676px",
                                 duration: 0.5,
                                 ease: "power3.out"
-                            }, "<").to([".history-video-image-1"], {
-                                opacity: 1,
-                                top: "340px",
+                            }).to([".line-2"], {
+                                top: "-100px",
                                 left: "214px",
                                 duration: 0.5,
+                                ease: "power3.Out"
+                            }, "<").to(".bigYear-1", {
+                                fontSize: "42px",
+                                lineHeight: "42px",
+                                top: "70px",
+                                left: "178px",
+                                duration: 0.5,
                                 ease: "power3.out"
-                            }, "<");
-                        thirdAnimation(collapseTl);
-                        suraHistory.classList.replace("overflow-hidden", "overflow-y-hidden");
+                            }, "<").to([".history-image-1"], {
+                                opacity: 0,
+                                top: "-620px",
+                                left: "-400px",
+                                duration: 0.5,
+                                ease: "power3.Out"
+                            }, "<").to([".history-description-1"], {
+                                opacity: 0,
+                                top: "-190px",
+                                left: "-230px",
+                                duration: 0.5,
+                                ease: "power3.out"
+                            }, "<")
+                                // second part
+                                .to([".line-3"], {
+                                    opacity: 1,
+                                    top: "130px",
+                                    left: "200px",
+                                    duration: 0.5,
+                                    ease: "power3.Out"
+                                }, "<").to([".line-4"], {
+                                    opacity: 1,
+                                    top: "273px",
+                                    left: "212px",
+                                    duration: 0.5,
+                                    ease: "power3.Out"
+                                }, "<").fromTo(".line-3",
+                                    { clipPath: "inset(0% 0% 100% 0%)" },
+                                    { clipPath: "inset(0% 0% 0% 0%)", duration: 0.8, ease: "power3.in" },
+                                ).fromTo(".line-4",
+                                    { clipPath: "inset(0% 100% 0% 0%)" },
+                                    { clipPath: "inset(0% 0% 0% 0%)", duration: 1, ease: "power3.in" },
+                                ).to([".history-image-2"], {
+                                    opacity: 1,
+                                    top: "71px",
+                                    left: "740px",
+                                    duration: 0.5,
+                                    ease: "power3.Out"
+                                }, "<").to([".history-description-2"], {
+                                    opacity: 1,
+                                    top: "90px",
+                                    left: "335px",
+                                    duration: 0.5,
+                                    ease: "power3.out"
+                                }, "<").to([".history-video-image-1"], {
+                                    opacity: 1,
+                                    top: "340px",
+                                    left: "214px",
+                                    duration: 0.5,
+                                    ease: "power3.out"
+                                }, "<")
+                                // Third
+                                .fromTo([".history-description-3", ".history-video-image-2", ".history-description-4", ".history-image-3"],
+                                    { opacity: 0, x: -50 },
+                                    { opacity: 1, x: 0, duration: 0.5, ease: "power3.in" }
+                                ).fromTo(".line-5",
+                                    { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }, "<"
+                                ).fromTo(".line-6",
+                                    { clipPath: "inset(0% 0% 100% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
+                                ).fromTo(".line-7",
+                                    { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
+                                )
+                                // 4th
+                                .fromTo(".line-8",
+                                    { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
+                                ).fromTo(".blue-frame",
+                                    { clipPath: "inset(0% 100% 0% 0%)" },
+                                    { clipPath: "inset(0% 0% 0% 0%)", duration: 1, ease: "power3.in" }, "<"
+                                )
+                                // 5th
+                                .fromTo([".history-description-5", ".history-image-4", ".history-image-5", ".history-image-6"],
+                                    { opacity: 0, x: -50 },
+                                    { opacity: 1, x: 0, duration: 0.5, ease: "power3.in" }
+                                ).fromTo(".line-9",
+                                    { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }, "<"
+                                ).fromTo(".line-10",
+                                    { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
+                                ).fromTo(".bigYear-2",
+                                    { fontSize: "200px", lineHeight: "200px", opacity: 0 },
+                                    { fontSize: "42px", lineHeight: "42px", opacity: 1, duration: 1, ease: "elastic.in" }
+                                ).fromTo(".line-11",
+                                    { clipPath: "inset(0% 0% 100% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
+                                ).fromTo(".line-12",
+                                    { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
+                                )
+                                // 6th Part
+                                .fromTo([".history-description-6", ".history-description-7", ".history-description-8", ".history-image-7", ".history-image-8"],
+                                    { opacity: 0, x: -50 },
+                                    { opacity: 1, x: 0, duration: 0.5, ease: "power3.in" }
+                                ).fromTo(".line-13",
+                                    { clipPath: "inset(0% 0% 100% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }, "<"
+                                ).fromTo(".line-14",
+                                    { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
+                                ).fromTo(".line-15",
+                                    { clipPath: "inset(100% 0% 0% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
+                                ).fromTo(".line-16",
+                                    { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
+                                ).fromTo(".bigYear-3",
+                                    { fontSize: "200px", lineHeight: "200px", opacity: 0 },
+                                    { fontSize: "42px", lineHeight: "42px", opacity: 1, duration: 1, ease: "elastic.in" }
+                                )
+                                // 7th part
+                                .fromTo([".history-description-9", ".history-description-10", ".history-image-9", ".history-image-10"],
+                                    { opacity: 0, x: -50 },
+                                    { opacity: 1, x: 0, duration: 0.5, ease: "power3.in" }
+                                )
+                                .fromTo(".line-17",
+                                    { clipPath: "inset(0% 0% 100% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }, "<"
+                                ).fromTo(".line-18",
+                                    { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
+                                ).fromTo(".line-19",
+                                    { clipPath: "inset(0% 0% 100% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
+                                ).fromTo(".line-20",
+                                    { clipPath: "inset(0% 100% 0% 0%)", opacity: 0 },
+                                    { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1, ease: "power3.in" }
+                                );
+
+                            suraHistory.classList.replace("overflow-hidden", "overflow-y-hidden");
+                        }
+                    } else {
+                        if (!isAnimating) {
+                            isAnimating = true;
+                            collapseTl.to(".line-1", {
+                                opacity: 1,
+                                top: "0px",
+                                left: "136px",
+                                duration: 0.5,
+                                ease: "power3.out"
+                            }).to([".line-2"], {
+                                opacity: 1,
+                                top: "12px",
+                                left: "911px",
+                                duration: 0.5,
+                                ease: "power3.Out"
+                            }, "<").to(".bigYear-1", {
+                                fontSize: "200px",
+                                lineHeight: "200px",
+                                top: "180px",
+                                left: "710px",
+                                duration: 0.5,
+                                ease: "power3.out"
+                            }, "<").to([".history-image-1"], {
+                                opacity: 1,
+                                top: "0px",
+                                left: "225px",
+                                duration: 0.5,
+                                ease: "power3.Out"
+                            }, "<").to([".history-description-1"], {
+                                opacity: 1,
+                                top: "54px",
+                                left: "645px",
+                                duration: 0.5,
+                                ease: "power3.out"
+                            }, "<")
+                                // second part
+                                .to([".line-3"], {
+                                    opacity: 0,
+                                    top: "540px",
+                                    left: "1055px",
+                                    duration: 0.5,
+                                    ease: "power3.Out"
+                                }, "<").to([".line-4"], {
+                                    opacity: 0,
+                                    top: "540px",
+                                    left: "1055px",
+                                    duration: 0.5,
+                                    ease: "power3.Out"
+                                }, "<").to([".history-image-2"], {
+                                    opacity: 0,
+                                    top: "540px",
+                                    left: "1055px",
+                                    duration: 0.5,
+                                    ease: "power3.Out"
+                                }, "<").to([".history-description-2"], {
+                                    opacity: 0,
+                                    top: "740px",
+                                    left: "1055px",
+                                    duration: 0.5,
+                                    ease: "power3.out"
+                                }, "<").to([".history-video-image-1"], {
+                                    opacity: 0,
+                                    top: "740px",
+                                    left: "1055px",
+                                    duration: 0.5,
+                                    ease: "power3.out"
+                                }, "<");
+                            undoThirdAnimation();
+                            defaultView();
+                            suraHistory.classList.replace("overflow-y-hidden", "overflow-hidden");
+                        }
                     }
-                } else {
-                    if (!isAnimating) {
-                        isAnimating = true;
-                        collapseTl.to(".line-1", {
-                            opacity: 1,
-                            top: "0px",
-                            left: "136px",
-                            duration: 0.5,
-                            ease: "power3.out"
-                        }).to([".line-2"], {
-                            opacity: 1,
-                            top: "12px",
-                            left: "911px",
-                            duration: 0.5,
-                            ease: "power3.Out"
-                        }, "<").to(".bigYear-1", {
-                            fontSize: "200px",
-                            lineHeight: "200px",
-                            top: "180px",
-                            left: "710px",
-                            duration: 0.5,
-                            ease: "power3.out"
-                        }, "<").to([".history-image-1"], {
-                            opacity: 1,
-                            top: "0px",
-                            left: "225px",
-                            duration: 0.5,
-                            ease: "power3.Out"
-                        }, "<").to([".history-description-1"], {
-                            opacity: 1,
-                            top: "54px",
-                            left: "645px",
-                            duration: 0.5,
-                            ease: "power3.out"
-                        }, "<")
-                            // second part
-                            .to([".line-3"], {
-                                opacity: 0,
-                                top: "540px",
-                                left: "1055px",
-                                duration: 0.5,
-                                ease: "power3.Out"
-                            }, "<").to([".line-4"], {
-                                opacity: 0,
-                                top: "540px",
-                                left: "1055px",
-                                duration: 0.5,
-                                ease: "power3.Out"
-                            }, "<").to([".history-image-2"], {
-                                opacity: 0,
-                                top: "540px",
-                                left: "1055px",
-                                duration: 0.5,
-                                ease: "power3.Out"
-                            }, "<").to([".history-description-2"], {
-                                opacity: 0,
-                                top: "740px",
-                                left: "1055px",
-                                duration: 0.5,
-                                ease: "power3.out"
-                            }, "<").to([".history-video-image-1"], {
-                                opacity: 0,
-                                top: "740px",
-                                left: "1055px",
-                                duration: 0.5,
-                                ease: "power3.out"
-                            }, "<");
-                        undoThirdAnimation();
-                        defaultView();
-                        suraHistory.classList.replace("overflow-y-hidden", "overflow-hidden");
-                    }
+                    isCollapsed = !isCollapsed;
+                    setTimeout(() => { isAnimating = false; }, 3000);
                 }
-                isCollapsed = !isCollapsed;
-                setTimeout(() => { isAnimating = false; }, 3000);
             }
 
             const bigYear1 = document.querySelector(".bigYear-1");
 
             bigYear1.addEventListener("click", function () {
-                animation1();
+                if (!isAnimating) {
+                    animation1();
+                }
             });
 
 
@@ -1139,6 +1112,57 @@
             }
 
             historySection.addEventListener("scroll", updateYearTab);
+
+            // Add click listeners to each year tab for reverse control
+            years.forEach((year, index) => {
+                year.addEventListener("click", function () {
+                    // Calculate the target scrollLeft for the given tab index
+                    const maxScrollLeft = historySection.scrollWidth - historySection.clientWidth;
+                    // For example, if the years are distributed evenly:
+                    const targetScrollLeft = (index / (years.length - 1)) * maxScrollLeft;
+
+                    if (isCollapsed) {
+                        // Animate the horizontal scrolling of historySection
+                        gsap.to(historySection, {
+                            scrollLeft: targetScrollLeft,
+                            duration: 3,
+                            ease: "power2.inOut",
+                            onComplete: () => {
+                                // Update the tab fill after scrolling completes (optional if updateYearTab is reliable)
+                                yearTabChange(index);
+                            }
+                        });
+                    }
+                });
+            });
+
+            function autoplayScroll() {
+                autoPlay = true;
+                const maxScrollLeft = historySection.scrollWidth - historySection.clientWidth;
+
+                gsap.to(historySection, {
+                    scrollLeft: maxScrollLeft,
+                    duration: 20, // Adjust duration for smoother or faster effect
+                    ease: "power2.inOut",
+                    onComplete: () => {
+                        // Optional: Restart from the beginning after completion
+                        gsap.to(historySection, {
+                            scrollLeft: 0,
+                            duration: 10,
+                            ease: "power2.inOut",
+                            delay: 1, // Pause before restarting
+                            onComplete: () => {
+                                autoPlay = false;
+                            },
+                        });
+                    }
+                });
+            }
+
+            defaultView().then(() => {
+                animation1();
+                autoplayScroll();
+            });
         });
     </script>
     <script src="./js/script.js"></script>
